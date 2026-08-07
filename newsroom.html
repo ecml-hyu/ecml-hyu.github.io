@@ -3,57 +3,115 @@ layout: page
 title: "Newsroom"
 eyebrow: "ECML UPDATES"
 lead: "Laboratory news, awards, events, and announcements."
+extra_css:
+  - /assets/css/newsroom.css
 ---
 {%- comment -%}
-  글 목록은 _posts/ 를 읽어 자동으로 그린다. 이 파일을 고칠 일은 없다.
-  새 글은 _posts/YYYY-MM-DD-제목.md 파일을 추가하면 최신순으로 올라온다.
+  새 글은 _posts/YYYY-MM-DD-제목.md 파일을 추가하면 최신순으로 자동 표시된다.
+  thumbnail 과 images 를 입력하면 News 및 Gallery 양쪽에 활용된다.
 {%- endcomment -%}
-<div class="news-actions">
-  <a class="button" id="new-post-btn"
-     data-repo="{{ site.repository }}" data-branch="{{ site.branch }}"
-     href="https://github.com/{{ site.repository }}/new/{{ site.branch }}?filename=_posts/{{ site.time | date: '%Y-%m-%d' }}-new-post.md"
-     rel="noopener">새 게시물</a>
-  <a class="button-ghost" id="upload-media-btn"
-     data-repo="{{ site.repository }}" data-branch="{{ site.branch }}"
-     href="https://github.com/{{ site.repository }}/upload/{{ site.branch }}/assets/img/news"
-     rel="noopener">사진 업로드</a>
-  <p class="news-hint">
-    사진을 먼저 올린 뒤 글을 쓰면 경로를 바로 넣을 수 있습니다.
-    저장소 쓰기 권한이 필요합니다.
-  </p>
-</div>
-<script src="{{ '/assets/js/newpost.js' | relative_url }}" defer></script>
+{%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+{%- assign gallery_count = 0 -%}
+{%- for post in site.posts -%}
+  {%- if post.images -%}{%- assign gallery_count = gallery_count | plus: post.images.size -%}{%- endif -%}
+{%- endfor -%}
 
-{%- if site.posts.size > 0 %}
-<ul class="news-list">
-{%- for post in site.posts %}
-  <li class="item news-entry">
-    {%- if post.thumbnail %}
-    <a class="news-thumb" href="{{ post.url | relative_url }}">
-      <img src="{{ post.thumbnail }}" alt="" loading="lazy" width="220" height="150">
-    </a>
-    {%- endif %}
-    <div class="news-body">
-      <span class="tag">{{ post.date | date: "%Y.%m.%d" }}</span>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>
-        {%- if post.description -%}
-          {{ post.description }}
-        {%- else -%}
-          {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
-        {%- endif -%}
-      </p>
-      {%- if post.images and post.images.size > 0 %}
-      <span class="news-count">사진 {{ post.images.size }}장</span>
-      {%- endif %}
+<section class="newsroom" aria-label="ECML news and gallery">
+  <div class="newsroom-masthead">
+    <p class="newsroom-kicker">FROM THE LAB</p>
+    <p class="newsroom-summary">A living record of our research, people, and moments in motion.</p>
+    <div class="news-actions">
+      <a class="button" id="new-post-btn"
+         data-repo="{{ site.repository }}" data-branch="{{ site.branch }}"
+         href="https://github.com/{{ site.repository }}/new/{{ site.branch }}?filename=_posts/{{ site.time | date: '%Y-%m-%d' }}-new-post.md"
+         rel="noopener">Write a post <span aria-hidden="true">↗</span></a>
+      <a class="button-ghost" id="upload-media-btn"
+         data-repo="{{ site.repository }}" data-branch="{{ site.branch }}"
+         href="https://github.com/{{ site.repository }}/upload/{{ site.branch }}/assets/img/news"
+         rel="noopener">Upload images</a>
     </div>
-  </li>
-{%- endfor %}
-</ul>
-{%- else %}
-<article class="item">
-  <span class="tag">COMING SOON</span>
-  <h3>ECML Lab website launches</h3>
-  <p>Research news and laboratory announcements will be published here.</p>
-</article>
-{%- endif %}
+    <p class="news-hint">Upload images first, then add their paths while writing a post. Repository write access is required.</p>
+  </div>
+
+  <div class="newsroom-controls">
+    <div class="news-tabs" role="tablist" aria-label="Newsroom content">
+      <button class="news-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="news-panel" id="news-tab" data-news-tab="news">News <span>{{ site.posts.size }}</span></button>
+      <button class="news-tab" type="button" role="tab" aria-selected="false" aria-controls="gallery-panel" id="gallery-tab" data-news-tab="gallery">Gallery <span>{{ gallery_count }}</span></button>
+    </div>
+    <div class="news-filters" aria-label="Filter news by year">
+      <button class="news-filter is-active" type="button" data-news-filter="all" aria-pressed="true">All</button>
+      {%- for year in years %}
+      <button class="news-filter" type="button" data-news-filter="{{ year.name }}" aria-pressed="false">{{ year.name }}</button>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <div class="news-panel" id="news-panel" role="tabpanel" aria-labelledby="news-tab">
+    {%- if site.posts.size > 0 %}
+      {%- assign feature = site.posts.first -%}
+    <article class="news-feature" data-news-year="{{ feature.date | date: '%Y' }}">
+      <a class="news-feature-media" href="{{ feature.url | relative_url }}" aria-label="Read {{ feature.title }}">
+        {%- if feature.thumbnail -%}
+        <img src="{{ feature.thumbnail }}" alt="" width="1200" height="720">
+        {%- else -%}
+        <img src="{{ '/assets/img/hero.webp' | relative_url }}" alt="" width="1200" height="720">
+        {%- endif -%}
+      </a>
+      <div class="news-feature-copy">
+        <p class="news-meta"><span>FEATURED UPDATE</span>{{ feature.date | date: "%d %b %Y" }}</p>
+        <h2><a href="{{ feature.url | relative_url }}">{{ feature.title }}</a></h2>
+        <p>{{ feature.description | default: feature.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+        <a class="news-read" href="{{ feature.url | relative_url }}">Read the story <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+
+    <div class="news-stream" aria-live="polite">
+      <div class="news-stream-head"><p>Latest updates</p><span>{{ site.posts.size }} published</span></div>
+      <ul class="news-list">
+      {%- for post in site.posts %}
+        <li class="news-entry" data-news-year="{{ post.date | date: '%Y' }}">
+          <span class="news-index" aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          <div class="news-body">
+            <p class="news-meta">{{ post.date | date: "%d %b %Y" }}{%- if post.images and post.images.size > 0 %}<span class="news-photo-count">{{ post.images.size }} photos</span>{% endif -%}</p>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>
+          </div>
+          <a class="news-arrow" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">↗</a>
+        </li>
+      {%- endfor %}
+      </ul>
+      <p class="news-empty" hidden>No updates were published in this year.</p>
+    </div>
+    {%- else %}
+    <article class="news-empty-state">
+      <p class="newsroom-kicker">FIRST ENTRY</p>
+      <h2>The next chapter starts here.</h2>
+      <p>Research news, awards, conference moments, and laboratory announcements will appear in this space.</p>
+    </article>
+    {%- endif %}
+  </div>
+
+  <div class="gallery-panel" id="gallery-panel" role="tabpanel" aria-labelledby="gallery-tab" hidden>
+    {%- if gallery_count > 0 %}
+    <div class="gallery-grid">
+      {%- for post in site.posts %}{%- if post.images %}{%- for image in post.images %}
+      <a class="gallery-card" href="{{ post.url | relative_url }}" data-news-year="{{ post.date | date: '%Y' }}">
+        <img src="{{ image }}" alt="" loading="lazy" width="720" height="540">
+        <span><b>{{ post.title }}</b><small>{{ post.date | date: "%Y" }}</small></span>
+      </a>
+      {%- endfor %}{%- endif %}{%- endfor %}
+    </div>
+    <p class="news-empty" hidden>No gallery images were added in this year.</p>
+    {%- else %}
+    <article class="gallery-empty-state">
+      <span class="gallery-orbit" aria-hidden="true"></span>
+      <p class="newsroom-kicker">ECML IN MOTION</p>
+      <h2>Moments worth keeping.</h2>
+      <p>Conference days, field work, laboratory life, and team milestones will collect here as the story grows.</p>
+    </article>
+    {%- endif %}
+  </div>
+</section>
+
+<script src="{{ '/assets/js/newpost.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/newsroom.js' | relative_url }}" defer></script>

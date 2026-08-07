@@ -32,6 +32,11 @@
 
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="stylesheet" href="{{ '/site.css' | relative_url }}">
+{%- if page.extra_css %}
+  {%- for stylesheet in page.extra_css %}
+<link rel="stylesheet" href="{{ stylesheet | relative_url }}">
+  {%- endfor %}
+{%- endif %}
 {%- comment -%}
   intro-spline.css 는 인트로가 있는 페이지(index)에서만 필요하다.
   sindoll2 님이 index.html 에 직접 넣었던 것을 그대로 옮긴 것.
