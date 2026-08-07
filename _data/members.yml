@@ -21,13 +21,13 @@
 #                 scripts/consent-check.md 참조.
 
 - name_en: "Kiho Park"
-  name_ko: null
+  name_ko: "박기호"
   group: "pi"
   degree: null
   started: null
   email_user: "kiho138"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/kiho-park.webp"
   photo_slug: "kiho-park"
   title: "Associate Professor"
   department: "Department of Chemical Engineering"
@@ -59,6 +59,18 @@
     - "2015.10: Best Oral Presentation Award (KIChE 2015 Fall Meeting)"
     - "2012.10: Best Poster Presentation Award (KIChE 2012 Spring Meeting)"
 
+- name_en: "Jeongwoo Moon"
+  name_ko: "문정우"
+  group: "postdoc"
+  degree: "Postdoctoral Researcher"
+  started: null
+  email_user: null
+  email_domain: null
+  photo: null
+  photo_slug: "jeongwoo-moon"
+  hobby: ""
+  research_areas: []
+
 - name_en: "Yinseo Song"
   name_ko: "송인서"
   group: "phd"
@@ -66,7 +78,7 @@
   started: "2026.03"
   email_user: "dlstj54"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/yinseo-song.webp"
   photo_slug: "yinseo-song"
   hobby: ""
   research_areas:
@@ -81,7 +93,7 @@
   started: "2023.09"
   email_user: "rjsdud2178"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/gunyoung-kim.webp"
   photo_slug: "gunyoung-kim"
   hobby: ""
   research_areas:

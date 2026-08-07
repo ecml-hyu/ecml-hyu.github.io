@@ -67,7 +67,7 @@ lead: "Faculty, researchers, and students working on water intelligence."
 </div>
 {%- endif %}
 
-{%- assign groups = "phd:Ph.D. Students,integrated:M.S./Ph.D. Integrated,master:M.S. Students,undergraduate:Undergraduate Researchers" | split: "," -%}
+{%- assign groups = "postdoc:Postdoctoral Researchers,phd:Ph.D. Students,integrated:M.S./Ph.D. Integrated,master:M.S. Students,undergraduate:Undergraduate Researchers" | split: "," -%}
 {%- for g in groups -%}
 {%- assign gp = g | split: ":" -%}
 {%- assign people = site.data.members | where: "group", gp[0] -%}

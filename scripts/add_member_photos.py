@@ -84,8 +84,13 @@ def main():
         return 1
 
     matched, skipped, done = [], [], []
+    default_src = None
 
     for f in files:
+        stem = os.path.splitext(f)[0]
+        if norm_key(stem) in ("기본이미지", "default", "defaultavatar", "기본"):
+            default_src = f          # 사람이 아니라 기본 아바타용 그림
+            continue
         key = norm_key(os.path.splitext(f)[0])
         hit = None
         for m in members:
@@ -117,6 +122,23 @@ def main():
         done.append(m)
         print("  변환    %-22s <- %-28s %6.1fKB -> %6.1fKB"
               % (m["slug"] + ".webp", f, before / 1024.0, after / 1024.0))
+
+    # 기본 아바타 갱신 (사진 없는 사람에게 쓰이는 그림)
+    if default_src:
+        dest = os.path.join(OUT_DIR, "default-avatar.webp")
+        src = os.path.join(args.src, default_src)
+        before = os.path.getsize(src)
+        if not args.dry_run:
+            im = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
+            im = ImageOps.fit(im, (SIZE, SIZE), Image.LANCZOS, centering=(0.5, 0.5))
+            im.save(dest, "WEBP", quality=QUALITY, method=6)
+            after = os.path.getsize(dest)
+        else:
+            after = 0
+        print("  기본이미지 default-avatar.webp   <- %-22s %6.1fKB -> %6.1fKB"
+              % (default_src, before / 1024.0, after / 1024.0))
+        print("           _config.yml 의 default_member_photo 를")
+        print("           /assets/img/members/default-avatar.webp 로 맞춰 두세요.")
 
     # members.yml 의 photo 줄 갱신 (뒤에서부터 바꿔야 위치가 안 밀린다)
     changed = 0

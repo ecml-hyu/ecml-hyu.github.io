@@ -72,6 +72,8 @@ def group_from_degree(degree, page_default):
     if page_default:
         return page_default
     d = (degree or "").lower()
+    if "post" in d and "doc" in d:
+        return "postdoc"
     if "integrated" in d:
         return "integrated"
     if "ph.d" in d or "phd" in d:
@@ -291,7 +293,7 @@ def dump_yaml(members):
         "#   덮어써진다. 그래서 그 스크립트는 --force 없이는 실행되지 않게 해 두었다.",
         "#   취미(hobby)와 사진(photo)은 여기서 직접 채우는 항목이다.",
         "#",
-        "# group : pi | phd | integrated | master | undergraduate | alumni",
+        "# group : pi | postdoc | phd | integrated | master | undergraduate | alumni",
         "# hobby : 본인이 직접 적는 칸. 비워 두면 화면에 나오지 않는다.",
         "# photo : 사진을 넣는 방법",
         "#   1) 이미지를 assets/img/members/<photo_slug>.webp 로 올린다",
@@ -379,7 +381,8 @@ def main():
         if m["group"] == "alumni" and m["name_en"] not in CONSENT_GRANTED:
             m["needs_consent"] = True
 
-    order = {"pi": 0, "phd": 1, "integrated": 2, "master": 3, "undergraduate": 4, "alumni": 5}
+    order = {"pi": 0, "postdoc": 1, "phd": 2, "integrated": 3,
+             "master": 4, "undergraduate": 5, "alumni": 6}
     members.sort(key=lambda x: (order.get(x["group"], 9), x["started"] or "", x["name_en"]))
 
     data_dir = os.path.join(ROOT, "_data")
