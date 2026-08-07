@@ -26,9 +26,21 @@ lead: "Contact ECML Lab at Hanyang University."
   <article class="item contact-block">
     <span class="tag">ADDRESS</span>
     <h3>{{ loc.building_ko }} <small>({{ loc.building_no }})</small></h3>
-    <p class="contact-en">{{ loc.building_en }}</p>
-    <p>{{ loc.address_ko }}<br>
-       <span class="contact-en">{{ loc.address_en }}</span></p>
+    {%- if loc.rooms %}
+    <p class="contact-rooms">{{ loc.rooms }}</p>
+    {%- endif %}
+    {%- comment -%}
+      전체 영문 주소는 _config.yml 의 조각들을 여기서 이어 붙인다.
+      완성된 문장을 따로 저장해 두면 한쪽만 고쳐져 어긋난다.
+    {%- endcomment -%}
+    {%- capture full_address -%}
+      {{ loc.rooms }}, {{ loc.building_en }}, {{ loc.department_en }}, {{ loc.university_en }}, {{ loc.street_en }}.
+    {%- endcapture %}
+    <p class="contact-address-en">{{ full_address | strip }}</p>
+    <p class="contact-address-ko">
+      {%- if loc.postal_code %}({{ loc.postal_code }}) {% endif -%}
+      {{ loc.address_ko }} {{ loc.building_ko }}
+    </p>
 
     <div class="map-links">
       {%- assign q = loc.map_query | url_encode -%}

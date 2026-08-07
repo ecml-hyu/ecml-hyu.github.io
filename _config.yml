@@ -19,42 +19,15 @@ default_member_photo: /assets/img/members/default-avatar.webp
 # map_query 는 세 지도 서비스 검색에 그대로 쓰이므로, 바꿀 때는
 # 세 곳 모두에서 제대로 찾아지는 이름인지 확인할 것.
 location:
+  # 전체 영문 주소는 아래 조각들을 template 에서 이어 붙여 만든다.
+  # 같은 내용을 두 군데 적어 두면 한쪽만 고쳐져 어긋나므로 조각으로만 관리한다.
+  rooms: Room no. 301/313/314
   building_ko: 신소재공학관
-  building_en: Advanced Materials & Chemical Engineering Building
+  building_en: Advanced Materials and Chemical Engineering Building
   building_no: "204"
+  department_en: Department of Chemical Engineering
+  university_en: Hanyang University
+  street_en: 222 Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea
+  postal_code: "04763"
   address_ko: 서울특별시 성동구 왕십리로 222
-  address_en: 222 Wangsimni-ro, Seongdong-gu, Seoul 04763, Republic of Korea
   map_query: 한양대학교 신소재공학관
-
-# 뉴스룸 '새 게시물' 버튼이 GitHub 작성 화면을 열 때 사용한다.
-repository: ecml-hyu/ecml-hyu.github.io
-branch: main
-
-# 뉴스 글 주소는 아래 defaults 안에서만 지정한다.
-#
-# 주의: 최상위에 permalink: 를 두면 게시물뿐 아니라 '페이지' URL 까지 바뀐다.
-#       research.html 이 /research/ 로 옮겨가 기존 주소가 전부 404 가 된다.
-#       (실제로 한 번 그렇게 배포됐다.) 반드시 type: posts 스코프 안에 둘 것.
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      permalink: /newsroom/:year/:month/:day/:title/
-
-# GitHub Pages 화이트리스트 플러그인만 사용
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
-# site.css 와 intro-spline.css 는 일부러 순수 CSS 로 둔다 (SCSS 로 바꾸지 말 것).
-# Sass 는 min()/max() 를 내장 함수로 해석해서 min(1120px, calc(...)) 에서
-# 빌드를 실패시킨다. sass_dir 을 쓰지 않으므로 Jekyll 은 그대로 복사만 한다.
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - scripts
-  - vendor
