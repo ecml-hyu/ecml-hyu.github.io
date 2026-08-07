@@ -5,9 +5,18 @@
 #   템플릿에서 JavaScript 로 합쳐 렌더링하므로 HTML 소스에는 주소가 남지 않는다.
 #   YAML 을 직접 고칠 때도 절대 한 줄로 합치지 말 것.
 #
+# ⚠ 이 파일은 손으로 고쳐도 된다. 다만 scripts/parse_members.py 를 다시 돌리면
+#   덮어써진다. 그래서 그 스크립트는 --force 없이는 실행되지 않게 해 두었다.
+#   취미(hobby)와 사진(photo)은 여기서 직접 채우는 항목이다.
+#
 # group : pi | phd | integrated | master | undergraduate | alumni
-# photo : 로컬 경로. 구 사이트(lh3.googleusercontent.com) 를 참조하지 않는다.
-#         원본 URL 은 scripts/raw/photo_manifest.json 에만 있다.
+# hobby : 본인이 직접 적는 칸. 비워 두면 화면에 나오지 않는다.
+# photo : 사진을 넣는 방법
+#   1) 이미지를 assets/img/members/<photo_slug>.webp 로 올린다
+#      (정사각형 권장. scripts/optimize_news_images.py 로 변환 가능)
+#   2) 아래 photo 를 그 경로로 바꾼다. 예: /assets/img/members/kiho-park.webp
+#   null 인 동안에는 이름 이니셜 자리표시자가 대신 나온다.
+#   실제 파일이 없는 경로를 적으면 사이트에 깨진 이미지가 뜨니 주의.
 # needs_consent : 본인 동의 확인 전까지 템플릿에서 렌더링하지 않는다.
 #                 scripts/consent-check.md 참조.
 
@@ -18,7 +27,8 @@
   started: null
   email_user: "kiho138"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/kiho-park.webp"
+  photo: null
+  photo_slug: "kiho-park"
   title: "Associate Professor"
   department: "Department of Chemical Engineering"
   university: "Hanyang University"
@@ -56,7 +66,9 @@
   started: "2026.03"
   email_user: "dlstj54"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/yinseo-song.webp"
+  photo: null
+  photo_slug: "yinseo-song"
+  hobby: ""
   research_areas:
     - "Machine learning-based chemical process modeling"
     - "Forward osmosis and desalination system characterization"
@@ -69,7 +81,9 @@
   started: "2023.09"
   email_user: "rjsdud2178"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/gunyoung-kim.webp"
+  photo: null
+  photo_slug: "gunyoung-kim"
+  hobby: ""
   research_areas:
     - "Batch RO process modeling"
     - "HSBRO system modeling and optimization"
@@ -82,7 +96,9 @@
   started: "2024.09"
   email_user: "rlagmstp"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/heun-se-kim.webp"
+  photo: null
+  photo_slug: "heun-se-kim"
+  hobby: ""
   research_areas:
     - "LCA-based process evaluation"
     - "HSBRO system optimization and pilot-scale operation"
@@ -95,7 +111,9 @@
   started: "2025.03"
   email_user: "hyowoog2"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/hyowoog-gwak.webp"
+  photo: null
+  photo_slug: "hyowoog-gwak"
+  hobby: ""
   research_areas:
     - "Supply chain optimization"
     - "CCUS system modeling"
@@ -107,7 +125,9 @@
   started: "2025.03"
   email_user: "yunjulike"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/yunju-kim.webp"
+  photo: null
+  photo_slug: "yunju-kim"
+  hobby: ""
   research_areas:
     - "Nanofiltration system modeling"
     - "CCUS system modeling"
@@ -119,7 +139,9 @@
   started: "2026.03"
   email_user: "yshwan0415"
   email_domain: "hanyang.ac.kr"
-  photo: "/assets/img/members/sehwan-yang.webp"
+  photo: null
+  photo_slug: "sehwan-yang"
+  hobby: ""
   research_areas:
     - "Reinforced learning-based process control"
 
@@ -130,7 +152,9 @@
   started: null
   email_user: "mseokim9999"
   email_domain: "gmail.com"
-  photo: "/assets/img/members/minseo-kim.webp"
+  photo: null
+  photo_slug: "minseo-kim"
+  hobby: ""
   research_areas:
     - "AI-based chemical process modeling"
     - "Brine valorization/utilization"
@@ -143,6 +167,8 @@
   email_user: null
   email_domain: null
   photo: null
+  photo_slug: "gyu-sang-cho"
+  hobby: ""
   needs_consent: true
   former_status: "Undergraduate student"
   research_areas: []
@@ -154,7 +180,9 @@
   started: null
   email_user: null
   email_domain: null
-  photo: "/assets/img/members/suji-son.webp"
+  photo: null
+  photo_slug: "suji-son"
+  hobby: ""
   needs_consent: true
   former_status: "Undergraduate student"
   research_areas: []

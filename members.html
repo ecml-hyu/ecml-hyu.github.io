@@ -4,4 +4,114 @@ title: "Members"
 eyebrow: "THE PEOPLE OF ECML"
 lead: "Faculty, researchers, and students working on water intelligence."
 ---
-<div class="editable"><h3>담당자 작성 영역</h3><p>이름 · 역할 · 연구 관심 분야 · 이메일 · 사진을 구성원별 카드로 추가하세요.</p></div><div class="cards"><article class="card"><b>Principal Investigator</b><p>Professor profile will be added here.</p></article><article class="card"><b>Researchers</b><p>Graduate researcher profiles will be added here.</p></article><article class="card"><b>Alumni</b><p>Past member information will be added here.</p></article></div>
+{%- comment -%}
+  이 페이지는 _data/members.yml 에서 자동으로 그린다. 이 파일은 고칠 일이 없다.
+  구성원 추가/수정/취미/사진은 모두 _data/members.yml 만 편집하면 된다.
+
+  이메일은 평문으로 넣지 않는다. user 와 domain 을 나눠 두고
+  assets/js/email.js 가 클릭 시점에 합친다 (스팸 봇 수집 방지).
+
+  졸업생(alumni)은 needs_consent 가 붙어 있으면 본인 동의 확인 전까지
+  렌더링하지 않는다. 목록은 scripts/consent-check.md 참조.
+{%- endcomment -%}
+
+{%- assign pi = site.data.members | where: "group", "pi" | first -%}
+{%- if pi %}
+<section class="pi-card">
+  <div class="pi-photo">
+    {%- if pi.photo -%}
+    <img src="{{ pi.photo }}" alt="{{ pi.name_en }}" width="200" height="200">
+    {%- else -%}
+    <span class="photo-slot" aria-hidden="true">{{ pi.name_en | slice: 0 }}</span>
+    {%- endif -%}
+  </div>
+  <div class="pi-body">
+    <h2 class="pi-name">{{ pi.name_en }}{% if pi.name_ko %} <small>{{ pi.name_ko }}</small>{% endif %}</h2>
+    {%- if pi.title %}<p class="pi-title">{{ pi.title }}</p>{% endif -%}
+    {%- if pi.department %}<p class="pi-affil">{{ pi.department }}</p>{% endif -%}
+    {%- if pi.university %}<p class="pi-affil">{{ pi.university }}</p>{% endif -%}
+    <p class="pi-contact">
+      {%- if pi.email_user %}
+      <a class="pill email-link" href="#" data-user="{{ pi.email_user }}" data-domain="{{ pi.email_domain }}">Email</a>
+      {%- endif -%}
+      {%- if pi.tel %}<span class="pub-rank">{{ pi.tel }}</span>{% endif -%}
+    </p>
+  </div>
+</section>
+
+{%- assign cv = "education:Education,experience:Professional Experience,activities:Professional Activities and Membership" | split: "," -%}
+<div class="pi-cv">
+{%- for c in cv -%}
+{%- assign cp = c | split: ":" -%}
+{%- assign list = pi[cp[0]] -%}
+{%- if list and list.size > 0 %}
+  <div class="cv-block">
+    <h3>{{ cp[1] }}</h3>
+    <ul>
+      {%- for line in list %}
+      <li>{{ line }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endif -%}
+{%- endfor %}
+</div>
+{%- endif %}
+
+{%- assign groups = "phd:Ph.D. Students,integrated:M.S./Ph.D. Integrated,master:M.S. Students,undergraduate:Undergraduate Researchers" | split: "," -%}
+{%- for g in groups -%}
+{%- assign gp = g | split: ":" -%}
+{%- assign people = site.data.members | where: "group", gp[0] -%}
+{%- if people.size > 0 %}
+<h2 class="pub-group">{{ gp[1] }} <span class="pub-count">{{ people.size }}</span></h2>
+<div class="member-grid">
+{%- for m in people %}
+  <article class="member-card">
+    <div class="member-photo">
+      {%- if m.photo -%}
+      <img src="{{ m.photo }}" alt="{{ m.name_en }}" loading="lazy" width="120" height="120">
+      {%- else -%}
+      <span class="photo-slot" aria-hidden="true">{{ m.name_en | slice: 0 }}</span>
+      {%- endif -%}
+    </div>
+    <div class="member-info">
+      <b class="member-name">{{ m.name_ko | default: m.name_en }}</b>
+      <span class="member-en">{{ m.name_en }}</span>
+      {%- if m.degree %}
+      <p class="member-degree">{{ m.degree }}</p>
+      {%- endif %}
+      {%- if m.research_areas and m.research_areas.size > 0 %}
+      <ul class="member-areas">
+        {%- for a in m.research_areas %}<li>{{ a }}</li>{% endfor %}
+      </ul>
+      {%- endif %}
+      {%- if m.hobby and m.hobby != "" %}
+      <p class="member-hobby"><span>취미</span>{{ m.hobby }}</p>
+      {%- endif %}
+      {%- if m.email_user %}
+      <p class="member-contact">
+        <a class="pill email-link" href="#" data-user="{{ m.email_user }}" data-domain="{{ m.email_domain }}">Email</a>
+      </p>
+      {%- endif %}
+    </div>
+  </article>
+{%- endfor %}
+</div>
+{%- endif -%}
+{%- endfor %}
+
+{%- assign alumni = site.data.members | where: "group", "alumni" -%}
+{%- assign shown = "" | split: "," -%}
+{%- for a in alumni -%}{%- unless a.needs_consent -%}{%- assign shown = shown | push: a -%}{%- endunless -%}{%- endfor -%}
+{%- if shown.size > 0 %}
+<h2 class="pub-group">Alumni <span class="pub-count">{{ shown.size }}</span></h2>
+<ul class="alumni-list">
+{%- for a in shown %}
+  <li><b>{{ a.name_ko | default: a.name_en }}</b> <span>{{ a.name_en }}</span>
+    {%- if a.former_status %} · {{ a.former_status }}{% endif -%}
+  </li>
+{%- endfor %}
+</ul>
+{%- endif %}
+
+<script src="{{ '/assets/js/email.js' | relative_url }}" defer></script>

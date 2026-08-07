@@ -1,0 +1,10 @@
+Kiho Park        pi             photo=None   slug=kiho-park        hobby=(PI 제외)
+Yinseo Song      phd            photo=None   slug=yinseo-song      hobby=''
+GunYoung Kim     integrated     photo=None   slug=gunyoung-kim     hobby=''
+Heun Se Kim      integrated     photo=None   slug=heun-se-kim      hobby=''
+Hyowoog Gwak     master         photo=None   slug=hyowoog-gwak     hobby=''
+Yunju Kim        master         photo=None   slug=yunju-kim        hobby=''
+Sehwan Yang      master         photo=None   slug=sehwan-yang      hobby=''
+Minseo Kim       undergraduate  photo=None   slug=minseo-kim       hobby=''
+Gyu Sang Cho     alumni         photo=None   slug=gyu-sang-cho     hobby=''
+Suji Son         alumni         photo=None   slug=suji-son         hobby=''

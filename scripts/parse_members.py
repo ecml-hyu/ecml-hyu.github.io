@@ -279,9 +279,18 @@ def dump_yaml(members):
         "#   템플릿에서 JavaScript 로 합쳐 렌더링하므로 HTML 소스에는 주소가 남지 않는다.",
         "#   YAML 을 직접 고칠 때도 절대 한 줄로 합치지 말 것.",
         "#",
+        "# ⚠ 이 파일은 손으로 고쳐도 된다. 다만 scripts/parse_members.py 를 다시 돌리면",
+        "#   덮어써진다. 그래서 그 스크립트는 --force 없이는 실행되지 않게 해 두었다.",
+        "#   취미(hobby)와 사진(photo)은 여기서 직접 채우는 항목이다.",
+        "#",
         "# group : pi | phd | integrated | master | undergraduate | alumni",
-        "# photo : 로컬 경로. 구 사이트(lh3.googleusercontent.com) 를 참조하지 않는다.",
-        "#         원본 URL 은 scripts/raw/photo_manifest.json 에만 있다.",
+        "# hobby : 본인이 직접 적는 칸. 비워 두면 화면에 나오지 않는다.",
+        "# photo : 사진을 넣는 방법",
+        "#   1) 이미지를 assets/img/members/<photo_slug>.webp 로 올린다",
+        "#      (정사각형 권장. scripts/optimize_news_images.py 로 변환 가능)",
+        "#   2) 아래 photo 를 그 경로로 바꾼다. 예: /assets/img/members/kiho-park.webp",
+        "#   null 인 동안에는 이름 이니셜 자리표시자가 대신 나온다.",
+        "#   실제 파일이 없는 경로를 적으면 사이트에 깨진 이미지가 뜨니 주의.",
         "# needs_consent : 본인 동의 확인 전까지 템플릿에서 렌더링하지 않는다.",
         "#                 scripts/consent-check.md 참조.",
         "",
@@ -294,7 +303,10 @@ def dump_yaml(members):
         out.append("  started: %s" % q(m["started"]))
         out.append("  email_user: %s" % q(m["email_user"]))
         out.append("  email_domain: %s" % q(m["email_domain"]))
-        out.append("  photo: %s" % q(m["photo"]))
+        out.append("  photo: %s" % (q(m["photo"]) if m["photo"] else "null"))
+        out.append("  photo_slug: %s" % q(m.get("photo_slug")))
+        if m["group"] != "pi":
+            out.append("  hobby: %s" % q(m.get("hobby") or ""))
         if m.get("needs_consent"):
             out.append("  needs_consent: true")
         if m.get("former_status"):
@@ -318,6 +330,16 @@ def dump_yaml(members):
 
 
 def main():
+    # _data/members.yml 은 사람이 직접 고치는 파일이다 (취미, 사진 경로).
+    # 이 스크립트는 구 홈페이지에서 새로 생성하므로 그 편집분을 지운다.
+    # 실수로 날리지 않도록 --force 를 요구한다.
+    target = os.path.join(ROOT, "_data", "members.yml")
+    if os.path.exists(target) and "--force" not in sys.argv:
+        print("_data/members.yml 이 이미 있다. 다시 생성하면 손으로 적은")
+        print("취미와 사진 경로가 사라진다.")
+        print("정말 다시 만들려면:  python scripts/parse_members.py --force")
+        return 1
+
     banners = banner_urls()
     members = []
     per_page = []
@@ -332,15 +354,20 @@ def main():
         members.extend(got)
 
     # 사진 경로 확정 + 매니페스트
+    #
+    # 중요: 실제 파일이 저장소에 있을 때만 photo 에 경로를 넣는다.
+    # 없는 경로를 넣으면 사이트에 깨진 이미지가 뜬다.
+    # 파일이 없으면 null 로 두고, 템플릿이 이니셜 자리표시자를 그린다.
     for m in members:
         slug = slugify(m["name_en"])
         src = m.pop("_photo_src", None)
+        rel = "assets/img/members/%s.webp" % slug
         if src:
-            m["photo"] = "/assets/img/members/%s.webp" % slug
-            photo_manifest[slug] = {"name_en": m["name_en"], "source": src,
-                                    "local": "assets/img/members/%s.webp" % slug}
-        else:
-            m["photo"] = None
+            photo_manifest[slug] = {"name_en": m["name_en"], "source": src, "local": rel}
+        m["photo"] = ("/" + rel) if os.path.exists(os.path.join(ROOT, rel)) else None
+        m["photo_slug"] = slug           # 사진을 올릴 때 쓸 파일명
+        if m["group"] != "pi":
+            m.setdefault("hobby", "")    # 본인이 직접 채우는 항목
         if m["group"] == "alumni":
             m["needs_consent"] = True
 

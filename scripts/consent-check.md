@@ -1,6 +1,6 @@
 # 동의 확인 필요 목록
 
-생성: 2026-08-07T11:54:35
+생성: 2026-08-07T14:13:20
 
 아래 항목은 **본인 동의를 확인하기 전까지 웹사이트에 렌더링하지 않는다.**
 `_data/members.yml` 에 `needs_consent: true` 로 표시되어 있고,
@@ -11,7 +11,7 @@
 | 이름 | 그룹 | 사진 | 이메일 | 비고 |
 |---|---|---|---|---|
 | 조규상 (Gyu Sang Cho) | alumni | 없음 | 없음 | Undergraduate student |
-| 손수지 (Suji Son) | alumni | 있음 | 없음 | Undergraduate student |
+| 손수지 (Suji Son) | alumni | 없음 | 없음 | Undergraduate student |
 
 확인할 것
 
