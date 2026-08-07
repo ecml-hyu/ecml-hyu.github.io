@@ -1,0 +1,1819 @@
+# 논문 목록 — scripts/parse_publications.py 가 구 홈페이지에서 생성.
+# 직접 고쳐도 되지만, 스크립트를 다시 돌리면 덮어쓰인다.
+#
+# authors[].corresponding : 원본의 * 표기 (교신저자)
+# authors[].co_first      : 원본의 + 또는 dagger 표기 (공동 제1저자)
+# doi                     : DOI 문자열만 (URL 아님). 링크는 https://doi.org/{doi}
+# url                     : DOI 가 아닌 링크(출판사 페이지 등)
+# section                 : '2023 (Before HYU)' 처럼 소속 이력이 표기된 헤딩. 없으면 null
+# id                      : 구 홈페이지의 원본 순번 (재정렬해도 보존)
+# publisher               : 단행본/북챕터 출판사. 저널 논문은 null
+
+- id: 55
+  type: journal-scie
+  title: "Adaptive reinforcement learning for energy-efficient high-recovery closed-circuit reverse osmosis"
+  year: 2026
+  authors:
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: false
+    - name: "Byeongchan Yun"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seong-Su Kim"
+      corresponding: false
+      co_first: false
+    - name: "Youngjoo Lee"
+      corresponding: false
+      co_first: false
+    - name: "Kwanho Jeong"
+      corresponding: true
+      co_first: false
+    - name: "Kyung Hwa Cho"
+      corresponding: true
+      co_first: false
+  journal: "Water Res."
+  volume: "299"
+  issue: null
+  pages: "125855"
+  publisher: null
+  doi: "10.1016/j.watres.2026.125855"
+  url: null
+  journal_rank: "Top 1.1% journal in Water Resources"
+  section: null
+  impact_factor: 12.4
+
+- id: 54
+  type: journal-scie
+  title: "Hydrophobic-Modified, Stable MXene Membrane Joule Heater for Water Purification"
+  year: 2026
+  authors:
+    - name: "Ki Hyun Lee"
+      corresponding: false
+      co_first: false
+    - name: "Hyeonhoo Lee"
+      corresponding: false
+      co_first: false
+    - name: "Hwansoo Shin"
+      corresponding: false
+      co_first: false
+    - name: "Dong Jun Kang"
+      corresponding: false
+      co_first: false
+    - name: "Yeongbhin Seo"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Tae Hee Han"
+      corresponding: true
+      co_first: false
+  journal: "ACS Appl. Electron. Mater."
+  volume: "8"
+  issue: "6"
+  pages: "2305-2314"
+  publisher: null
+  doi: "10.1021/acsaelm.5c02542"
+  url: "https://pubs.acs.org/doi/10.1021/acsaelm.5c02542"
+  journal_rank: null
+  section: null
+  impact_factor: 4.7
+
+- id: 53
+  type: journal-scie
+  title: "A novel framework for forward osmosis in zero- and low-flow conditions: Applicability and fundamental differences from reverse osmosis"
+  year: 2026
+  authors:
+    - name: "Yinseo Song"
+      corresponding: false
+      co_first: true
+    - name: "GunYoung Kim"
+      corresponding: false
+      co_first: true
+    - name: "Min Seok Lee"
+      corresponding: false
+      co_first: false
+    - name: "Min-kyu Kim"
+      corresponding: false
+      co_first: false
+    - name: "Ji Woong Chang"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Water Res."
+  volume: "288"
+  issue: null
+  pages: "124717"
+  publisher: null
+  doi: "10.1016/j.watres.2025.124717"
+  url: null
+  journal_rank: "Top 1.1% journal in Water Resources"
+  section: null
+  impact_factor: 12.4
+
+- id: 52
+  type: journal-scie
+  title: "Practical implementation and challenges of current batch-type RO systems and future potential: A review"
+  year: 2025
+  authors:
+    - name: "GunYoung Kim"
+      corresponding: false
+      co_first: false
+    - name: "Yinseo Song"
+      corresponding: false
+      co_first: false
+    - name: "Tae-mun Hwang"
+      corresponding: false
+      co_first: false
+    - name: "Yong-Gyun Park"
+      corresponding: false
+      co_first: false
+    - name: "Philip A. Davies"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "616"
+  issue: null
+  pages: "119404"
+  publisher: null
+  doi: "10.1016/j.desal.2025.119404"
+  url: null
+  journal_rank: "Top 2.0% journal in Water Resources"
+  section: null
+  impact_factor: 8.4
+
+- id: 51
+  type: journal-scie
+  title: "Sustainable operation of hybrid semi-batch/batch reverse osmosis by additional purge-and-refill phase: Optimization and life cycle assessment"
+  year: 2025
+  authors:
+    - name: "Heun Se Kim"
+      corresponding: false
+      co_first: false
+    - name: "Jaeeun Byun"
+      corresponding: false
+      co_first: false
+    - name: "Ahyeon Jeong"
+      corresponding: false
+      co_first: false
+    - name: "GunYoung Kim"
+      corresponding: false
+      co_first: false
+    - name: "Juwon Lee"
+      corresponding: false
+      co_first: false
+    - name: "Tae-mun Hwang"
+      corresponding: false
+      co_first: false
+    - name: "Yong-Gyun Park"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "616"
+  issue: null
+  pages: "119364"
+  publisher: null
+  doi: "10.1016/j.desal.2025.119364"
+  url: null
+  journal_rank: "Top 2.0% journal in Water Resources"
+  section: null
+  impact_factor: 8.4
+
+- id: 50
+  type: journal-scie
+  title: "Experimental challenges and troubleshooting in operating batch reverse osmosis system for brackish water desalination"
+  year: 2025
+  authors:
+    - name: "Dhaval Patel"
+      corresponding: false
+      co_first: false
+    - name: "Anurag Mudgal"
+      corresponding: true
+      co_first: false
+    - name: "Dipak Ankoliya"
+      corresponding: false
+      co_first: false
+    - name: "Vivek Patel"
+      corresponding: false
+      co_first: false
+    - name: "Jatin Patel"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Philp Davies"
+      corresponding: false
+      co_first: false
+    - name: "Nirajan Dhakal"
+      corresponding: false
+      co_first: false
+  journal: "J. Water Process Eng."
+  volume: "77"
+  issue: null
+  pages: "108652"
+  publisher: null
+  doi: "10.1016/j.jwpe.2025.108652"
+  url: null
+  journal_rank: "Top 5.3% journal in Water Resources"
+  section: null
+  impact_factor: 6.3
+
+- id: 49
+  type: journal-scie
+  title: "Implementation of low-pressure pressure exchanger (LPPX) on two-stage reverse osmosis (RO) system: Energetic and environmental impacts in a large-scale water reuse facility"
+  year: 2025
+  authors:
+    - name: "Jaeeun Byun"
+      corresponding: false
+      co_first: false
+    - name: "Yunhwan Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Yong-Gyun Park"
+      corresponding: true
+      co_first: false
+  journal: "J. Water Process Eng."
+  volume: "74"
+  issue: null
+  pages: "107849"
+  publisher: null
+  doi: "10.1016/j.jwpe.2025.107849"
+  url: null
+  journal_rank: "Top 5.3% journal in Water Resources"
+  section: null
+  impact_factor: 6.3
+
+- id: 48
+  type: journal-scie
+  title: "Critical challenges in high-salinity seawater reverse osmosis systems: Technical, energy, and environmental reviews"
+  year: 2025
+  authors:
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: false
+    - name: "Suji Son"
+      corresponding: false
+      co_first: false
+    - name: "Jungbin Kim"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "607"
+  issue: null
+  pages: "118811"
+  publisher: null
+  doi: "10.1016/j.desal.2025.118811"
+  url: null
+  journal_rank: "Top 2.0% journal in Water Resources"
+  section: null
+  impact_factor: 8.4
+
+- id: 47
+  type: journal-scie
+  title: "Robust deep learning model combined with missing input data estimation: Application in a 1000 m3/day high-salinity SWRO plant"
+  year: 2025
+  authors:
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: false
+    - name: "Kwanho Jeong"
+      corresponding: false
+      co_first: false
+    - name: "Sung Ho Chae"
+      corresponding: false
+      co_first: false
+    - name: "Jaegyu Shim"
+      corresponding: false
+      co_first: false
+    - name: "Jihye Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kyung Hwa Cho"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "603"
+  issue: null
+  pages: "118678"
+  publisher: null
+  doi: "10.1016/j.desal.2025.118678"
+  url: null
+  journal_rank: "Top 2.0% journal in Water Resources"
+  section: null
+  impact_factor: 8.4
+
+- id: 46
+  type: journal-scie
+  title: "Explainable AI for permeate flux prediction in forward osmosis: SHAP interpretability and theoretical validation for enhanced predictive reliability"
+  year: 2025
+  authors:
+    - name: "Yinseo Song"
+      corresponding: false
+      co_first: false
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "601"
+  issue: null
+  pages: "118551"
+  publisher: null
+  doi: "10.1016/j.desal.2025.118551"
+  url: null
+  journal_rank: "Top 2.0% journal in Water Resources"
+  section: null
+  impact_factor: 8.4
+
+- id: 45
+  type: journal-scie
+  title: "Comprehensive analysis of energy saving and high-quality permeate production strategies for a large-scale seawater reverse osmosis desalination plant with diverse process configurations and external resource utilization"
+  year: 2025
+  authors:
+    - name: "Yunhwan Kim"
+      corresponding: false
+      co_first: false
+    - name: "Jaeeun Byun"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Yong-Gyun Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "596"
+  issue: null
+  pages: "118292"
+  publisher: null
+  doi: "10.1016/j.desal.2024.118292"
+  url: null
+  journal_rank: "Top 2.0% journal in Water Resources"
+  section: null
+  impact_factor: 8.4
+
+- id: 44
+  type: journal-scie
+  title: "Optimal operation guidelines for direct recovery of high-purity precursor from spent lithium-ion batteries: hybrid operation model of population balance equation and data-driven classifier"
+  year: 2024
+  authors:
+    - name: "Jeongdong Kim"
+      corresponding: false
+      co_first: false
+    - name: "Seongbin Ga"
+      corresponding: false
+      co_first: false
+    - name: "Sungho Suh"
+      corresponding: false
+      co_first: false
+    - name: "Joseph Sang-Il Kwon"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Junghwan Kim"
+      corresponding: true
+      co_first: false
+  journal: "J. Appl. Cryst."
+  volume: "57"
+  issue: null
+  pages: "1924-1939"
+  publisher: null
+  doi: "10.1107/S1600576724010239"
+  url: null
+  journal_rank: "Top 3.84% journal in Crystallography"
+  section: null
+  impact_factor: 6.1
+
+- id: 43
+  type: journal-scie
+  title: "Application of batch reverse osmosis as an appropriate technology for inland desalination: Design, modeling, and operating strategies"
+  year: 2024
+  authors:
+    - name: "GunYoung Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "592"
+  issue: null
+  pages: "118185"
+  publisher: null
+  doi: "10.1016/j.desal.2024.118185"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 42
+  type: journal-scie
+  title: "Energy self-sustainable operation of solar-powered pressure-retarded membrane distillation: Modeling, implementation viability, and economic feasibility study"
+  year: 2024
+  authors:
+    - name: "Heun Se Kim"
+      corresponding: false
+      co_first: true
+    - name: "Gyu Sang Cho"
+      corresponding: false
+      co_first: true
+    - name: "Yong-Gyun Park"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "592"
+  issue: null
+  pages: "118076"
+  publisher: null
+  doi: "10.1016/j.desal.2024.118076"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 41
+  type: journal-scie
+  title: "Design of hybrid desalination process using waste heat and cold energy from LNG power plant increasing energy and economic potential"
+  year: 2024
+  authors:
+    - name: "Jonghun Lim"
+      corresponding: false
+      co_first: true
+    - name: "Jinwoo Park"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Junghwan Kim"
+      corresponding: true
+      co_first: false
+  journal: "J. Clean. Prod."
+  volume: "452"
+  issue: null
+  pages: "141998"
+  publisher: null
+  doi: "10.1016/j.jclepro.2024.141998"
+  url: null
+  journal_rank: "Top 7.8% journal in Environmental Sciences"
+  section: null
+  impact_factor: 11.1
+
+- id: 40
+  type: journal-scie
+  title: "Exergy analysis for enhanced performance of integrated batch reverse osmosis-Forward osmosis system for brackish water treatment"
+  year: 2024
+  authors:
+    - name: "Dhaval Patel"
+      corresponding: false
+      co_first: false
+    - name: "Anurag Mudgal"
+      corresponding: true
+      co_first: false
+    - name: "Vivek Patel"
+      corresponding: false
+      co_first: false
+    - name: "Jatin Patel"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Philp Davies"
+      corresponding: false
+      co_first: false
+    - name: "Nirajan Dhakal"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "580"
+  issue: null
+  pages: "117548"
+  publisher: null
+  doi: "10.1016/j.desal.2024.117548"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 39
+  type: journal-scie
+  title: "Optimal design strategy, heuristics, and theoretical analysis of multi-stage reverse osmosis for seawater desalination"
+  year: 2024
+  authors:
+    - name: "Yunhwan Kim"
+      corresponding: false
+      co_first: false
+    - name: "Yong-Gyun Park"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "580"
+  issue: null
+  pages: "117534"
+  publisher: null
+  doi: "10.1016/j.desal.2024.117534"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 38
+  type: journal-scie
+  title: "Cost-based optimization, feasibility study, and sensitivity analysis of forward osmosis/crystallization/reverse osmosis with high-temperature operation for high-salinity seawater desalination"
+  year: 2024
+  authors:
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: false
+    - name: "Do Yeon Kim"
+      corresponding: false
+      co_first: false
+    - name: "Joon Ha Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "580"
+  issue: null
+  pages: "117531"
+  publisher: null
+  doi: "10.1016/j.desal.2024.117531"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 37
+  type: journal-scie
+  title: "Current progress in semi-batch reverse osmosis for brackish water desalination"
+  year: 2024
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: true
+      co_first: false
+    - name: "Linyinxue Dong"
+      corresponding: false
+      co_first: false
+    - name: "Ho Kyong Shon"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "578"
+  issue: null
+  pages: "117434"
+  publisher: null
+  doi: "10.1016/j.desal.2024.117434"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 3
+  type: journal-domestic
+  title: "Techno-economic analysis and environmental impact assessment of a green ammonia synthesis process under various ammonia liquefaction scenarios"
+  year: 2024
+  authors:
+    - name: "GunYoung Kim"
+      corresponding: false
+      co_first: false
+    - name: "Inseo Song"
+      corresponding: false
+      co_first: false
+    - name: "Boram Gu"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Korean Chemical Engineering Research, 62(2) 163-172"
+  volume: null
+  issue: null
+  pages: null
+  publisher: null
+  doi: "10.9713/kcer.2024.62.2.163"
+  url: null
+  journal_rank: null
+  section: null
+  impact_factor: null
+
+- id: 36
+  type: journal-scie
+  title: "Energy, exergy, economic and environment analysis of standalone forward osmosis (FO) system for domestic wastewater treatment"
+  year: 2023
+  authors:
+    - name: "Dhaval Patel"
+      corresponding: false
+      co_first: false
+    - name: "Anurag Mudgal"
+      corresponding: true
+      co_first: false
+    - name: "Vivek Patel"
+      corresponding: false
+      co_first: false
+    - name: "Jatin Patel"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Philp Davies"
+      corresponding: false
+      co_first: false
+    - name: "Rubén Rodríguez Alegre"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "567"
+  issue: null
+  pages: "116995"
+  publisher: null
+  doi: "10.1016/j.desal.2023.116995"
+  url: null
+  journal_rank: "Top 2.4% journal in Water Resources"
+  section: "2023 (Before HYU)"
+  impact_factor: 9.9
+
+- id: 35
+  type: journal-scie
+  title: "Desalination, Water Re-use, and Halophyte Cultivation in Salinized Regions: A Highly Productive Groundwater Treatment System"
+  year: 2023
+  authors:
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Anurag Mudgal"
+      corresponding: false
+      co_first: false
+    - name: "Varsha Mudgal"
+      corresponding: false
+      co_first: false
+    - name: "Moshe Sagi"
+      corresponding: false
+      co_first: false
+    - name: "Dominic Standing"
+      corresponding: false
+      co_first: false
+    - name: "Philip A. Davies"
+      corresponding: true
+      co_first: false
+  journal: "Environ. Sci. Technol."
+  volume: "57"
+  issue: null
+  pages: "11863-11875"
+  publisher: null
+  doi: "10.1021/acs.est.3c02881"
+  url: null
+  journal_rank: "Top 6.8% journal in Environmental Sciences"
+  section: "2023 (Before HYU)"
+  impact_factor: 11.4
+
+- id: 34
+  type: journal-scie
+  title: "Techno-economic analysis of integrated bipolar membrane electrodialysis and batch reverse osmosis for water and chemical recovery from dairy wastewater"
+  year: 2023
+  authors:
+    - name: "Dipak Ankoliya"
+      corresponding: false
+      co_first: false
+    - name: "Anurag Mudgal"
+      corresponding: true
+      co_first: false
+    - name: "Manish Kumar Sinha"
+      corresponding: false
+      co_first: false
+    - name: "Philip Davies"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Rubén Rodríguez Alegre"
+      corresponding: false
+      co_first: false
+    - name: "Vivek Patel"
+      corresponding: false
+      co_first: false
+    - name: "Jatin Patel"
+      corresponding: false
+      co_first: false
+  journal: "J. Clean. Prod."
+  volume: "420"
+  issue: null
+  pages: "138264"
+  publisher: null
+  doi: "10.1016/j.jclepro.2023.138264"
+  url: null
+  journal_rank: "Top 7.8% journal in Environmental Sciences"
+  section: "2023 (Before HYU)"
+  impact_factor: 11.1
+
+- id: 1
+  type: book
+  title: "Seawater Reverse Osmosis (SWRO) Desalination: Energy consumption in plants, advanced low-energy technologies, and future developments for improving energy efficiency"
+  year: 2023
+  authors:
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Abayomi Babatunde Alayande"
+      corresponding: false
+      co_first: false
+    - name: "Youngjin Kim"
+      corresponding: false
+      co_first: false
+  journal: null
+  volume: null
+  issue: null
+  pages: null
+  publisher: "IWA Publishing"
+  doi: "10.2166/9781789061215"
+  url: null
+  journal_rank: null
+  section: null
+  impact_factor: null
+
+- id: 33
+  type: journal-scie
+  title: "Design Parameters of a Direct Contact Membrane Distillation and a Case Study of Its Applicability to Low-Grade Waste Energy"
+  year: 2022
+  authors:
+    - name: "Bitaw Nigatu Tewodros"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: true
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Membranes."
+  volume: "12"
+  issue: null
+  pages: "1279"
+  publisher: null
+  doi: "10.3390/membranes12121279"
+  url: null
+  journal_rank: null
+  section: null
+  impact_factor: 4.562
+
+- id: 32
+  type: journal-scie
+  title: "Prediction of permeate water flux in forward osmosis (FO) desalination system using tree-based ensemble machine learning models"
+  year: 2022
+  authors:
+    - name: "Yinseo Song"
+      corresponding: false
+      co_first: false
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: false
+    - name: "Joon Ha Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalin. Water Treat."
+  volume: "277"
+  issue: null
+  pages: "30-39"
+  publisher: null
+  doi: "10.5004/dwt.2022.29110"
+  url: null
+  journal_rank: null
+  section: null
+  impact_factor: 1.273
+
+- id: 31
+  type: journal-scie
+  title: "Not from Scratch: Predicting Thermophysical Properties through Model-Based Transfer Learning Using Graph Convolutional Networks"
+  year: 2022
+  authors:
+    - name: "Rodrigo S. Hormazabal"
+      corresponding: false
+      co_first: false
+    - name: "Jeong Won Kang"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: true
+      co_first: false
+  journal: "J. Chem. Inf. Model."
+  volume: "62"
+  issue: null
+  pages: "5411-5424"
+  publisher: null
+  doi: "10.1021/acs.jcim.2c00846"
+  url: null
+  journal_rank: null
+  section: null
+  impact_factor: 6.162
+
+- id: 30
+  type: journal-scie
+  title: "Hybrid semi-batch/batch reverse osmosis (HSBRO) for use in zero liquid discharge (ZLD) applications"
+  year: 2022
+  authors:
+    - name: "Ebrahim Hosseinipour"
+      corresponding: false
+      co_first: false
+    - name: "Somayeh Karimi"
+      corresponding: false
+      co_first: false
+    - name: "Stéphan Barbe"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Philip A.Davies"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "544"
+  issue: null
+  pages: "116126"
+  publisher: null
+  doi: "10.1016/j.desal.2022.116126"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: null
+  impact_factor: 11.211
+
+- id: 29
+  type: journal-scie
+  title: "Batch reverse osmosis (BRO)-adsorption desalination (AD) hybrid system for multipurpose desalination and minimal liquid discharge"
+  year: 2022
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Ibrahim Albaik"
+      corresponding: false
+      co_first: true
+    - name: "Philip A. Davies"
+      corresponding: false
+      co_first: false
+    - name: "Raya Al-Dadah"
+      corresponding: false
+      co_first: false
+    - name: "Saad Mahmoud"
+      corresponding: false
+      co_first: false
+    - name: "Mohamed A. Ismail"
+      corresponding: false
+      co_first: false
+    - name: "Mohammed K. Almesfer"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "539"
+  issue: null
+  pages: "115945"
+  publisher: null
+  doi: "10.1016/j.desal.2022.115945"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: null
+  impact_factor: 11.211
+
+- id: 28
+  type: journal-scie
+  title: "Brine management systems using membrane concentrators: Future directions for membrane development in desalination"
+  year: 2022
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "535"
+  issue: null
+  pages: "115839"
+  publisher: null
+  doi: "10.1016/j.desal.2022.115839"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: null
+  impact_factor: 11.211
+
+- id: 27
+  type: journal-scie
+  title: "Energetic and exergetic analyses of a closed-loop pressure retarded membrane distillation (PRMD) for low-grade thermal energy utilization and freshwater production"
+  year: 2022
+  authors:
+    - name: "Min Seok Lee"
+      corresponding: false
+      co_first: false
+    - name: "Ji Woong Chang"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "534"
+  issue: null
+  pages: "115799"
+  publisher: null
+  doi: "10.1016/j.desal.2022.115799"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: null
+  impact_factor: 11.211
+
+- id: 26
+  type: journal-scie
+  title: "A free-piston batch reverse osmosis (RO) system for brackish water desalination: Experimental study and model validation"
+  year: 2022
+  authors:
+    - name: "Ebrahim Hosseinipour"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Liam Burlace"
+      corresponding: false
+      co_first: false
+    - name: "Tim Naughton"
+      corresponding: false
+      co_first: false
+    - name: "Philip A. Davies"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "527"
+  issue: null
+  pages: "115524"
+  publisher: null
+  doi: "10.1016/j.desal.2021.115524"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: null
+  impact_factor: 11.211
+
+- id: 25
+  type: journal-scie
+  title: "Comprehensive assessment of the effects of operating conditions on membrane intrinsic parameters of forward osmosis (FO) based on principal component analysis (PCA)"
+  year: 2022
+  authors:
+    - name: "Min-kyu Kim"
+      corresponding: false
+      co_first: false
+    - name: "Ji Woong Chang"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: true
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "641"
+  issue: null
+  pages: "119909"
+  publisher: null
+  doi: "10.1016/j.memsci.2021.119909"
+  url: null
+  journal_rank: "Top 3.89% journal in Polymer Science"
+  section: null
+  impact_factor: 10.53
+
+- id: 2
+  type: journal-domestic
+  title: "Performance Evaluation of a Closed-Loop Pressure Retarded Membrane Distillation for Brackish Water Desalination and Power Generation"
+  year: 2022
+  authors:
+    - name: "Gyu Sang Cho"
+      corresponding: false
+      co_first: false
+    - name: "Jun-Seo Lee"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+  journal: "Korean Chemical Engineering Research"
+  volume: "60"
+  issue: "4"
+  pages: "525-534"
+  publisher: null
+  doi: "10.9713/kcer.2022.60.4.525"
+  url: null
+  journal_rank: null
+  section: "2022 (Before HYU)"
+  impact_factor: null
+
+- id: 24
+  type: journal-scie
+  title: "A compact hybrid batch/semi-batch reverse osmosis (HBSRO) system for high-recovery, low-energy desalination"
+  year: 2021
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Philip A. Davies"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "504"
+  issue: null
+  pages: "114976"
+  publisher: null
+  doi: "10.1016/j.desal.2021.114976"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: null
+  impact_factor: 11.211
+
+- id: 23
+  type: journal-scie
+  title: "High-Performance and Durable Pressure Retarded Osmosis Membranes Fabricated Using Hydrophilized Polyethylene Separators"
+  year: 2021
+  authors:
+    - name: "Soon Jin Kwon"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Dal Yong Kim"
+      corresponding: false
+      co_first: false
+    - name: "Min Zhan"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+    - name: "Jung-Hyun Lee"
+      corresponding: false
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "619"
+  issue: null
+  pages: "118796"
+  publisher: null
+  doi: "10.1016/j.memsci.2020.118796"
+  url: null
+  journal_rank: "Top 3.89% journal in Polymer Science"
+  section: "Before CNU (~2021)"
+  impact_factor: 10.53
+
+- id: 22
+  type: journal-scie
+  title: "Membrane transport behavior characterization method with constant water flux in pressure assisted forward osmosis"
+  year: 2021
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Yoon Hyuk Jang"
+      corresponding: false
+      co_first: true
+    - name: "Ji Woong Chang"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "498"
+  issue: null
+  pages: "114738"
+  publisher: null
+  doi: "10.1016/j.desal.2020.114738"
+  url: null
+  journal_rank: "Top 2.5% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 11.211
+
+- id: 21
+  type: journal-scie
+  title: "Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system a free piston for brackish water treatment"
+  year: 2020
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Liam Burlace"
+      corresponding: false
+      co_first: false
+    - name: "Nirajan Dhakal"
+      corresponding: false
+      co_first: false
+    - name: "Anurag Mudgal"
+      corresponding: false
+      co_first: false
+    - name: "Neil A. Stewart and Philip A. Davies"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "494"
+  issue: null
+  pages: "114625"
+  publisher: null
+  doi: "10.1016/j.desal.2020.114625"
+  url: null
+  journal_rank: "Top 2.55% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 9.501
+
+- id: 20
+  type: journal-scie
+  title: "Application of two-stage reverse osmosis system for desalination of high-salinity and high-temperature seawater with improved stability and performance"
+  year: 2020
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "492"
+  issue: null
+  pages: "114645"
+  publisher: null
+  doi: "10.1016/j.desal.2020.114645"
+  url: null
+  journal_rank: "Top 2.55% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 9.501
+
+- id: 19
+  type: journal-scie
+  title: "Optimization of two-stage seawater reverse osmosis membrane processes with practical design aspects for improving energy efficiency"
+  year: 2020
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "601"
+  issue: null
+  pages: "117889"
+  publisher: null
+  doi: "10.1016/j.memsci.2020.117889"
+  url: null
+  journal_rank: "Top 3.92% journal in Polymer Science"
+  section: "Before CNU (~2021)"
+  impact_factor: 8.742
+
+- id: 18
+  type: journal-scie
+  title: "Comprehensive analysis of a hybrid FO/crystallization/RO process for improving its economic feasibility to seawater desalination"
+  year: 2020
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Do Yeon Kim"
+      corresponding: false
+      co_first: false
+    - name: "Yoon Hyuk Jang"
+      corresponding: false
+      co_first: false
+    - name: "Min-gyu Kim"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "Water Res."
+  volume: "171"
+  issue: null
+  pages: "115426"
+  publisher: null
+  doi: "10.1016/j.watres.2019.115426"
+  url: null
+  journal_rank: "Top 1.53% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 11.236
+
+- id: 17
+  type: journal-scie
+  title: "Quantitative Analysis of the Irreversible Membrane Fouling of Forward Osmosis during Wastewater Reclamation: Correlation with the Modified Fouling Index"
+  year: 2020
+  authors:
+    - name: "Min Zhan"
+      corresponding: false
+      co_first: false
+    - name: "Gimun Gwak"
+      corresponding: false
+      co_first: false
+    - name: "David Inhyuk Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "597"
+  issue: null
+  pages: "117757"
+  publisher: null
+  doi: "10.1016/j.memsci.2019.117757"
+  url: null
+  journal_rank: "Top 3.92% journal in Polymer Science"
+  section: "Before CNU (~2021)"
+  impact_factor: 8.742
+
+- id: 16
+  type: journal-scie
+  title: "Towards a low-energy seawater reverse osmosis desalination plant: A review and theoretical analysis for future directions"
+  year: 2020
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: true
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "595"
+  issue: null
+  pages: "117607"
+  publisher: null
+  doi: "10.1016/j.memsci.2019.117607"
+  url: null
+  journal_rank: "Top 3.92% journal in Polymer Science"
+  section: "Before CNU (~2021)"
+  impact_factor: 8.742
+
+- id: 15
+  type: journal-scie
+  title: "Modified Kinetic Rate Equation Model for Cooling Crystallization"
+  year: 2019
+  authors:
+    - name: "Yuntae Jin"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Korean J. Chem. Eng."
+  volume: "36"
+  issue: null
+  pages: "2095-2103"
+  publisher: null
+  doi: "10.1007/s11814-019-0415-7"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 14
+  type: journal-scie
+  title: "Low-recovery, -energy-consumption, -emission hybrid systems of seawater desalination: Energy optimization and cost analysis"
+  year: 2019
+  authors:
+    - name: "Tewodros Nigatu Bitaw"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Jin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Ji Woong Chang"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "468"
+  issue: null
+  pages: "114085"
+  publisher: null
+  doi: "10.1016/j.desal.2019.114085"
+  url: null
+  journal_rank: "Top 1.6% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 7.098
+
+- id: 13
+  type: journal-scie
+  title: "A comprehensive review on energy consumption of seawater reverse osmosis desalination plants"
+  year: 2019
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "Appl. Energy"
+  volume: "254"
+  issue: null
+  pages: "113652"
+  publisher: null
+  doi: "10.1016/j.apenergy.2019.113652"
+  url: null
+  journal_rank: "Top 3.85% journal in Engineering, Chemical"
+  section: "Before CNU (~2021)"
+  impact_factor: 8.848
+
+- id: 12
+  type: journal-scie
+  title: "Fabrication of high performance and durable forward osmosis membranes using mussel-inspired polydopamine-modified polyethylene supports"
+  year: 2019
+  authors:
+    - name: "Soon Jin Kwon"
+      corresponding: false
+      co_first: false
+    - name: "Sang-Hee Park"
+      corresponding: false
+      co_first: false
+    - name: "Min Gyu Shin"
+      corresponding: false
+      co_first: false
+    - name: "Min Sang Park"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+    - name: "Hosik Park"
+      corresponding: false
+      co_first: false
+    - name: "You-In Park"
+      corresponding: false
+      co_first: false
+    - name: "Jung-Hyun Lee"
+      corresponding: false
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "584"
+  issue: null
+  pages: "89-99"
+  publisher: null
+  doi: "10.1016/j.memsci.2019.04.074"
+  url: null
+  journal_rank: "Top 2.91% journal in Polymer Science"
+  section: "Before CNU (~2021)"
+  impact_factor: 7.183
+
+- id: 11
+  type: journal-scie
+  title: "Solubility measurement and recrystallization process design for 1,1,2,2,9,9,10,10-octafluoro[2.2]paracyclophane (AF4) purification"
+  year: 2019
+  authors:
+    - name: "Hyeonjung Kim"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Ji Woong Chang"
+      corresponding: false
+      co_first: false
+    - name: "Taeho Lee"
+      corresponding: false
+      co_first: false
+    - name: "Sung Hyun Kim"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Cryst. Growth Des."
+  volume: "19"
+  issue: null
+  pages: "1748-1755"
+  publisher: null
+  doi: "10.1021/acs.cgd.8b01723"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 10
+  type: journal-scie
+  title: "Process design and operating strategies on a new continuous vaporization system for purification of organic hole-transport material"
+  year: 2019
+  authors:
+    - name: "Jin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Seokgeun Jin"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Chem. Eng. Technol."
+  volume: "42"
+  issue: null
+  pages: "109-118"
+  publisher: null
+  doi: "10.1002/ceat.201700682"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 9
+  type: journal-scie
+  title: "Feasibility study of a forward osmosis/crystallization/reverse osmosis hybrid process with high-temperature operation: Modeling, experiments, and energy consumption"
+  year: 2018
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Heo Hwan"
+      corresponding: false
+      co_first: false
+    - name: "Do Yeon Kim"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "J. Membr. Sci."
+  volume: "555"
+  issue: null
+  pages: "206-219"
+  publisher: null
+  doi: "10.1016/j.memsci.2018.03.031"
+  url: null
+  journal_rank: "Top 1.72% journal in Polymer Science"
+  section: "Before CNU (~2021)"
+  impact_factor: 7.015
+
+- id: 8
+  type: journal-scie
+  title: "Theoretical analysis of pressure retarded membrane distillation (PRMD) process for simultaneous production of water and electricity"
+  year: 2017
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Do Yeon Kim"
+      corresponding: false
+      co_first: true
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Ind. Eng. Chem. Res."
+  volume: "56"
+  issue: null
+  pages: "14888-14901"
+  publisher: null
+  doi: "10.1021/acs.iecr.7b03642"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 7
+  type: journal-scie
+  title: "Cost-based feasibility study and sensitivity analysis of a new draw solution assisted reverse osmosis (DSARO) process for seawater desalination"
+  year: 2017
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Do Yeon Kim"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "422"
+  issue: null
+  pages: "182-193"
+  publisher: null
+  doi: "10.1016/j.desal.2017.08.026"
+  url: null
+  journal_rank: "Top 1.67% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 6.603
+
+- id: 6
+  type: journal-scie
+  title: "A modified scaled variable reduced coordinate (SVRC)-quantitative structure property relationship (QSPR) model for predicting liquid viscosity of pure organic compounds"
+  year: 2017
+  authors:
+    - name: "Seongmin Lee"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Yunkyung Kwon"
+      corresponding: false
+      co_first: false
+    - name: "Tae-Yun Park"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Korean J. Chem. Eng."
+  volume: "34"
+  issue: null
+  pages: "2715-2724"
+  publisher: null
+  doi: "10.1007/s11814-017-0173-3"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 5
+  type: journal-scie
+  title: "A Quantitative Structure-Property Relationship Model for Predicting the Critical Pressures of Organic Compounds Containing Oxygen, Sulfur, and Nitrogen"
+  year: 2017
+  authors:
+    - name: "Ji Ye Oh"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Yangsoo Kim"
+      corresponding: false
+      co_first: false
+    - name: "Tae-Yun Park"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "J. Chem. Eng. Jap."
+  volume: "50"
+  issue: null
+  pages: "397-407"
+  publisher: null
+  doi: "10.1252/jcej.16we367"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 4
+  type: journal-scie
+  title: "Quantitative estimation of internal concentration polarization in a spiral wound forward osmosis membrane module compared to a flat sheet membrane module"
+  year: 2017
+  authors:
+    - name: "Changseong Bae"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: true
+    - name: "Hwan Heo"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Korean J. Chem. Eng."
+  volume: "34"
+  issue: null
+  pages: "844-853"
+  publisher: null
+  doi: "10.1007/s11814-016-0307-z"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 3
+  type: journal-scie
+  title: "Optimization on a new hybrid Forward osmosis-Electrodialysis-Reverse osmosis seawater desalination process"
+  year: 2016
+  authors:
+    - name: "Tewodros Nigatu Bitaw"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Desalination"
+  volume: "398"
+  issue: null
+  pages: "265-281"
+  publisher: null
+  doi: "10.1016/j.desal.2016.07.032"
+  url: null
+  journal_rank: "Top 1.7% journal in Water Resources"
+  section: "Before CNU (~2021)"
+  impact_factor: 5.527
+
+- id: 2
+  type: journal-scie
+  title: "Operating Strategy for Continuous Multistage Mixed Suspension and Mixed Product Removal (MSMPR) Crystallization Processes Depending on Crystallization Kinetic Parameters"
+  year: 2016
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Do Yeon Kim"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Ind. Eng. Chem. Res."
+  volume: "55"
+  issue: null
+  pages: "7142-7153"
+  publisher: null
+  doi: "10.1021/acs.iecr.6b01386"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 1
+  type: journal-scie
+  title: "Feasibility study of solvent recycle process in spin-on hard mask material manufacturing system"
+  year: 2015
+  authors:
+    - name: "Hyun Jae Jeong"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: false
+      co_first: false
+  journal: "Korean J. Chem. Eng."
+  volume: "32"
+  issue: null
+  pages: "2375-2383"
+  publisher: null
+  doi: "10.1007/s11814-015-0093-z"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 1
+  type: journal-domestic
+  title: "Economic Analysis of Geothermal Energy and VMD Desalination Hybrid Process"
+  year: 2014
+  authors:
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Jin Hyun Kim"
+      corresponding: false
+      co_first: false
+    - name: "Hyuk Soo Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kwan-Young Lee"
+      corresponding: false
+      co_first: false
+    - name: "Dae Ryook Yang"
+      corresponding: true
+      co_first: false
+    - name: "Kyung Nam Kim"
+      corresponding: true
+      co_first: false
+  journal: "CLEAN TECHNOLOGY"
+  volume: "20"
+  issue: null
+  pages: "13-21"
+  publisher: null
+  doi: "10.7464/ksct.2014.20.1.013"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
+- id: 1
+  type: book-chapter
+  title: "Fundamentals and application of reverse osmosis membrane processes"
+  year: null
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Jihun Lim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "Osmosis Engineering"
+  volume: null
+  issue: null
+  pages: "17-52"
+  publisher: "Elsevier"
+  doi: "10.1016/B978-0-12-821016-1.00002-4"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null

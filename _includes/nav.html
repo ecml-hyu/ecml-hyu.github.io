@@ -1,0 +1,12 @@
+{%- comment -%}
+  내비게이션 항목은 아래 한 줄에서만 관리한다. "파일명:표시이름" 형식.
+  현재 페이지에는 sindoll2 님이 만든 .active 클래스가 자동으로 붙는다.
+{%- endcomment -%}
+{%- assign nav_items = "newsroom.html:Newsroom,members.html:Members,publications.html:Publications,research.html:Research,projects.html:Projects,contact.html:Contact" | split: "," -%}
+<nav class="wrap"><a class="brand" href="{{ '/' | relative_url }}"><i>ECML</i> LAB</a><div class="links">
+{%- for entry in nav_items -%}
+{%- assign parts = entry | split: ":" -%}
+{%- assign target = parts[0] | prepend: "/" -%}
+<a {% if page.url == target %}class="active" {% endif %}href="{{ target | relative_url }}">{{ parts[1] }}</a>
+{%- endfor -%}
+</div></nav>

@@ -1,0 +1,23 @@
+=== people-principle-investigator ===  노드 31, 구글이미지 3
+  [h1] Principle Investigator
+  [h1] Kiho Park, Ph.D.
+  [p] Associate Professor
+  [p] Department of Chemical Engineering
+  [p] Hanyang University
+  [p] Tel: +82-2-2220-0523
+  [p] Email: kiho138@hanyang.ac.kr
+  [p] Education
+  [p] Ph.D. in Chemical and Biological Engineering, Korea University, 2018.
+  [p] – through Master and Ph.D. integrated course (Supervisor: Prof. Dae Ryook Yang)
+  [p] B.S. in Chemical and Biological Engineering, Korea University, 2011.
+  [p] Professional Experience
+  [p] 2024.03~Present: Associate Professor, Department of Chemical Engineering, Hanyang University
+  [p] 2023.04~2024.02: Associate Professor, School of Chemical Engineering, Chonnam National University
+  [p] 2021.03~2023.03: Assitant Professor, School of Chemical Engineering, Chonnam National University
+  [p] 2019.07~2021.01: Research Fellow, Department of Civil Engineering, University of Birmingham
+  [p] 2018.11~2019.06: Research Professor, School of Civil, Environmental and Architectural Engineering, Korea University
+  [p] 2018.03~2018.10: Research Professor, Department of Chemical and Biological Engineering, Korea University
+  [p] Professional Activities and Membership
+  [p] 2023.08~Present: Members, Korean Society of Environmental Engineers
+  [p] 2022.09~Present: Director, Korean Society of Ultrapure Water
+  [p] 2021.03~Present: Members, Korean Institute of Chemical Engineering

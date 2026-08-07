@@ -1,0 +1,6 @@
+=== people-alumni ===  노드 5, 구글이미지 3
+  [h1] Alumni
+  [h2] 손수지 (Suji Son)
+  [p] Undergraduate student
+  [h2] 조규상 (Gyu Sang Cho)
+  [p] Undergraduate student

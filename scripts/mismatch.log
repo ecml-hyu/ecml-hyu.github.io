@@ -1,0 +1,30 @@
+=== verify_doi.py @ 2026-08-07T11:51:02 ===
+대조 60건 / 일치 52 / 불일치 6 / 조회실패 2 / DOI없음 0
+※ 자동 수정하지 않았다. 아래 항목은 사람이 확인해야 한다.
+
+[조회 실패]    journal-domestic #3 | doi=10.9713/kcer.2024.62.2.163 | DOI를 CrossRef에서 찾을 수 없음 (404)
+[불일치]       book #1 | doi=10.2166/9781789061215
+    제목
+        원본    : Seawater Reverse Osmosis (SWRO) Desalination: Energy consumption in plants, advanced low-energy technologies, and future developments for improving energy efficiency
+        CrossRef: Seawater Reverse Osmosis (SWRO) Desalination
+[불일치]       journal-scie #32 | doi=10.5004/dwt.2022.29110
+    제목
+        원본    : Prediction of permeate water flux in forward osmosis (FO) desalination system using tree-based ensemble machine learning models
+        CrossRef: Prediction of permeate water flux in forward osmosis desalination system using tree-based ensemble machine learning models
+[조회 실패]    journal-domestic #2 | doi=10.9713/kcer.2022.60.4.525 | DOI를 CrossRef에서 찾을 수 없음 (404)
+[불일치]       journal-scie #21 | doi=10.1016/j.desal.2020.114625
+    제목
+        원본    : Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system a free piston for brackish water treatment
+        CrossRef: Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system using a free piston for brackish water treatment
+[불일치]       journal-scie #13 | doi=10.1016/j.apenergy.2019.113652
+    제목
+        원본    : A comprehensive review on energy consumption of seawater reverse osmosis desalination plants
+        CrossRef: A comprehensive review of energy consumption of seawater reverse osmosis desalination plants
+[불일치]       journal-scie #10 | doi=10.1002/ceat.201700682
+    제목
+        원본    : Process design and operating strategies on a new continuous vaporization system for purification of organic hole-transport material
+        CrossRef: Process Design and Operating Strategies for a Continuous Vaporization System for Purifying Organic Hole‐Transport Materials
+[불일치]       book-chapter #1 | doi=10.1016/B978-0-12-821016-1.00002-4
+    연도(원본 없음)
+        원본    : None
+        CrossRef: 2021

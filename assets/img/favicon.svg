@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ECML Lab water drop">
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12a6c9"/>
+      <stop offset="1" stop-color="#1573cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#062b45"/>
+  <path d="M32 11c8.6 10.2 15 18.3 15 25.4A15 15 0 0 1 17 36.4C17 29.3 23.4 21.2 32 11Z" fill="url(#d)"/>
+  <path d="M25 34.5a7 7 0 0 0 6.2 8.3" fill="none" stroke="#9eeeff" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
+</svg>

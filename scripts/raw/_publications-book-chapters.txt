@@ -1,0 +1,4 @@
+[h1] Book Chapters
+[h1] Before CNU (~2021)
+[p] (1) Jungbin Kim, Jihun Lim, Kiho Park, Seungkwan Hong, Fundamentals and application of reverse osmosis membrane processes. In Osmosis Engineering (pp. 17-52). Elsevier.
+LINK: https://doi.org/10.1016/B978-0-12-821016-1.00002-4

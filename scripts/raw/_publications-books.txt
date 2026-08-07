@@ -1,0 +1,4 @@
+[h1] Books
+[h1] 2023
+[p] (1) Seungkwan Hong, Kiho Park, Jungbin Kim, Abayomi Babatunde Alayande, Youngjin Kim, Seawater Reverse Osmosis (SWRO) Desalination: Energy consumption in plants, advanced low-energy technologies, and future developments for improving energy efficiency, IWA Publishing
+LINK: https://doi.org/10.2166/9781789061215

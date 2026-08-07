@@ -1,0 +1,39 @@
+title: ECML Lab
+tagline: Water Intelligence
+description: ECML Lab, Hanyang University
+url: "https://ecml.hanyang.ac.kr"
+baseurl: ""
+lang: en
+
+# 소셜/OG 기본 이미지 (head.html 에서 사용)
+og_image: /assets/img/hero.webp
+
+# 뉴스룸 '새 게시물' 버튼이 GitHub 작성 화면을 열 때 사용한다.
+repository: ecml-hyu/ecml-hyu.github.io
+branch: main
+
+# 뉴스 글 주소: /newsroom/2026/08/07/title/
+permalink: /newsroom/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# GitHub Pages 화이트리스트 플러그인만 사용
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# site.css 와 intro-spline.css 는 일부러 순수 CSS 로 둔다 (SCSS 로 바꾸지 말 것).
+# Sass 는 min()/max() 를 내장 함수로 해석해서 min(1120px, calc(...)) 에서
+# 빌드를 실패시킨다. sass_dir 을 쓰지 않으므로 Jekyll 은 그대로 복사만 한다.
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts
+  - vendor

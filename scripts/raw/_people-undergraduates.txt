@@ -1,0 +1,7 @@
+=== people-undergraduates ===  노드 6, 구글이미지 3
+  [h1] Undergraduates
+  [h2] 김민서 (Minseo Kim)
+  [p] Degree  B.S course (4rd year)
+  [p] Contact  mseokim9999@gmail.com
+  [p] Research areaAI-based chemical process modeling
+  [p] Brine valorization/utilization

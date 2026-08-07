@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}"><head>{% include head.html %}
+{%- if page.intro %}
+<!-- 인트로는 세션당 1회만. 첫 페인트 전에 <html> 에 클래스를 붙여 깜빡임을 막는다 -->
+<script src="{{ '/assets/js/intro.js' | relative_url }}"></script>
+{%- endif %}
+</head>
+<body>
+{%- if page.intro %}
+<div class="intro spline-intro" id="intro"><div class="intro-spline" aria-hidden="true"><iframe src="https://my.spline.design/claritystream-IloWkPRJTypvKBYKXUF90Pu5/" frameborder="0" title="Sustainable process animation"></iframe></div><div class="intro-vignette" aria-hidden="true"></div><div class="intro-copy"><p>ECO-FRIENDLY CHEMICAL PROCESS MODELING LABORATORY</p><h1>Modeling a<br><em>cleaner future.</em></h1><small>Sustainable chemistry, intelligently engineered.</small><button id="skip">Skip introduction</button></div></div>
+{% endif -%}
+<header>{% include nav.html %}</header>
+<main>{{ content }}</main>
+<footer><div class="wrap">© ECML Lab, Hanyang University</div></footer>
+</body></html>

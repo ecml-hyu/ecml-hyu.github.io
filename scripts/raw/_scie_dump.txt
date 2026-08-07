@@ -1,0 +1,125 @@
+[HEAD] Peer-reviewed Journal Papers (SCIE)
+[HEAD] 2026
+        LINK: #h.hrub8y97y77x
+[ P  ] (55) Jeongwoo Moon, Byeongchan Yun, Kiho Park, Seong-Su Kim, Youngjoo Lee, Kwanho Jeong*, Kyung Hwa Cho*, Adaptive reinforcement learning for energy-efficient high-recovery closed-circuit reverse osmosis, Water Res. 299 (2026) 125855 (IF: 12.4, Top 1.1% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.watres.2026.125855
+[ P  ] (54) Ki Hyun Lee, Hyeonhoo Lee, Hwansoo Shin, Dong Jun Kang, Yeongbhin Seo, Kiho Park, Tae Hee Han*, Hydrophobic-Modified, Stable MXene Membrane Joule Heater for Water Purification, ACS Appl. Electron. Mater. 8(6) (2026) 2305−2314 (IF: 4.7)
+        LINK: https://pubs.acs.org/doi/10.1021/acsaelm.5c02542
+[ P  ] (53) Yinseo Song+, GunYoung Kim+, Min Seok Lee, Min-kyu Kim, Ji Woong Chang, Dae Ryook Yang, Kiho Park*, A novel framework for forward osmosis in zero- and low-flow conditions: Applicability and fundamental differences from reverse osmosis, Water Res. 288 (2026) 124717 (IF: 12.4, Top 1.1% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.watres.2025.124717
+[HEAD] 2025
+        LINK: #h.dg7w96ft346o
+[ P  ] (52) GunYoung Kim, Yinseo Song, Tae-mun Hwang, Yong-Gyun Park, Philip A. Davies*, Kiho Park*, Practical implementation and challenges of current batch-type RO systems and future potential: A review, Desalination 616 (2025) 119404 (IF: 8.4, Top 2.0% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2025.119404
+[ P  ] (51) Heun Se Kim, Jaeeun Byun, Ahyeon Jeong, GunYoung Kim, Juwon Lee, Tae-mun Hwang, Yong-Gyun Park*, Kiho Park*, Sustainable operation of hybrid semi-batch/batch reverse osmosis by additional purge-and-refill phase: Optimization and life cycle assessment, Desalination 616 (2025) 119364 (IF: 8.4, Top 2.0% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2025.119364
+[ P  ] (50) Dhaval Patel, Anurag Mudgal*, Dipak Ankoliya, Vivek Patel, Jatin Patel, Kiho Park, Philp Davies, Nirajan Dhakal, Experimental challenges and troubleshooting in operating batch reverse osmosis system for brackish water desalination, J. Water Process Eng. 77 (2025) 108652 (*corresponding author) (IF: 6.3, Top 5.3% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.jwpe.2025.108652
+[ P  ] (49) Jaeeun Byun, Yunhwan Kim, Kiho Park*, Yong-Gyun Park*, Implementation of low-pressure pressure exchanger (LPPX) on two-stage reverse osmosis (RO) system: Energetic and environmental impacts in a large-scale water reuse facility, J. Water Process Eng. 74 (2025) 107849 (*corresponding author) (IF: 6.3, Top 5.3% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.jwpe.2025.107849
+[ P  ] (48) Jeongwoo Moon, Suji Son, Jungbin Kim*, Kiho Park*, Critical challenges in high-salinity seawater reverse osmosis systems: Technical, energy, and environmental reviews, Desalination 607 (2025) 118811 (*corresponding author) (IF: 8.4, Top 2.0% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2025.118811
+[ P  ] (47) Jeongwoo Moon, Kwanho Jeong, Sung Ho Chae, Jaegyu Shim, Jihye Kim, Kyung Hwa Cho*, Kiho Park*, Robust deep learning model combined with missing input data estimation: Application in a 1000 m3/day high-salinity SWRO plant, Desalination 603 (2025) 118678 (*corresponding author) (IF: 8.4, Top 2.0% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2025.118678
+[ P  ] (46) Yinseo Song, Jeongwoo Moon, Kiho Park*, Explainable AI for permeate flux prediction in forward osmosis: SHAP interpretability and theoretical validation for enhanced predictive reliability, Desalination 601 (2025) 118551 (*corresponding author) (IF: 8.4, Top 2.0% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2025.118551
+[ P  ] (45) Yunhwan Kim, Jaeeun Byun, Kiho Park*, Yong-Gyun Park*, Comprehensive analysis of energy saving and high-quality permeate production strategies for a large-scale seawater reverse osmosis desalination plant with diverse process configurations and external resource utilization, Desalination 596 (2025) 118292 (*corresponding author) (IF: 8.4, Top 2.0% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.118292
+[HEAD] 2024
+        LINK: #h.yq98s5yhzkdh
+[ P  ] (44) Jeongdong Kim, Seongbin Ga, Sungho Suh, Joseph Sang-Il Kwon, Kiho Park*, and Junghwan Kim*, Optimal operation guidelines for direct recovery of high-purity precursor from spent lithium-ion batteries: hybrid operation model of population balance equation and data-driven classifier, J. Appl. Cryst. 57 (2024) 1924-1939 (*corresponding author) (IF: 6.1, Top 3.84% journal in Crystallography)
+        LINK: https://doi.org/10.1107/S1600576724010239
+[ P  ] (43) GunYoung Kim, Kiho Park*, Application of batch reverse osmosis as an appropriate technology for inland desalination: Design, modeling, and operating strategies, Desalination 592 (2024) 118185 (*corresponding author) (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.118185
+[ P  ] (42) Heun Se Kim+, Gyu Sang Cho+, Yong-Gyun Park*, Kiho Park*, Energy self-sustainable operation of solar-powered pressure-retarded membrane distillation: Modeling, implementation viability, and economic feasibility study, Desalination 592 (2024) 118076 (*corresponding author) (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.118076
+[ P  ] (41) Jonghun Lim+, Jinwoo Park+, Kiho Park*, Junghwan Kim*, Design of hybrid desalination process using waste heat and cold energy from LNG power plant increasing energy and economic potential, J. Clean. Prod. 452 (2024) 141998 (*corresponding author) (IF: 11.1, Top 7.8% journal in Environmental Sciences)
+        LINK: https://doi.org/10.1016/j.jclepro.2024.141998
+[ P  ] (40) Dhaval Patel, Anurag Mudgal*, Vivek Patel, Jatin Patel, Kiho Park, Philp Davies, Nirajan Dhakal, Exergy analysis for enhanced performance of integrated batch reverse osmosis–Forward osmosis system for brackish water treatment, Desalination 580 (2024) 117548 (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.117548
+[ P  ] (39) Yunhwan Kim, Yong-Gyun Park*, Kiho Park*, Optimal design strategy, heuristics, and theoretical analysis of multi-stage reverse osmosis for seawater desalination, Desalination 580 (2024) 117534 (*corresponding author) (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.117534
+[ P  ] (38) Jeongwoo Moon, Do Yeon Kim, Joon Ha Kim, Kiho Park*, Cost-based optimization, feasibility study, and sensitivity analysis of forward osmosis/crystallization/reverse osmosis with high-temperature operation for high-salinity seawater desalination, Desalination 580 (2024) 117531 (*corresponding author) (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.117531
+[ P  ] (37) Jungbin Kim*, Linyinxue Dong, Ho Kyong Shon, Kiho Park*, Current progress in semi-batch reverse osmosis for brackish water desalination, Desalination 578 (2024) 117434 (*corresponding author) (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2024.117434
+[HEAD] 2023 (Before HYU)
+        LINK: #h.vftvc2a1qa9o
+[ P  ] (36) Dhaval Patel, Anurag Mudgal*, Vivek Patel, Jatin Patel, Kiho Park, Philp Davies, Rubén Rodríguez Alegre, Energy, exergy, economic and environment analysis of standalone forward osmosis (FO) system for domestic wastewater treatment, Desalination 567 (2023) 116995 (IF: 9.9, Top 2.4% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2023.116995
+[ P  ] (35) Kiho Park*, Anurag Mudgal, Varsha Mudgal, Moshe Sagi, Dominic Standing, Philip A. Davies*, Desalination, Water Re-use, and Halophyte Cultivation in Salinized Regions: A Highly Productive Groundwater Treatment System, Environ. Sci. Technol. 57 (2023) 11863–11875 (IF: 11.4, Top 6.8% journal in Environmental Sciences)
+        LINK: https://doi.org/10.1021/acs.est.3c02881
+[ P  ] (34) Dipak Ankoliya, Anurag Mudgal*, Manish Kumar Sinha, Philip Davies, Kiho Park, Rubén Rodríguez Alegre, Vivek Patel, Jatin Patel, Techno-economic analysis of integrated bipolar membrane electrodialysis and batch reverse osmosis for water and chemical recovery from dairy wastewater, J. Clean. Prod. 420 (2023) 138264 (IF: 11.1, Top 7.8% journal in Environmental Sciences)
+        LINK: https://doi.org/10.1016/j.jclepro.2023.138264
+[HEAD] 2022
+        LINK: #h.c86ow2foyfwx
+[ P  ] (33) Bitaw Nigatu Tewodros, Dae Ryook Yang*, Kiho Park*, Design Parameters of a Direct Contact Membrane Distillation and a Case Study of Its Applicability to Low-Grade Waste Energy, Membranes. 12 (2022) 1279 (*corresponding author) (IF: 4.562)
+        LINK: https://doi.org/10.3390/membranes12121279
+[ P  ] (32) Yinseo Song, Jeongwoo Moon, Joon Ha Kim, Kiho Park*, Prediction of permeate water flux in forward osmosis (FO) desalination system using tree-based ensemble machine learning models, Desalin. Water Treat. 277 (2022) 30–39 (*corresponding author) (IF: 1.273)
+        LINK: http://doi.org/10.5004/dwt.2022.29110
+[ P  ] (31) Rodrigo S. Hormazabal, Jeong Won Kang, Kiho Park*, and Dae Ryook Yang*, Not from Scratch: Predicting Thermophysical Properties through Model-Based Transfer Learning Using Graph Convolutional Networks, J. Chem. Inf. Model. 62 (2022) 5411-5424 (*co-corresponding author) (IF: 6.162)
+        LINK: https://doi.org/10.1021/acs.jcim.2c00846
+[ P  ] (30) Ebrahim Hosseinipour, Somayeh Karimi, Stéphan Barbe, Kiho Park, Philip A.Davies*, Hybrid semi-batch/batch reverse osmosis (HSBRO) for use in zero liquid discharge (ZLD) applications, Desalination 544 (2022) 116126 (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2022.116126
+[ P  ] (29) Kiho Park+, Ibrahim Albaik+, Philip A. Davies, Raya Al-Dadah, Saad Mahmoud, Mohamed A. Ismail, Mohammed K. Almesfer, Batch reverse osmosis (BRO)-adsorption desalination (AD) hybrid system for multipurpose desalination and minimal liquid discharge, Desalination 539 (2022) 115945 (+co-first author) (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2022.115945
+[ P  ] (28) Kiho Park, Jungbin Kim, Seungkwan Hong, Brine management systems using membrane concentrators: Future directions for membrane development in desalination, Desalination 535 (2022) 115839 (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2022.115839
+[ P  ] (27) Min Seok Lee, Ji Woong Chang, Kiho Park*, Dae Ryook Yang*, Energetic and exergetic analyses of a closed-loop pressure retarded membrane distillation (PRMD) for low-grade thermal energy utilization and freshwater production, Desalination 534 (2022) 115799 (*co-corresponding author) (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2022.115799
+[ P  ] (26) Ebrahim Hosseinipour, Kiho Park, Liam Burlace, Tim Naughton, Philip A. Davies, A free-piston batch reverse osmosis (RO) system for brackish water desalination: Experimental study and model validation, Desalination 527 (2022) 115524 (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2021.115524
+[ P  ] (25) Min-kyu Kim, Ji Woong Chang, Kiho Park*, Dae Ryook Yang*, Comprehensive assessment of the effects of operating conditions on membrane intrinsic parameters of forward osmosis (FO) based on principal component analysis (PCA), J. Membr. Sci. 641 (2022) 119909 (*co-corresponding author) (IF: 10.530, Top 3.89% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2021.119909
+[HEAD] 2021
+        LINK: #h.vdxbcvzc5s6j
+[ P  ] (24) Kiho Park, Philip A. Davies, A compact hybrid batch/semi-batch reverse osmosis (HBSRO) system for high-recovery, low-energy desalination, Desalination 504 (2021) 114976 (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2021.114976
+[HEAD] Before CNU (~2021)
+        LINK: #h.6ky7pzh0qkn4
+[ P  ] (23) Soon Jin Kwon†, Kiho Park†, Dal Yong Kim, Min Zhan, Seungkwan Hong, Jung-Hyun Lee, High-Performance and Durable Pressure Retarded Osmosis Membranes Fabricated Using Hydrophilized Polyethylene Separators, J. Membr. Sci. 619 (2021) 118796 (†co-first author) (IF: 10.530, Top 3.89% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2020.118796
+[ P  ] (22) Kiho Park+, Yoon Hyuk Jang+, Ji Woong Chang, and Dae Ryook Yang, Membrane transport behavior characterization method with constant water flux in pressure assisted forward osmosis, Desalination 498 (2021) 114738 (+co-first author) (IF: 11.211, Top 2.5% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2020.114738
+[ P  ] (21) Kiho Park, Liam Burlace, Nirajan Dhakal, Anurag Mudgal, Neil A. Stewart and Philip A. Davies, Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system a free piston for brackish water treatment, Desalination 494 (2020) 114625 (IF: 9.501, Top 2.55% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2020.114625
+[ P  ] (20) Jungbin Kim, Kiho Park, Seungkwan Hong, Application of two-stage reverse osmosis system for desalination of high-salinity and high-temperature seawater with improved stability and performance, Desalination 492 (2020) 114645 (IF: 9.501, Top 2.55% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2020.114645
+[ P  ] (19) Jungbin Kim, Kiho Park, Seungkwan Hong, Optimization of two-stage seawater reverse osmosis membrane processes with practical design aspects for improving energy efficiency, J. Membr. Sci. 601 (2020) 117889 (IF: 8.742, Top 3.92% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2020.117889
+[ P  ] (18) Kiho Park, Do Yeon Kim, Yoon Hyuk Jang, Min-gyu Kim, Dae Ryook Yang, Seungkwan Hong, Comprehensive analysis of a hybrid FO/crystallization/RO process for improving its economic feasibility to seawater desalination, Water Res. 171 (2020) 115426 (IF: 11.236, Top 1.53% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.watres.2019.115426
+[ P  ] (17) Min Zhan, Gimun Gwak, David Inhyuk Kim, Kiho Park, Seungkwan Hong, Quantitative Analysis of the Irreversible Membrane Fouling of Forward Osmosis during Wastewater Reclamation: Correlation with the Modified Fouling Index, J. Membr. Sci. 597 (2020) 117757 (IF: 8.742, Top 3.92% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2019.117757
+[ P  ] (16) Kiho Park+, Jungbin Kim+, Dae Ryook Yang, Seungkwan Hong, Towards a low-energy seawater reverse osmosis desalination plant: A review and theoretical analysis for future directions, J. Membr. Sci. 595 (2020) 117607 (+co-first author) (IF: 8.742, Top 3.92% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2019.117607
+[ P  ] (15) Yuntae Jin+, Kiho Park+, Dae Ryook Yang, Modified Kinetic Rate Equation Model for Cooling Crystallization, Korean J. Chem. Eng. 36 (2019) 2095-2103 (+co-first author)
+        LINK: https://doi.org/10.1007/s11814-019-0415-7
+[ P  ] (14) Tewodros Nigatu Bitaw, Kiho Park, Jin Kim, Ji Woong Chang, Dae Ryook Yang, Low-recovery, -energy-consumption, -emission hybrid systems of seawater desalination: Energy optimization and cost analysis, Desalination 468 (2019) 114085 (IF: 7.098, Top 1.6% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2019.114085
+[ P  ] (13) Jungbin Kim+, Kiho Park+, Dae Ryook Yang, Seungkwan Hong, A comprehensive review on energy consumption of seawater reverse osmosis desalination plants, Appl. Energy 254 (2019) 113652 (+co-first author) (IF: 8.848, Top 3.85% journal in Engineering, Chemical)
+        LINK: https://doi.org/10.1016/j.apenergy.2019.113652
+[ P  ] (12) Soon Jin Kwon, Sang-Hee Park, Min Gyu Shin, Min Sang Park, Kiho Park, Seungkwan Hong, Hosik Park, You-In Park, Jung-Hyun Lee, Fabrication of high performance and durable forward osmosis membranes using mussel-inspired polydopamine-modified polyethylene supports, J. Membr. Sci. 584 (2019) 89-99 (IF: 7.183, Top 2.91% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2019.04.074
+[ P  ] (11) Hyeonjung Kim+, Kiho Park+, Ji Woong Chang, Taeho Lee, Sung Hyun Kim, Dae Ryook Yang, Solubility measurement and recrystallization process design for 1,1,2,2,9,9,10,10-octafluoro[2.2]paracyclophane (AF4) purification, Cryst. Growth Des. 19 (2019) 1748-1755 (+co-first author)
+        LINK: https://doi.org/10.1021/acs.cgd.8b01723
+[ P  ] (10) Jin Kim, Kiho Park**, Seokgeun Jin, Dae Ryook Yang, Process design and operating strategies on a new continuous vaporization system for purification of organic hole-transport material, Chem. Eng. Technol. 42 (2019) 109-118 (**co-corresponding author)
+        LINK: https://doi.org/10.1002/ceat.201700682
+[ P  ] (9) Kiho Park, Heo Hwan, Do Yeon Kim, Dae Ryook Yang, Feasibility study of a forward osmosis/crystallization/reverse osmosis hybrid process with high-temperature operation: Modeling, experiments, and energy consumption, J. Membr. Sci. 555 (2018) 206-219 (IF: 7.015, Top 1.72% journal in Polymer Science)
+        LINK: https://doi.org/10.1016/j.memsci.2018.03.031
+[ P  ] (8) Kiho Park+, Do Yeon Kim+, Dae Ryook Yang, Theoretical analysis of pressure retarded membrane distillation (PRMD) process for simultaneous production of water and electricity, Ind. Eng. Chem. Res. 56 (2017) 14888-14901 (+co-first author)
+        LINK: https://doi.org/10.1021/acs.iecr.7b03642
+[ P  ] (7) Kiho Park, Do Yeon Kim, Dae Ryook Yang, Cost-based feasibility study and sensitivity analysis of a new draw solution assisted reverse osmosis (DSARO) process for seawater desalination, Desalination 422 (2017) 182-193.(IF: 6.603, Top 1.67% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2017.08.026
+[ P  ] (6) Seongmin Lee+, Kiho Park+, Yunkyung Kwon, Tae-Yun Park, Dae Ryook Yang, A modified scaled variable reduced coordinate (SVRC)-quantitative structure property relationship (QSPR) model for predicting liquid viscosity of pure organic compounds, Korean J. Chem. Eng. 34 (2017) 2715-2724 (+co-first author)
+        LINK: https://doi.org/10.1007/s11814-017-0173-3
+[ P  ] (5) Ji Ye Oh, Kiho Park, Yangsoo Kim, Tae-Yun Park, Dae Ryook Yang, A Quantitative Structure-Property Relationship Model for Predicting the Critical Pressures of Organic Compounds Containing Oxygen, Sulfur, and Nitrogen, J. Chem. Eng. Jap. 50 (2017) 397-407
+        LINK: https://doi.org/10.1252/jcej.16we367
+[ P  ] (4) Changseong Bae+, Kiho Park+, Hwan Heo, Dae Ryook Yang, Quantitative estimation of internal concentration polarization in a spiral wound forward osmosis membrane module compared to a flat sheet membrane module, Korean J. Chem. Eng. 34 (2017) 844-853 (+co-first author)
+        LINK: https://doi.org/10.1007/s11814-016-0307-z
+[ P  ] (3) Tewodros Nigatu Bitaw, Kiho Park, Dae Ryook Yang, Optimization on a new hybrid Forward osmosis-Electrodialysis-Reverse osmosis seawater desalination process, Desalination 398 (2016) 265-281 (IF: 5.527, Top 1.7% journal in Water Resources)
+        LINK: https://doi.org/10.1016/j.desal.2016.07.032
+[ P  ] (2) Kiho Park, Do Yeon Kim, Dae Ryook Yang, Operating Strategy for Continuous Multistage Mixed Suspension and Mixed Product Removal (MSMPR) Crystallization Processes Depending on Crystallization Kinetic Parameters, Ind. Eng. Chem. Res. 55 (2016) 7142-7153
+        LINK: https://doi.org/10.1021/acs.iecr.6b01386
+[ P  ] (1) Hyun Jae Jeong, Kiho Park, Dae Ryook Yang, Feasibility study of solvent recycle process in spin-on hard mask material manufacturing system, Korean J. Chem. Eng. 32 (2015) 2375-2383
+        LINK: https://doi.org/10.1007/s11814-015-0093-z

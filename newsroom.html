@@ -1,1 +1,59 @@
-<!doctype html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Newsroom | ECML Lab</title><link rel="stylesheet" href="site.css"></head><body><header><nav class="wrap"><a class="brand" href="index.html"><i>ECML</i> LAB</a><div class="links"><a class="active" href="newsroom.html">Newsroom</a><a href="members.html">Members</a><a href="publications.html">Publications</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div></nav></header><main><section class="page-head"><div class="wrap"><p class="eyebrow">ECML UPDATES</p><h1>Newsroom</h1><p class="lead">Laboratory news, awards, events, and announcements.</p></div></section><section class="wrap page"><div class="editable"><h3>담당자 작성 영역</h3><p>새 소식은 날짜, 제목, 2~3줄 설명, 관련 링크 순서로 추가하세요.</p></div><article class="item"><span class="tag">COMING SOON</span><h3>ECML Lab website launches</h3><p>Research news and laboratory announcements will be published here.</p></article></section></main><footer><div class="wrap">© ECML Lab, Hanyang University</div></footer></body></html>
+---
+layout: page
+title: "Newsroom"
+eyebrow: "ECML UPDATES"
+lead: "Laboratory news, awards, events, and announcements."
+---
+{%- comment -%}
+  글 목록은 _posts/ 를 읽어 자동으로 그린다. 이 파일을 고칠 일은 없다.
+  새 글은 _posts/YYYY-MM-DD-제목.md 파일을 추가하면 최신순으로 올라온다.
+{%- endcomment -%}
+<div class="news-actions">
+  <a class="button" id="new-post-btn"
+     data-repo="{{ site.repository }}" data-branch="{{ site.branch }}"
+     href="https://github.com/{{ site.repository }}/new/{{ site.branch }}?filename=_posts/{{ site.time | date: '%Y-%m-%d' }}-new-post.md"
+     rel="noopener">새 게시물</a>
+  <a class="button-ghost" id="upload-media-btn"
+     data-repo="{{ site.repository }}" data-branch="{{ site.branch }}"
+     href="https://github.com/{{ site.repository }}/upload/{{ site.branch }}/assets/img/news"
+     rel="noopener">사진 업로드</a>
+  <p class="news-hint">
+    사진을 먼저 올린 뒤 글을 쓰면 경로를 바로 넣을 수 있습니다.
+    저장소 쓰기 권한이 필요합니다.
+  </p>
+</div>
+<script src="{{ '/assets/js/newpost.js' | relative_url }}" defer></script>
+
+{%- if site.posts.size > 0 %}
+<ul class="news-list">
+{%- for post in site.posts %}
+  <li class="item news-entry">
+    {%- if post.thumbnail %}
+    <a class="news-thumb" href="{{ post.url | relative_url }}">
+      <img src="{{ post.thumbnail }}" alt="" loading="lazy" width="220" height="150">
+    </a>
+    {%- endif %}
+    <div class="news-body">
+      <span class="tag">{{ post.date | date: "%Y.%m.%d" }}</span>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>
+        {%- if post.description -%}
+          {{ post.description }}
+        {%- else -%}
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
+        {%- endif -%}
+      </p>
+      {%- if post.images and post.images.size > 0 %}
+      <span class="news-count">사진 {{ post.images.size }}장</span>
+      {%- endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ul>
+{%- else %}
+<article class="item">
+  <span class="tag">COMING SOON</span>
+  <h3>ECML Lab website launches</h3>
+  <p>Research news and laboratory announcements will be published here.</p>
+</article>
+{%- endif %}

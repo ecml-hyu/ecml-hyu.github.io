@@ -1,0 +1,160 @@
+# 연구실 구성원 — scripts/parse_members.py 가 구 홈페이지에서 생성.
+#
+# email_user / email_domain
+#   이메일을 평문으로 두지 않기 위해 분리 저장한다.
+#   템플릿에서 JavaScript 로 합쳐 렌더링하므로 HTML 소스에는 주소가 남지 않는다.
+#   YAML 을 직접 고칠 때도 절대 한 줄로 합치지 말 것.
+#
+# group : pi | phd | integrated | master | undergraduate | alumni
+# photo : 로컬 경로. 구 사이트(lh3.googleusercontent.com) 를 참조하지 않는다.
+#         원본 URL 은 scripts/raw/photo_manifest.json 에만 있다.
+# needs_consent : 본인 동의 확인 전까지 템플릿에서 렌더링하지 않는다.
+#                 scripts/consent-check.md 참조.
+
+- name_en: "Kiho Park"
+  name_ko: null
+  group: "pi"
+  degree: null
+  started: null
+  email_user: "kiho138"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/kiho-park.webp"
+  title: "Associate Professor"
+  department: "Department of Chemical Engineering"
+  university: "Hanyang University"
+  tel: "+82-2-2220-0523"
+  research_areas: []
+  education:
+    - "Ph.D. in Chemical and Biological Engineering, Korea University, 2018."
+    - "– through Master and Ph.D. integrated course (Supervisor: Prof. Dae Ryook Yang)"
+    - "B.S. in Chemical and Biological Engineering, Korea University, 2011."
+  experience:
+    - "2024.03~Present: Associate Professor, Department of Chemical Engineering, Hanyang University"
+    - "2023.04~2024.02: Associate Professor, School of Chemical Engineering, Chonnam National University"
+    - "2021.03~2023.03: Assitant Professor, School of Chemical Engineering, Chonnam National University"
+    - "2019.07~2021.01: Research Fellow, Department of Civil Engineering, University of Birmingham"
+    - "2018.11~2019.06: Research Professor, School of Civil, Environmental and Architectural Engineering, Korea University"
+    - "2018.03~2018.10: Research Professor, Department of Chemical and Biological Engineering, Korea University"
+  activities:
+    - "2023.08~Present: Members, Korean Society of Environmental Engineers"
+    - "2022.09~Present: Director, Korean Society of Ultrapure Water"
+    - "2021.03~Present: Members, Korean Institute of Chemical Engineering"
+    - "2021.03~Present: Members, The Korean Society of Industrial and Engineering Chemistry"
+    - "Honors and Awards"
+    - "2023.11: Miwon Award for Early-career Researchers (KSIEC 2023 Fall Meeting)"
+    - "2018.04: Hoimyung Graduate Research Award (KIChE 2017 Fall Meeting)"
+    - "2018.02: 2017 KU Graduate Student Achievement Award (Korea University)"
+    - "2017.08: Best-paper Awarded Student (Korea University)"
+    - "2016.05: Best Poster Presentation Award (ACTS 2016)"
+    - "2015.10: Best Oral Presentation Award (KIChE 2015 Fall Meeting)"
+    - "2012.10: Best Poster Presentation Award (KIChE 2012 Spring Meeting)"
+
+- name_en: "Yinseo Song"
+  name_ko: "송인서"
+  group: "phd"
+  degree: "Ph.D course (2026.03~)"
+  started: "2026.03"
+  email_user: "dlstj54"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/yinseo-song.webp"
+  research_areas:
+    - "Machine learning-based chemical process modeling"
+    - "Forward osmosis and desalination system characterization"
+    - "CCUS thermodynamic modeling"
+
+- name_en: "GunYoung Kim"
+  name_ko: "김건영"
+  group: "integrated"
+  degree: "M.S/Ph.D Integrated course (2023.09~)"
+  started: "2023.09"
+  email_user: "rjsdud2178"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/gunyoung-kim.webp"
+  research_areas:
+    - "Batch RO process modeling"
+    - "HSBRO system modeling and optimization"
+    - "Biodiesel production system modeling and optimization"
+
+- name_en: "Heun Se Kim"
+  name_ko: "김흔세"
+  group: "integrated"
+  degree: "M.S/Ph.D Integrated course (2024.09~)"
+  started: "2024.09"
+  email_user: "rlagmstp"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/heun-se-kim.webp"
+  research_areas:
+    - "LCA-based process evaluation"
+    - "HSBRO system optimization and pilot-scale operation"
+    - "Machine learning-based chemical proces modeling"
+
+- name_en: "Hyowoog Gwak"
+  name_ko: "곽효욱"
+  group: "master"
+  degree: "Master course (2025.03~)"
+  started: "2025.03"
+  email_user: "hyowoog2"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/hyowoog-gwak.webp"
+  research_areas:
+    - "Supply chain optimization"
+    - "CCUS system modeling"
+
+- name_en: "Yunju Kim"
+  name_ko: "김윤주"
+  group: "master"
+  degree: "Master course (2025.03~)"
+  started: "2025.03"
+  email_user: "yunjulike"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/yunju-kim.webp"
+  research_areas:
+    - "Nanofiltration system modeling"
+    - "CCUS system modeling"
+
+- name_en: "Sehwan Yang"
+  name_ko: "양세환"
+  group: "master"
+  degree: "Master course (2026.03~)"
+  started: "2026.03"
+  email_user: "yshwan0415"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/sehwan-yang.webp"
+  research_areas:
+    - "Reinforced learning-based process control"
+
+- name_en: "Minseo Kim"
+  name_ko: "김민서"
+  group: "undergraduate"
+  degree: "B.S course (4rd year)"
+  started: null
+  email_user: "mseokim9999"
+  email_domain: "gmail.com"
+  photo: "/assets/img/members/minseo-kim.webp"
+  research_areas:
+    - "AI-based chemical process modeling"
+    - "Brine valorization/utilization"
+
+- name_en: "Gyu Sang Cho"
+  name_ko: "조규상"
+  group: "alumni"
+  degree: null
+  started: null
+  email_user: null
+  email_domain: null
+  photo: null
+  needs_consent: true
+  former_status: "Undergraduate student"
+  research_areas: []
+
+- name_en: "Suji Son"
+  name_ko: "손수지"
+  group: "alumni"
+  degree: null
+  started: null
+  email_user: null
+  email_domain: null
+  photo: "/assets/img/members/suji-son.webp"
+  needs_consent: true
+  former_status: "Undergraduate student"
+  research_areas: []

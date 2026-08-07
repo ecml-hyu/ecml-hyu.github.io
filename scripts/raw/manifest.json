@@ -1,0 +1,99 @@
+{
+  "fetched_at": "2026-08-07T11:43:44",
+  "base": "https://sites.google.com/view/encpl",
+  "delay_seconds": 1.0,
+  "pages": [
+    {
+      "slug": "people-principle-investigator",
+      "path": "/people/principle-investigator",
+      "url": "https://sites.google.com/view/encpl/people/principle-investigator",
+      "status": 200,
+      "bytes": 152889
+    },
+    {
+      "slug": "people-graduates",
+      "path": "/people/graduates",
+      "url": "https://sites.google.com/view/encpl/people/graduates",
+      "status": 200,
+      "bytes": 179471
+    },
+    {
+      "slug": "people-undergraduates",
+      "path": "/people/undergraduates",
+      "url": "https://sites.google.com/view/encpl/people/undergraduates",
+      "status": 200,
+      "bytes": 140596
+    },
+    {
+      "slug": "people-alumni",
+      "path": "/people/alumni",
+      "url": "https://sites.google.com/view/encpl/people/alumni",
+      "status": 200,
+      "bytes": 138497
+    },
+    {
+      "slug": "publications-scie",
+      "path": "/publications/peer-reviewed-journal-papers-scie",
+      "url": "https://sites.google.com/view/encpl/publications/peer-reviewed-journal-papers-scie",
+      "status": 200,
+      "bytes": 306823
+    },
+    {
+      "slug": "publications-domestic",
+      "path": "/publications/peer-reviewed-journal-papers-domestic",
+      "url": "https://sites.google.com/view/encpl/publications/peer-reviewed-journal-papers-domestic",
+      "status": 200,
+      "bytes": 148107
+    },
+    {
+      "slug": "publications-book-chapters",
+      "path": "/publications/book-chapters",
+      "url": "https://sites.google.com/view/encpl/publications/book-chapters",
+      "status": 200,
+      "bytes": 137123
+    },
+    {
+      "slug": "publications-books",
+      "path": "/publications/books",
+      "url": "https://sites.google.com/view/encpl/publications/books",
+      "status": 200,
+      "bytes": 137624
+    },
+    {
+      "slug": "patents",
+      "path": "/patents",
+      "url": "https://sites.google.com/view/encpl/patents",
+      "status": 200,
+      "bytes": 145970
+    },
+    {
+      "slug": "projects",
+      "path": "/projects",
+      "url": "https://sites.google.com/view/encpl/projects",
+      "status": 200,
+      "bytes": 192759
+    },
+    {
+      "slug": "news",
+      "path": "/news",
+      "url": "https://sites.google.com/view/encpl/news",
+      "status": 200,
+      "bytes": 132303
+    },
+    {
+      "slug": "research",
+      "path": "/research",
+      "url": "https://sites.google.com/view/encpl/research",
+      "status": 200,
+      "bytes": 186510
+    },
+    {
+      "slug": "index",
+      "path": "/",
+      "url": "https://sites.google.com/view/encpl/",
+      "status": 200,
+      "bytes": 137051
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,31 @@
+### publications-scie
+  문단 55 / 번호항목 55 / 링크있음 55
+  헤딩: Peer-reviewed Journal Papers (SCIE) | 2026 | 2025 | 2024 | 2023 (Before HYU) | 2022 | 2021 | Before CNU (~2021)
+    마커: '*'=67  '+'=33  '†'=3
+### publications-domestic
+  문단 3 / 번호항목 3 / 링크있음 3
+  헤딩: Peer-reviewed Journal Papers (Domestic) | 2024 | 2022 (Before HYU) | Before CNU (~2021)
+    마커: '*'=7  '+'=0  '†'=0
+### publications-book-chapters
+  문단 1 / 번호항목 1 / 링크있음 1
+  헤딩: Book Chapters | Before CNU (~2021)
+    마커: '*'=0  '+'=0  '†'=0
+### publications-books
+  문단 1 / 번호항목 1 / 링크있음 1
+  헤딩: Books | 2023
+    마커: '*'=0  '+'=0  '†'=0
+### patents
+  문단 10 / 번호항목 10 / 링크있음 10
+  헤딩: Patents | Submitted patents | Registered patents
+    마커: '*'=0  '+'=0  '†'=0
+### projects
+  문단 31 / 번호항목 0 / 링크있음 0
+  헤딩: Projects | Ongoing projects | 저에너지/고효율/무방류 달성과 물/자원 통합 관리를 위한 고회수율 HSBRO 시스템의 실증 테스트 및 지능형 관리 플랫폼 개발 | 4단계 BK21 탄소중립 첨단소재 교육연구단 | 녹색 융합기술 인재 양성 특성화 대학원 전문인력 양성사업 (포스트플라스틱) | 생산수 계통의 오일제거 및 수처리 복합공정 설비기술 개발 | Terminated projects | 탈탄소 달성 및 높은 지속 가능성을 갖춘 신개념 하이브리드 담수화 공정 기술 개발 | 디지털 트윈 기반 고순도 공업용수 생산 공정의 운영기술 개발 | 10만톤/년급 바이오디젤 생산플랜트 FEED를 위한 공정모사 용역 | 연산2.5만톤급 수산화리튬 결정화기 국산화를 위한 공정수리 모델 개발 | 에너지 효율 및 회수율이 높은 신개념 batch RO 및 hybrid batch RO 공정 개발, 타당성 평가, 최적 운전 조건 탐색
+    (번호없음) (Practical implementation and AI-based design/control platform development of high recovery HSBRO system for low energy/high efficiency/zero liquid di
+    (번호없음) 지원기관: 한국연구재단 (과학기술정보통신부)
+    (번호없음) 연구기간: 2024.04.01. ~ 2029.03.28.
+    마커: '*'=0  '+'=0  '†'=0
+### news
+  문단 0 / 번호항목 0 / 링크있음 0
+  헤딩: News
+    마커: '*'=0  '+'=0  '†'=0

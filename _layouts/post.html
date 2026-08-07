@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section class="page-head"><div class="wrap">
+  <p class="eyebrow"><a href="{{ '/newsroom.html' | relative_url }}">NEWSROOM</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="lead">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+    {%- if page.author %} · {{ page.author }}{% endif -%}
+  </p>
+</div></section>
+<section class="wrap page">
+  <article class="post-body">
+    {{ content }}
+  </article>
+
+  {%- if page.images and page.images.size > 0 %}
+  <div class="gallery">
+    {%- for img in page.images %}
+    <a class="gallery-item" href="{{ img }}" target="_blank" rel="noopener">
+      <img src="{{ img }}" alt="{{ page.title }} 사진 {{ forloop.index }}" loading="lazy">
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {%- if page.attachments and page.attachments.size > 0 %}
+  <div class="attachments">
+    <h3>첨부</h3>
+    <ul>
+      {%- for f in page.attachments %}
+      <li><a href="{{ f.url | default: f }}" rel="noopener">{{ f.name | default: f }}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endif %}
+
+  <p class="back-link"><a href="{{ '/newsroom.html' | relative_url }}">← 뉴스룸으로</a></p>
+</section>

@@ -1,0 +1,35 @@
+[h1] Graduates
+[p] Ph.D course
+[h2] 송인서 (Yinseo Song)
+[p] Degree  Ph.D course (2026.03~)
+[p] Contact  dlstj54@hanyang.ac.kr
+[p] Research areaMachine learning-based chemical process modeling
+[p] Forward osmosis and desalination system characterization
+[p] CCUS thermodynamic modeling
+[h2] 김건영 (GunYoung Kim)
+[p] Degree  M.S/Ph.D Integrated course (2023.09~)
+[p] Contact  rjsdud2178@hanyang.ac.kr
+[p] Research areaBatch RO process modeling
+[p] HSBRO system modeling and optimization
+[p] Biodiesel production system modeling and optimization
+[h2] 김흔세 (Heun Se Kim)
+[p] Degree  M.S/Ph.D Integrated course (2024.09~)
+[p] Contact  rlagmstp@hanyang.ac.kr
+[p] Research areaLCA-based process evaluation
+[p] HSBRO system optimization and pilot-scale operation
+[p] Machine learning-based chemical proces modeling
+[p] Master course
+[h2] 김윤주 (Yunju Kim)
+[p] Degree  Master course (2025.03~)
+[p] Contact  yunjulike@hanyang.ac.kr
+[p] Research areaNanofiltration system modeling
+[p] CCUS system modeling
+[h2] 곽효욱 (Hyowoog Gwak)
+[p] Degree  Master course (2025.03~)
+[p] Contact  hyowoog2@hanyang.ac.kr
+[p] Research areaSupply chain optimization
+[p] CCUS system modeling
+[h2] 양세환 (Sehwan Yang)
+[p] Degree  Master course (2026.03~)
+[p] Contact  yshwan0415@hanyang.ac.kr
+[p] Research areaReinforced learning-based process control
