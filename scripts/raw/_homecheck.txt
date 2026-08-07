@@ -1,0 +1,21 @@
+홈에서 쓰는 클래스 19개
+CSS 에 정의 없는 클래스: 없음
+
+=== 히어로 관련 클래스 정의 위치 ===
+  .hero             site.css
+  .spline-hero      site.css, intro-spline.css
+  .spline-stage     site.css, intro-spline.css
+  .water-wash       site.css, intro-spline.css
+  .hero-copy        site.css
+  .eyebrow          site.css
+  .intro            site.css, intro-spline.css
+  .spline-intro     intro-spline.css
+  .intro-spline     intro-spline.css
+  .intro-vignette   intro-spline.css
+  .intro-copy       site.css, intro-spline.css
+
+=== 홈 본문 텍스트 ===
+  Modeling is not challenge! ECML develops modeling and intelligent technologies for desalination and sustainable water systems. Explore our research EXPLORE ECML Research for resilient water. Research Research themes, methods, and laboratory directions. Projects Current and completed research projects. Publications Journal articles, conferences, and reports.
+
+=== 인트로 텍스트 ===
+  ECO-FRIENDLY CHEMICAL PROCESS MODELING LABORATORY Modeling a cleaner future. Sustainable chemistry, intelligently engineered. Skip introduction
