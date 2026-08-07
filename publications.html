@@ -25,10 +25,6 @@ lead: "Journal articles, conference papers, and technical reports from ECML."
 {%- assign books = site.data.publications | where: "type", "book" -%}
 {%- assign etc_count = domestic.size | plus: chapters.size | plus: books.size -%}
 
-<p class="pub-summary">
-  논문 <b>{{ site.data.publications.size }}</b>편 (SCIE {{ scie.size }}편)
-  {%- if site.data.patents.size > 0 %} · 특허 <b>{{ site.data.patents.size }}</b>건{% endif %}
-</p>
 
 <div class="pub-tabs" role="tablist" aria-label="Publications categories">
   <button class="pub-tab" role="tab" id="tab-scie" aria-controls="panel-scie" aria-selected="true">
