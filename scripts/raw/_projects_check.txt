@@ -1,0 +1,50 @@
+[ongo] 4단계 BK21 탄소중립 첨단소재 교육연구단
+    EN   : Education & research center for advanced materials toward carbon neutrality
+    기관 : 한국연구재단 / 과학기술정보통신부
+    기간 : 2025.03.01 ~ 2027.08.31
+
+[ongo] 저에너지/고효율/무방류 달성과 물/자원 통합 관리를 위한 고회수율 HSBRO 시스템의 실증 테스트 및 지능형 관리 플랫폼 개발
+    EN   : Practical implementation and AI-based design/control platform development of high recovery HSBRO sys
+    기관 : 한국연구재단 / 과학기술정보통신부
+    기간 : 2024.04.01 ~ 2029.03.28
+
+[ongo] 녹색 융합기술 인재 양성 특성화 대학원 전문인력 양성사업 (포스트플라스틱)
+    EN   : Graduate students resource development program specialized in green convergence technology: post-pla
+    기관 : 한국환경산업기술원 / 환경부
+    기간 : 2024.03.01 ~ 2025.11.30
+
+[ongo] 생산수 계통의 오일제거 및 수처리 복합공정 설비기술 개발
+    EN   : Development of oil sand process affected water reuse and zero liquid discharge system
+    역할 : 공동7: 역삼투 조합 증발농축 공정 설계 및 운영지원 최적화 모델 및 성능평가
+    기관 : 국토교통과학기술진흥원 / 국토교통부
+    기간 : 2022.04.01 ~ 2025.12.31
+
+[term] 10만톤/년급 바이오디젤 생산플랜트 FEED를 위한 공정모사 용역
+    EN   : Process simulation for FEED of 100,000 tons/year biodiesel production plant
+    기관 : 한국에너지기술연구원
+    기간 : 2024.11.21 ~ 2024.12.17
+
+[term] 탈탄소 달성 및 높은 지속 가능성을 갖춘 신개념 하이브리드 담수화 공정 기술 개발
+    EN   : Development of new hybrid desalination systems for zero carbon emission and high sustainability
+    기관 : 한양대학교
+    기간 : 2024.03.01 ~ 2025.02.28
+
+[term] 연산2.5만톤급 수산화리튬 결정화기 국산화를 위한 공정수리 모델 개발
+    EN   : Process model development for LiOH recrystallization implementation for a large-scale system at 2500
+    기관 : 포스코이앤씨
+    기간 : 2024.01.01 ~ 2024.11.30
+
+[term] CO2 to Olefin 모델링 최적화를 위한 공정 시뮬레이션 모델 개발, 분석 및 최적화 연구
+    EN   : Process model development, analysis, and optimization for CO2 to olefin system
+    기관 : GS건설
+    기간 : 2023.07.01 ~ 2023.11.30
+
+[term] 디지털 트윈 기반 고순도 공업용수 생산 공정의 운영기술 개발
+    EN   : Development of operational technology for ultra-pure water process based on digital twin
+    기관 : 한국환경산업기술원 / 환경부
+    기간 : 2021.06.30 ~ 2024.12.31
+
+[term] 에너지 효율 및 회수율이 높은 신개념 batch RO 및 hybrid batch RO 공정 개발, 타당성 평가, 최적 운전 조건 탐색
+    EN   : Process development, feasibility study, and optimization of novel batch reverse osmosis (RO) and hyb
+    기관 : 한국연구재단 / 과학기술정보통신부
+    기간 : 2021.06.01 ~ 2024.02.28

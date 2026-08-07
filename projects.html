@@ -4,4 +4,46 @@ title: "Projects"
 eyebrow: "ECML IN ACTION"
 lead: "Research collaborations and funded projects advancing water intelligence."
 ---
-<div class="editable"><h3>담당자 작성 영역</h3><p>프로젝트명 · 기간 · 지원기관 · 참여자 · 한 줄 설명 · 성과 링크를 추가하세요.</p></div><article class="item"><span class="tag">ONGOING</span><h3>Project portfolio will be added here</h3><p>Current and completed projects can be grouped by year or theme.</p></article>
+{%- comment -%}
+  목록은 _data/projects.yml 에서 자동으로 그린다. 이 파일은 고칠 일이 없다.
+  과제를 추가하거나 고치려면 _data/projects.yml 만 편집하면 된다.
+
+  진행중 과제가 먼저 오고, 각 묶음 안에서는 시작일 최신순이다.
+{%- endcomment -%}
+<div class="editable">
+  <h3>담당자 작성 영역</h3>
+  <p>과제 사진이나 추가 설명이 필요하면 이 자리에 넣으세요.
+     과제 목록은 <code>_data/projects.yml</code> 에서 관리합니다.</p>
+</div>
+
+{%- assign groups = "ongoing:Ongoing,terminated:Terminated" | split: "," -%}
+{%- for g in groups -%}
+{%- assign gp = g | split: ":" -%}
+{%- assign items = site.data.projects | where: "status", gp[0] -%}
+{%- if items.size > 0 %}
+<h2 class="pub-group">{{ gp[1] }} <span class="pub-count">{{ items.size }}</span></h2>
+<ul class="proj-list">
+{%- for p in items %}
+  <li class="proj-item">
+    <div class="proj-period">
+      <span class="tag">{{ p.start | slice: 0, 4 }}</span>
+      <span class="proj-dates">{{ p.start }}{% if p.end %} ~ {{ p.end }}{% endif %}</span>
+    </div>
+    <div class="proj-body">
+      <h3 class="proj-title">{{ p.title_ko | escape }}</h3>
+      {%- if p.title_en %}
+      <p class="proj-title-en">{{ p.title_en | escape }}</p>
+      {%- endif %}
+      {%- if p.role %}
+      <p class="proj-role">{{ p.role | escape }}</p>
+      {%- endif %}
+      <p class="proj-funder">
+        <span class="pub-if">{{ p.funder | escape }}</span>
+        {%- if p.ministry %}<span class="pub-rank">{{ p.ministry | escape }}</span>{% endif -%}
+      </p>
+    </div>
+  </li>
+{%- endfor %}
+</ul>
+{%- endif -%}
+{%- endfor %}
