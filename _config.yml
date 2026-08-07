@@ -12,15 +12,18 @@ og_image: /assets/img/hero.webp
 repository: ecml-hyu/ecml-hyu.github.io
 branch: main
 
-# 뉴스 글 주소: /newsroom/2026/08/07/title/
-permalink: /newsroom/:year/:month/:day/:title/
-
+# 뉴스 글 주소는 아래 defaults 안에서만 지정한다.
+#
+# 주의: 최상위에 permalink: 를 두면 게시물뿐 아니라 '페이지' URL 까지 바뀐다.
+#       research.html 이 /research/ 로 옮겨가 기존 주소가 전부 404 가 된다.
+#       (실제로 한 번 그렇게 배포됐다.) 반드시 type: posts 스코프 안에 둘 것.
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+      permalink: /newsroom/:year/:month/:day/:title/
 
 # GitHub Pages 화이트리스트 플러그인만 사용
 plugins:
