@@ -169,7 +169,6 @@
   photo: null
   photo_slug: "gyu-sang-cho"
   hobby: ""
-  needs_consent: true
   former_status: "Undergraduate student"
   research_areas: []
 
@@ -183,6 +182,5 @@
   photo: null
   photo_slug: "suji-son"
   hobby: ""
-  needs_consent: true
   former_status: "Undergraduate student"
   research_areas: []

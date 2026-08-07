@@ -126,3 +126,44 @@ bundle exec jekyll build      # 결과물이 _site/ 에 생성됨
 `main` 에 push 하면 GitHub Pages 가 자동으로 빌드·배포합니다 (보통 1~2분).
 빌드가 실패하면 **이전 버전이 그대로 유지**되므로 사이트가 깨지지는 않습니다.
 배포 상태는 저장소의 Deployments 탭에서 확인할 수 있습니다.
+
+---
+
+## 구성원 사진 넣기
+
+사진들을 아무 폴더에나 모아두고 한 번만 실행하면 됩니다.
+
+```bash
+python scripts/add_member_photos.py "C:/사진들"
+```
+
+정사각형 600x600 WebP 로 변환해서 `assets/img/members/` 에 넣고,
+`_data/members.yml` 의 `photo` 항목까지 자동으로 채웁니다.
+
+**파일 이름**에 아래 중 아무거나 들어있으면 그 사람으로 인식합니다.
+
+| 방식 | 예시 |
+|---|---|
+| photo_slug | `kiho-park.jpg` |
+| 영문 이름 | `GunYoung Kim.png` |
+| 한글 이름 | `송인서.jpg` |
+
+이름을 못 맞춘 파일은 건너뛰고 목록으로 알려줍니다.
+바꾸기 전에 확인만 하려면 `--dry-run`, 이미 있는 사진을 갈아끼우려면 `--overwrite` 를 붙입니다.
+
+### 손으로 넣는 경우
+
+1. 이미지를 `assets/img/members/<photo_slug>.webp` 로 올립니다
+   (`photo_slug` 는 `_data/members.yml` 에 사람마다 적혀 있습니다)
+2. 그 사람의 `photo:` 를 `null` 에서 `/assets/img/members/<slug>.webp` 로 바꿉니다
+
+`photo` 가 `null` 인 동안에는 이름 이니셜이 들어간 원형 자리표시자가 나옵니다.
+**실제 파일이 없는 경로를 적으면 사이트에 깨진 이미지가 뜨니 주의하세요.**
+
+## 구성원 정보 고치기
+
+`_data/members.yml` 만 고치면 됩니다. `members.html` 은 건드릴 필요가 없습니다.
+`hobby` 는 비워 두면 카드에 나오지 않습니다.
+
+> `scripts/parse_members.py` 를 다시 돌리면 이 파일이 구 홈페이지 내용으로
+> 덮어써집니다. 그래서 `--force` 없이는 실행되지 않게 해 두었습니다.

@@ -33,6 +33,14 @@ PAGES = [
 failures = []
 photo_manifest = {}
 
+# 본인 동의를 확인한 졸업생. 여기 있으면 needs_consent 를 붙이지 않는다.
+# (파서를 --force 로 다시 돌려도 동의 확인 결과가 유지되도록 여기에 둔다)
+# 확인일: 2026-08-07
+CONSENT_GRANTED = {
+    "Suji Son",
+    "Gyu Sang Cho",
+}
+
 
 def norm(s):
     return re.sub(r"[ \t]+", " ", (s or "").replace("\xa0", " ")).strip()
@@ -368,7 +376,7 @@ def main():
         m["photo_slug"] = slug           # 사진을 올릴 때 쓸 파일명
         if m["group"] != "pi":
             m.setdefault("hobby", "")    # 본인이 직접 채우는 항목
-        if m["group"] == "alumni":
+        if m["group"] == "alumni" and m["name_en"] not in CONSENT_GRANTED:
             m["needs_consent"] = True
 
     order = {"pi": 0, "phd": 1, "integrated": 2, "master": 3, "undergraduate": 4, "alumni": 5}
