@@ -1,0 +1,14 @@
+총 60건
+타입별: {'journal-scie': 55, 'journal-domestic': 3, 'book': 1, 'book-chapter': 1}
+연도 범위: 2014 ~ 2026
+연도 없음: 1건
+
+구성원 이름 매칭 (굵게 표시할 대상):
+  Kiho Park        60편
+  GunYoung Kim     5편
+  Yinseo Song      4편
+  Heun Se Kim      2편
+  Gyu Sang Cho     2편
+  Suji Son         1편
+
+매칭 안 되는 저자 수: 106명 (외부 공저자)
