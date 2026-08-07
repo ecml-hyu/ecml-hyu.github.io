@@ -1,14 +1,6 @@
 
-=== parse_members.py @ 2026-08-07T11:54:35 ===
+=== parse_publications.py @ 2026-08-07T14:03:54 ===
   (실패 항목 없음)
 
-=== download_photos.py @ 2026-08-07T11:56:00 ===
-  사진 gunyoung-kim : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQUyg7ANKXyUnvugGnZu9y_6PRZJ7fRwIkD)
-  사진 heun-se-kim : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQU09mPbfNg0184GY9gAb8WKO1sbE0f6zdO)
-  사진 hyowoog-gwak : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQWljC62sLmsIG7jn6NMjPD2kF20MIC7PiW)
-  사진 kiho-park : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQXe5XOau4tp_s7Ek-_chPzTuCqAG_W0IBf)
-  사진 minseo-kim : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQUeflsqfuk2sQHtGQKufd3b-vgHGA1IBAE)
-  사진 sehwan-yang : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQUeflsqfuk2sQHtGQKufd3b-vgHGA1IBAE)
-  사진 suji-son : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQWYTLzZF-bCiRVbaTvwc_M2vdhmKp8_bKF)
-  사진 yinseo-song : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQV5_bgta_DZiTacub5Dn4D-z1owvQA1_of)
-  사진 yunju-kim : HTTP 403 (https://lh3.googleusercontent.com/sitesv/AG8ngQXDVPb6YPDTaVLXTL8Ky78ec_G07Qju5zg)
+=== parse_patents.py @ 2026-08-07T14:03:54 ===
+  (실패 항목 없음)

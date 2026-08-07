@@ -807,7 +807,7 @@
 
 - id: 32
   type: journal-scie
-  title: "Prediction of permeate water flux in forward osmosis (FO) desalination system using tree-based ensemble machine learning models"
+  title: "Prediction of permeate water flux in forward osmosis desalination system using tree-based ensemble machine learning models"
   year: 2022
   authors:
     - name: "Yinseo Song"
@@ -1150,9 +1150,37 @@
   section: "Before CNU (~2021)"
   impact_factor: 11.211
 
+- id: 1
+  type: book-chapter
+  title: "Fundamentals and application of reverse osmosis membrane processes"
+  year: 2021
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: false
+      co_first: false
+    - name: "Jihun Lim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Seungkwan Hong"
+      corresponding: false
+      co_first: false
+  journal: "Osmosis Engineering"
+  volume: null
+  issue: null
+  pages: "17-52"
+  publisher: "Elsevier"
+  doi: "10.1016/B978-0-12-821016-1.00002-4"
+  url: null
+  journal_rank: null
+  section: "Before CNU (~2021)"
+  impact_factor: null
+
 - id: 21
   type: journal-scie
-  title: "Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system a free piston for brackish water treatment"
+  title: "Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system using a free piston for brackish water treatment"
   year: 2020
   authors:
     - name: "Kiho Park"
@@ -1382,7 +1410,7 @@
 
 - id: 13
   type: journal-scie
-  title: "A comprehensive review on energy consumption of seawater reverse osmosis desalination plants"
+  title: "A comprehensive review of energy consumption of seawater reverse osmosis desalination plants"
   year: 2019
   authors:
     - name: "Jungbin Kim"
@@ -1487,7 +1515,7 @@
 
 - id: 10
   type: journal-scie
-  title: "Process design and operating strategies on a new continuous vaporization system for purification of organic hole-transport material"
+  title: "Process Design and Operating Strategies for a Continuous Vaporization System for Purifying Organic Hole-Transport Materials"
   year: 2019
   authors:
     - name: "Jin Kim"
@@ -1785,34 +1813,6 @@
   pages: "13-21"
   publisher: null
   doi: "10.7464/ksct.2014.20.1.013"
-  url: null
-  journal_rank: null
-  section: "Before CNU (~2021)"
-  impact_factor: null
-
-- id: 1
-  type: book-chapter
-  title: "Fundamentals and application of reverse osmosis membrane processes"
-  year: null
-  authors:
-    - name: "Jungbin Kim"
-      corresponding: false
-      co_first: false
-    - name: "Jihun Lim"
-      corresponding: false
-      co_first: false
-    - name: "Kiho Park"
-      corresponding: false
-      co_first: false
-    - name: "Seungkwan Hong"
-      corresponding: false
-      co_first: false
-  journal: "Osmosis Engineering"
-  volume: null
-  issue: null
-  pages: "17-52"
-  publisher: "Elsevier"
-  doi: "10.1016/B978-0-12-821016-1.00002-4"
   url: null
   journal_rank: null
   section: "Before CNU (~2021)"

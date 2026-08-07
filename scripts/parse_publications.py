@@ -30,6 +30,40 @@ SOURCES = [
 
 failures = []
 
+# CrossRef(https://api.crossref.org) 대조로 확인된 원본 오류 교정.
+# 구 홈페이지 원문이 틀렸고 출판사 등록 정보가 맞는 경우만 넣는다.
+# 여기에 두는 이유: YAML 만 고치면 이 스크립트를 다시 돌릴 때 되돌아간다.
+#
+# 검증 로그: scripts/mismatch.log
+# 일부러 고치지 않은 것:
+#   ("book", 1) — CrossRef 가 부제를 잘라먹었다. 원본 제목이 더 완전하므로 유지.
+CORRECTIONS = {
+    ("journal-scie", 21): {
+        # 원본에 'using' 이 빠져 있었다 ("system a free piston")
+        "title": "Design, modelling and optimisation of a batch reverse osmosis (RO) "
+                 "desalination system using a free piston for brackish water treatment",
+    },
+    ("journal-scie", 13): {
+        # 'review on' -> 출판 제목은 'review of'
+        "title": "A comprehensive review of energy consumption of seawater reverse "
+                 "osmosis desalination plants",
+    },
+    ("journal-scie", 32): {
+        # 원본이 '(FO)' 를 임의로 덧붙였다
+        "title": "Prediction of permeate water flux in forward osmosis desalination "
+                 "system using tree-based ensemble machine learning models",
+    },
+    ("journal-scie", 10): {
+        # 출판 제목과 상당히 다르다 (표기법, 단수/복수, 전치사)
+        "title": "Process Design and Operating Strategies for a Continuous Vaporization "
+                 "System for Purifying Organic Hole-Transport Materials",
+    },
+    ("book-chapter", 1): {
+        # 원본에 연도 표기가 아예 없었다. CrossRef 기준 2021.
+        "year": 2021,
+    },
+}
+
 
 def norm(s):
     """공백/특수문자 정규화. Google Sites 는 NBSP 와 유니코드 대시를 섞어 쓴다."""
@@ -329,6 +363,29 @@ def main():
         items = parse_page(slug, pub_type)
         per_page.append((slug, len(items), len(failures) - before_fail))
         all_items.extend(items)
+
+    # CrossRef 로 확인된 원본 오류 교정
+    applied = 0
+    for it in all_items:
+        fix = CORRECTIONS.get((it["type"], it["id"]))
+        if fix:
+            for k, v in fix.items():
+                if it.get(k) != v:
+                    it[k] = v
+                    applied += 1
+    print("CrossRef 교정 %d개 항목 적용" % applied)
+
+    # 교정으로 해결된 항목은 실패 목록에서 뺀다.
+    # (파싱 단계에서 '연도 확인 불가' 로 기록됐지만 교정이 값을 채워준 경우)
+    for (typ, pid), fix in CORRECTIONS.items():
+        if "year" not in fix:
+            continue
+        slug = [s for s, t in SOURCES if t == typ]
+        if not slug:
+            continue
+        stale = "%s #%d : 연도 확인 불가" % (slug[0], pid)
+        while stale in failures:
+            failures.remove(stale)
 
     # 연도 내림차순, 같은 해 안에서는 원본 순번 내림차순
     all_items.sort(key=lambda x: (-(x["year"] or 0), -x["id"]))

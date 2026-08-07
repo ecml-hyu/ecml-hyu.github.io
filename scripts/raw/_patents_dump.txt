@@ -1,0 +1,13 @@
+[h1] Patents
+[h1] Submitted patents  LINK:#h.rxc6x4k4vxh3
+[p] (9) Desalination system and method (Patent #US20230406730A1, US Patent, submitted)  LINK:https://patents.google.com/patent/US20230406730A1/en
+[h1] Registered patents  LINK:#h.j6yhuaib4wn1
+[p] (9) Desalination system and method (Patent #CN116635336B, China, registered)  LINK:https://patents.google.com/patent/CN116635336B/en
+[p] (8) SYSTEM FOR MEASURING PROPERTIES OF MASS TRANSPORT BEHAVIOR IN MEMBRANE AND SOLUTIONS (Patent #10-2652138, Korea, registered)  LINK:https://doi.org/10.8080/1020230095238
+[p] (7) SYSTEM FOR MEASURING PROPERTIES OF MASS TRANSPORT BEHAVIOR IN MEMBRANE AND SOLUTIONS (Patent #US11474021, US Patent, registered)  LINK:https://patents.google.com/patent/US20210055199A1/en
+[p] (6) Desalination system and method (PCT/GB2021/052880, PCT, registered)  LINK:https://patentscope.wipo.int/search/ko/detail.jsf?docId=WO2022096895
+[p] (5) A fresh water system capable of producing hydrogen gas (Patent #10-2328974, Korea, registered)  LINK:https://doi.org/10.8080/1020210007630
+[p] (4) Manufacturing method for high purity, high yield 1,1,2,2,9,9,10,10-octafluoro [2.2] paracyclophane (AF4) using cooling recrystallization separation technique (Patent #10-2231931, Korea, registered)  LINK:https://doi.org/10.8080/1020190027930
+[p] (3) A fresh water system capable of producing hydrogen gas (Patent #10-2207458, Korea, registered)  LINK:https://doi.org/10.8080/1020190033654
+[p] (2) Energy-efficient method of desalination and desalination apparatus (Patent #10-1903771, Korea, registered)  LINK:https://doi.org/10.8080/1020170060681
+[p] (1) Method of desalination using reverse osmosis continuous process and draw solution, and desalination apparatus (Patent #10-1737923, Korea, registered)  LINK:https://doi.org/10.8080/1020150083985

@@ -1,0 +1,8 @@
+journal-scie       #21 title = Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system using a free piston for brackish water treatment
+journal-scie       #13 title = A comprehensive review of energy consumption of seawater reverse osmosis desalination plants
+journal-scie       #32 title = Prediction of permeate water flux in forward osmosis desalination system using tree-based ensemble machine learning models
+journal-scie       #10 title = Process Design and Operating Strategies for a Continuous Vaporization System for Purifying Organic Hole-Transport Materials
+book-chapter       #1  year = 2021
+book               #1  title = Seawater Reverse Osmosis (SWRO) Desalination: Energy consumption in plants, advanced low-energy technologies, and future developments for improving energy efficiency
+
+연도 없는 항목: []

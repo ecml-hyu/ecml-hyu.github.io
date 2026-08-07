@@ -1,0 +1,90 @@
+# 특허 목록 — scripts/parse_patents.py 가 구 홈페이지에서 생성.
+#
+# status       : registered(등록) / submitted(출원)
+# number       : 특허번호. 한국은 10-XXXXXXX, 미국은 USXXXXXXX 형태
+# jurisdiction : Korea / US Patent / China / PCT
+# id           : 구 홈페이지의 원본 순번.
+#                주의 — 출원/등록 섹션별로 따로 매겨져 (9)번이 둘 있다.
+#                고유 식별은 number 로 할 것.
+# url          : 특허 원문 링크. 한국 건은 doi.org 형태지만 실제 DOI 가 아니라
+#                KIPRIS 출원번호 리다이렉트다.
+
+- id: 9
+  title: "Desalination system and method"
+  number: "CN116635336B"
+  jurisdiction: "China"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://patents.google.com/patent/CN116635336B/en"
+
+- id: 8
+  title: "SYSTEM FOR MEASURING PROPERTIES OF MASS TRANSPORT BEHAVIOR IN MEMBRANE AND SOLUTIONS"
+  number: "10-2652138"
+  jurisdiction: "Korea"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://doi.org/10.8080/1020230095238"
+
+- id: 7
+  title: "SYSTEM FOR MEASURING PROPERTIES OF MASS TRANSPORT BEHAVIOR IN MEMBRANE AND SOLUTIONS"
+  number: "US11474021"
+  jurisdiction: "US Patent"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://patents.google.com/patent/US20210055199A1/en"
+
+- id: 6
+  title: "Desalination system and method"
+  number: "PCT/GB2021/052880"
+  jurisdiction: "PCT"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://patentscope.wipo.int/search/ko/detail.jsf?docId=WO2022096895"
+
+- id: 5
+  title: "A fresh water system capable of producing hydrogen gas"
+  number: "10-2328974"
+  jurisdiction: "Korea"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://doi.org/10.8080/1020210007630"
+
+- id: 4
+  title: "Manufacturing method for high purity, high yield 1,1,2,2,9,9,10,10-octafluoro [2.2] paracyclophane (AF4) using cooling recrystallization separation technique"
+  number: "10-2231931"
+  jurisdiction: "Korea"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://doi.org/10.8080/1020190027930"
+
+- id: 3
+  title: "A fresh water system capable of producing hydrogen gas"
+  number: "10-2207458"
+  jurisdiction: "Korea"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://doi.org/10.8080/1020190033654"
+
+- id: 2
+  title: "Energy-efficient method of desalination and desalination apparatus"
+  number: "10-1903771"
+  jurisdiction: "Korea"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://doi.org/10.8080/1020170060681"
+
+- id: 1
+  title: "Method of desalination using reverse osmosis continuous process and draw solution, and desalination apparatus"
+  number: "10-1737923"
+  jurisdiction: "Korea"
+  status: "registered"
+  section: "Registered patents"
+  url: "https://doi.org/10.8080/1020150083985"
+
+- id: 9
+  title: "Desalination system and method"
+  number: "US20230406730A1"
+  jurisdiction: "US Patent"
+  status: "submitted"
+  section: "Submitted patents"
+  url: "https://patents.google.com/patent/US20230406730A1/en"

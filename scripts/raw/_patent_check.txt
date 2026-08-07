@@ -1,0 +1,13 @@
+[reg] #9  CN116635336B       China        Desalination system and method
+[reg] #8  10-2652138         Korea        SYSTEM FOR MEASURING PROPERTIES OF MASS TRANSPORT BEHAVIOR IN 
+[reg] #7  US11474021         US Patent    SYSTEM FOR MEASURING PROPERTIES OF MASS TRANSPORT BEHAVIOR IN 
+[reg] #6  PCT/GB2021/052880  PCT          Desalination system and method
+[reg] #5  10-2328974         Korea        A fresh water system capable of producing hydrogen gas
+[reg] #4  10-2231931         Korea        Manufacturing method for high purity, high yield 1,1,2,2,9,9,1
+[reg] #3  10-2207458         Korea        A fresh water system capable of producing hydrogen gas
+[reg] #2  10-1903771         Korea        Energy-efficient method of desalination and desalination appar
+[reg] #1  10-1737923         Korea        Method of desalination using reverse osmosis continuous proces
+[sub] #9  US20230406730A1    US Patent    Desalination system and method
+
+번호 중복 여부: 없음
+URL 없는 항목 : []

@@ -15,9 +15,10 @@ lead: "Journal articles, conference papers, and technical reports from ECML."
 {%- assign groups = "journal-scie:Peer-reviewed Journal Papers (SCIE),journal-domestic:Peer-reviewed Journal Papers (Domestic),book-chapter:Book Chapters,book:Books" | split: "," -%}
 
 <p class="pub-summary">
-  총 <b>{{ site.data.publications.size }}</b>편
+  논문 <b>{{ site.data.publications.size }}</b>편
   {%- assign scie = site.data.publications | where: "type", "journal-scie" -%}
-  {%- if scie.size > 0 %} · SCIE {{ scie.size }}편{% endif %}
+  {%- if scie.size > 0 %} (SCIE {{ scie.size }}편){% endif %}
+  {%- if site.data.patents.size > 0 %} · 특허 <b>{{ site.data.patents.size }}</b>건{% endif %}
 </p>
 
 {%- for g in groups -%}
@@ -72,6 +73,39 @@ lead: "Journal articles, conference papers, and technical reports from ECML."
         {%- if p.doi %}<a class="pill" href="https://doi.org/{{ p.doi }}" rel="noopener">DOI</a>{% endif -%}
         {%- if p.url %}<a class="pill" href="{{ p.url }}" rel="noopener">Publisher</a>{% endif -%}
       </p>
+      {%- endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ol>
+{%- endif -%}
+{%- endfor %}
+
+{%- comment -%}
+  특허는 _data/patents.yml 에서 그린다. 등록/출원 두 그룹으로 나눈다.
+  순번(id)이 그룹별로 따로 매겨져 있어 (9)번이 둘 있다. 고유값은 number 다.
+{%- endcomment -%}
+{%- assign patent_groups = "registered:Patents (Registered),submitted:Patents (Submitted)" | split: "," -%}
+{%- for g in patent_groups -%}
+{%- assign gp = g | split: ":" -%}
+{%- assign pats = site.data.patents | where: "status", gp[0] -%}
+{%- if pats.size > 0 %}
+<h2 class="pub-group">{{ gp[1] }} <span class="pub-count">{{ pats.size }}</span></h2>
+<ol class="pub-list">
+{%- for pt in pats %}
+  <li class="pub-item">
+    <span class="pub-id">{{ pt.id }}</span>
+    <div class="pub-body">
+      <p class="pub-title">
+        {%- if pt.url -%}<a href="{{ pt.url }}" rel="noopener">{{ pt.title }}</a>{%- else -%}{{ pt.title }}{%- endif -%}
+      </p>
+      <p class="pub-venue">{{ pt.number }}</p>
+      <p class="pub-metrics">
+        <span class="pub-if">{{ pt.status }}</span>
+        {%- if pt.jurisdiction %}<span class="pub-rank">{{ pt.jurisdiction }}</span>{% endif -%}
+      </p>
+      {%- if pt.url %}
+      <p class="pub-links"><a class="pill" href="{{ pt.url }}" rel="noopener">특허 원문</a></p>
       {%- endif %}
     </div>
   </li>

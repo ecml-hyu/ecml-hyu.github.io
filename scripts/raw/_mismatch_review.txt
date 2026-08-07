@@ -1,0 +1,29 @@
+--- journal-scie #21 (doi 10.1016/j.desal.2020.114625) ---
+  원본 제목  : Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system a free piston for brackish water treatment
+  CrossRef   : Design, modelling and optimisation of a batch reverse osmosis (RO) desalination system using a free piston for brackish water treatment
+  원본 연도  : 2020   CrossRef 연도: 2020
+
+--- journal-scie #13 (doi 10.1016/j.apenergy.2019.113652) ---
+  원본 제목  : A comprehensive review on energy consumption of seawater reverse osmosis desalination plants
+  CrossRef   : A comprehensive review of energy consumption of seawater reverse osmosis desalination plants
+  원본 연도  : 2019   CrossRef 연도: 2019
+
+--- journal-scie #32 (doi 10.5004/dwt.2022.29110) ---
+  원본 제목  : Prediction of permeate water flux in forward osmosis (FO) desalination system using tree-based ensemble machine learning models
+  CrossRef   : Prediction of permeate water flux in forward osmosis desalination system using tree-based ensemble machine learning models
+  원본 연도  : 2022   CrossRef 연도: 2022
+
+--- journal-scie #10 (doi 10.1002/ceat.201700682) ---
+  원본 제목  : Process design and operating strategies on a new continuous vaporization system for purification of organic hole-transport material
+  CrossRef   : Process Design and Operating Strategies for a Continuous Vaporization System for Purifying Organic Hole‐Transport Materials
+  원본 연도  : 2019   CrossRef 연도: 2019
+
+--- book #1 (doi 10.2166/9781789061215) ---
+  원본 제목  : Seawater Reverse Osmosis (SWRO) Desalination: Energy consumption in plants, advanced low-energy technologies, and future developments for improving energy efficiency
+  CrossRef   : Seawater Reverse Osmosis (SWRO) Desalination
+  원본 연도  : 2023   CrossRef 연도: 2023
+
+--- book-chapter #1 (doi 10.1016/B978-0-12-821016-1.00002-4) ---
+  원본 제목  : Fundamentals and application of reverse osmosis membrane processes
+  CrossRef   : Fundamentals and application of reverse osmosis membrane processes
+  원본 연도  : None   CrossRef 연도: 2021
