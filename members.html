@@ -43,10 +43,16 @@ lead: "Faculty, researchers, and students working on water intelligence."
 <div class="pi-cv">
 {%- for c in cv -%}
 {%- assign cp = c | split: ":" -%}
-{%- assign list = pi[cp[0]] -%}
+{%- comment -%}
+  Liquid 는 pi[cp[0]] 처럼 대괄호 안에 인덱스를 중첩하는 것을 처리하지 못한다.
+  키를 먼저 변수로 빼야 동적 접근이 동작한다. (이걸 놓쳐 한 번 빈 화면이 나갔다)
+{%- endcomment -%}
+{%- assign cv_key = cp[0] -%}
+{%- assign cv_label = cp[1] -%}
+{%- assign list = pi[cv_key] -%}
 {%- if list and list.size > 0 %}
   <div class="cv-block">
-    <h3>{{ cp[1] }}</h3>
+    <h3>{{ cv_label }}</h3>
     <ul>
       {%- for line in list %}
       <li>{{ line }}</li>
