@@ -8,3 +8,9 @@ vendor/
 
 # 사진 원본 작업 폴더 (변환 결과만 assets/img/members/ 에 커밋한다)
 인물이미지/
+
+# 작업용 문서(pptx/docx/xlsx 등)는 사이트에 배포하지 않는다.
+*.pptx
+*.docx
+*.xlsx
+*.hwp
