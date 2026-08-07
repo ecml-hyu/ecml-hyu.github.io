@@ -1,0 +1,16 @@
+=== .member-photo : 2개 규칙 ===
+  [미디어쿼리 안] .member-photo img { width:100%;height:100%;object-fit:cover;display:block }
+  [미디어쿼리 안] .member-photo { flex:none;width:160px;height:160px;border-radius:50%;overflow:hidden;background:#eef9fc;border:1px solid var(--line);dis }
+
+=== .member-card : 1개 규칙 ===
+  [미디어쿼리 안] .member-card { display:flex;flex-direction:column;align-items:center;gap:0;padding:24px 20px;border:1px solid var(--line);border-radius }
+
+=== .member-grid : 2개 규칙 ===
+  [미디어쿼리 안] .member-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px }
+  [미디어쿼리 안] .member-grid { grid-template-columns:1fr }
+
+=== .member-info : 1개 규칙 ===
+  [미디어쿼리 안] .member-info { width:100%;min-width:0 }
+
+=== .photo-slot : 1개 규칙 ===
+  [미디어쿼리 안] .photo-slot { color:#8fb6c4;font-size:2.6rem;font-weight:900;letter-spacing:-.02em }

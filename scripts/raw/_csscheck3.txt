@@ -1,0 +1,16 @@
+=== 캐시 헤더 ===
+  Cache-Control    max-age=600
+  Last-Modified    Fri, 07 Aug 2026 05:40:09 GMT
+  ETag             "6a756fb9-3071"
+  Age              159
+
+=== 이미지 관련 규칙 위치 ===
+  [최상위] .member-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  [최상위] .pi-photo{flex:0 0 160px;width:160px;height:160px;border-radius:14px;overflow:hidden;background:#eef9fc;border:1px solid var(--lin
+  [@media(max-width:760px)] .pi-photo{flex:none;width:120px;height:120px}
+  [최상위] .pi-photo img{width:100%;height:100%;object-fit:cover}
+
+=== 학생 카드 사진 HTML ===
+  <div class="member-photo"><img class="photo-default" src="/assets/img/members/default-avatar.webp" alt="" loading="lazy" width="120" height="120"></div>
+=== PI 사진 HTML ===
+  <div class="pi-photo"><img src="/assets/img/members/kiho-park.webp" alt="Kiho Park" width="200" height="200"></div>
