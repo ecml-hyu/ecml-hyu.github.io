@@ -1,0 +1,9 @@
+=== url 필드가 있는 항목 ===
+  journal-scie #54
+     doi : 10.1021/acsaelm.5c02542
+     url : https://pubs.acs.org/doi/10.1021/acsaelm.5c02542
+
+=== doi 없이 url 만 있는 항목 (있으면 Publisher 버튼이 유일한 링크) ===
+  없음
+
+전체 60건 중 url 보유 1건, doi 보유 60건

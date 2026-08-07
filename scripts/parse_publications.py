@@ -205,10 +205,13 @@ def split_doi(href):
     m = re.search(r"(?:doi\.org/|dx\.doi\.org/)(10\.\d{4,9}/\S+)", href, re.I)
     if m:
         return m.group(1).rstrip("/"), None
-    # pubs.acs.org/doi/10.1021/... 처럼 경로에 DOI 가 들어있는 경우
+    # pubs.acs.org/doi/10.1021/... 처럼 출판사 주소 경로에 DOI 가 들어있는 경우.
+    # 이때 원본 URL 은 버린다. https://doi.org/{doi} 가 어차피 같은 페이지로
+    # 보내주므로 링크를 두 개 남기면 화면에 중복 버튼이 생긴다.
     m = re.search(r"/doi/(?:abs/|full/)?(10\.\d{4,9}/\S+)", href, re.I)
     if m:
-        return m.group(1).rstrip("/"), href
+        return m.group(1).rstrip("/"), None
+    # DOI 를 못 찾은 링크만 url 로 남긴다 (출판사 페이지 등)
     return None, href
 
 

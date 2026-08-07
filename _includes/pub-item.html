@@ -14,9 +14,11 @@
         {%- endfor -%}
       </p>
       <p class="pub-title">
-        {%- assign link = include.p.url | default: nil -%}
-        {%- if link == nil and include.p.doi -%}
+        {%- comment -%} DOI 가 있으면 항상 doi.org 를 쓴다. 없을 때만 url {%- endcomment -%}
+        {%- if include.p.doi -%}
         {%- assign link = include.p.doi | prepend: "https://doi.org/" -%}
+        {%- else -%}
+        {%- assign link = include.p.url -%}
         {%- endif -%}
         {%- if link -%}
         <a href="{{ link }}" rel="noopener">{{ include.p.title }}</a>
@@ -38,11 +40,15 @@
         {%- if include.p.journal_rank %}<span class="pub-rank">{{ include.p.journal_rank }}</span>{% endif -%}
       </p>
       {%- endif %}
-      {%- if include.p.doi or include.p.url %}
-      <p class="pub-links">
-        {%- if include.p.doi %}<a class="pill" href="https://doi.org/{{ include.p.doi }}" rel="noopener">DOI</a>{% endif -%}
-        {%- if include.p.url %}<a class="pill" href="{{ include.p.url }}" rel="noopener">Publisher</a>{% endif -%}
-      </p>
+      {%- comment -%}
+        DOI 링크가 출판사 페이지로 그대로 연결되므로 Publisher 버튼은 두지 않는다.
+        (원본에 pubs.acs.org 주소로 걸려 있던 항목이 DOI 와 중복 표시됐었다)
+        DOI 가 없는 항목만 원본 링크를 보여 준다.
+      {%- endcomment -%}
+      {%- if include.p.doi %}
+      <p class="pub-links"><a class="pill" href="https://doi.org/{{ include.p.doi }}" rel="noopener">DOI</a></p>
+      {%- elsif include.p.url %}
+      <p class="pub-links"><a class="pill" href="{{ include.p.url }}" rel="noopener">링크</a></p>
       {%- endif %}
     </div>
   </li>
