@@ -4,4 +4,74 @@ title: "Contact"
 eyebrow: "GET IN TOUCH"
 lead: "Contact ECML Lab at Hanyang University."
 ---
-<div class="editable"><h3>담당자 작성 영역</h3><p>연구실 주소, 대표 이메일, 지도교수 이메일, 오시는 길 또는 지도 링크를 추가하세요.</p></div><article class="item"><span class="tag">CONTACT</span><h3>ECML Lab</h3><p>Hanyang University<br>Contact details will be published soon.</p></article>
+{%- comment -%}
+  주소와 지도 링크는 _config.yml 의 location 항목에서 만들어진다.
+  위치가 바뀌면 이 파일이 아니라 _config.yml 을 고칠 것.
+
+  지도는 좌표가 아니라 이름 검색 링크를 쓴다. 건물 좌표를 확인할 공식 출처가
+  없어 임의로 넣지 않았다. 세 서비스 모두 map_query 로 정확히 찾아준다.
+
+  이메일은 평문으로 두지 않는다. assets/js/email.js 가 클릭 시점에 합친다.
+{%- endcomment -%}
+{%- assign loc = site.location -%}
+{%- assign pi = site.data.members | where: "group", "pi" | first -%}
+
+<div class="editable">
+  <h3>담당자 작성 영역</h3>
+  <p>연구실 호실, 대표 전화, 오시는 길 상세 설명을 이 자리에 추가하세요.
+     주소와 지도 링크는 <code>_config.yml</code> 의 <code>location</code> 에서 관리합니다.</p>
+</div>
+
+<section class="contact-grid">
+  <article class="item contact-block">
+    <span class="tag">ADDRESS</span>
+    <h3>{{ loc.building_ko }} <small>({{ loc.building_no }})</small></h3>
+    <p class="contact-en">{{ loc.building_en }}</p>
+    <p>{{ loc.address_ko }}<br>
+       <span class="contact-en">{{ loc.address_en }}</span></p>
+
+    <div class="map-links">
+      {%- assign q = loc.map_query | url_encode -%}
+      <a class="map-btn map-google" href="https://www.google.com/maps/search/?api=1&amp;query={{ q }}"
+         target="_blank" rel="noopener" aria-label="Google 지도에서 {{ loc.building_ko }} 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
+        </svg>
+        <span>Google Maps</span>
+      </a>
+      <a class="map-btn map-kakao" href="https://map.kakao.com/link/search/{{ q }}"
+         target="_blank" rel="noopener" aria-label="카카오맵에서 {{ loc.building_ko }} 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
+        </svg>
+        <span>카카오맵</span>
+      </a>
+      <a class="map-btn map-naver" href="https://map.naver.com/p/search/{{ q }}"
+         target="_blank" rel="noopener" aria-label="네이버 지도에서 {{ loc.building_ko }} 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
+        </svg>
+        <span>네이버 지도</span>
+      </a>
+    </div>
+  </article>
+
+  <article class="item contact-block">
+    <span class="tag">CONTACT</span>
+    <h3>ECML Lab</h3>
+    {%- if pi %}
+    <p>{{ pi.name_en }}{% if pi.name_ko %} ({{ pi.name_ko }}){% endif %}<br>
+       <span class="contact-en">{{ pi.title }}</span></p>
+    <p class="contact-actions">
+      {%- if pi.email_user %}
+      <a class="pill email-link" href="#" data-user="{{ pi.email_user }}" data-domain="{{ pi.email_domain }}">Email</a>
+      {%- endif -%}
+      {%- if pi.tel %}<span class="pub-rank">{{ pi.tel }}</span>{% endif -%}
+    </p>
+    {%- else %}
+    <p>Contact details will be published soon.</p>
+    {%- endif %}
+  </article>
+</section>
+
+<script src="{{ '/assets/js/email.js' | relative_url }}" defer></script>

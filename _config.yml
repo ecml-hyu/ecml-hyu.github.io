@@ -15,6 +15,17 @@ og_image: /assets/img/hero.webp
 #       404 가 되고 깨진 이미지가 뜬다. (실제로 한 번 그렇게 배포됐다)
 default_member_photo: /assets/img/members/default-avatar.webp
 
+# 연구실 위치. Contact 페이지의 지도 링크가 이 값으로 만들어진다.
+# map_query 는 세 지도 서비스 검색에 그대로 쓰이므로, 바꿀 때는
+# 세 곳 모두에서 제대로 찾아지는 이름인지 확인할 것.
+location:
+  building_ko: 신소재공학관
+  building_en: Advanced Materials & Chemical Engineering Building
+  building_no: "204"
+  address_ko: 서울특별시 성동구 왕십리로 222
+  address_en: 222 Wangsimni-ro, Seongdong-gu, Seoul 04763, Republic of Korea
+  map_query: 한양대학교 신소재공학관
+
 # 뉴스룸 '새 게시물' 버튼이 GitHub 작성 화면을 열 때 사용한다.
 repository: ecml-hyu/ecml-hyu.github.io
 branch: main
