@@ -19,8 +19,11 @@ lead: "Faculty, researchers, and students working on water intelligence."
 {%- if pi %}
 <section class="pi-card">
   <div class="pi-photo">
+    {%- comment -%} 본인 사진 > 기본 이미지 > 이름 이니셜 순으로 대체한다 {%- endcomment -%}
     {%- if pi.photo -%}
     <img src="{{ pi.photo }}" alt="{{ pi.name_en }}" width="200" height="200">
+    {%- elsif site.default_member_photo -%}
+    <img class="photo-default" src="{{ site.default_member_photo }}" alt="" width="200" height="200">
     {%- else -%}
     <span class="photo-slot" aria-hidden="true">{{ pi.name_en | slice: 0 }}</span>
     {%- endif -%}
@@ -76,6 +79,8 @@ lead: "Faculty, researchers, and students working on water intelligence."
     <div class="member-photo">
       {%- if m.photo -%}
       <img src="{{ m.photo }}" alt="{{ m.name_en }}" loading="lazy" width="120" height="120">
+      {%- elsif site.default_member_photo -%}
+      <img class="photo-default" src="{{ site.default_member_photo }}" alt="" loading="lazy" width="120" height="120">
       {%- else -%}
       <span class="photo-slot" aria-hidden="true">{{ m.name_en | slice: 0 }}</span>
       {%- endif -%}

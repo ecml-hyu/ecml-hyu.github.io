@@ -96,7 +96,7 @@
   started: "2024.09"
   email_user: "rlagmstp"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/heun-se-kim.webp"
   photo_slug: "heun-se-kim"
   hobby: ""
   research_areas:
@@ -111,7 +111,7 @@
   started: "2025.03"
   email_user: "hyowoog2"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/hyowoog-gwak.webp"
   photo_slug: "hyowoog-gwak"
   hobby: ""
   research_areas:
@@ -125,7 +125,7 @@
   started: "2025.03"
   email_user: "yunjulike"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/yunju-kim.webp"
   photo_slug: "yunju-kim"
   hobby: ""
   research_areas:
@@ -139,7 +139,7 @@
   started: "2026.03"
   email_user: "yshwan0415"
   email_domain: "hanyang.ac.kr"
-  photo: null
+  photo: "/assets/img/members/sehwan-yang.webp"
   photo_slug: "sehwan-yang"
   hobby: ""
   research_areas:
@@ -154,6 +154,20 @@
   email_domain: "gmail.com"
   photo: null
   photo_slug: "minseo-kim"
+  hobby: ""
+  research_areas:
+    - "AI-based chemical process modeling"
+    - "Brine valorization/utilization"
+
+- name_en: "Gyeom Jeong"
+  name_ko: "정겸"
+  group: "undergraduate"
+  degree: "B.S course (4rd year)"
+  started: null
+  email_user: null
+  email_domain: null
+  photo: "/assets/img/members/gyeom-jeong.webp"
+  photo_slug: "gyeom-jeong"
   hobby: ""
   research_areas:
     - "AI-based chemical process modeling"
