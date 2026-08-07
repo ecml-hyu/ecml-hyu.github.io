@@ -1,0 +1,48 @@
+{%- comment -%}
+  논문 한 편. SCIE 탭과 Etc. 탭이 같은 형식을 쓰므로 include 로 뺐다.
+  전달값: p (논문 항목), member_names (굵게 표시할 구성원 영문이름 목록)
+{%- endcomment -%}
+  <li class="pub-item">
+    <span class="pub-id">{{ include.p.id }}</span>
+    <div class="pub-body">
+      <p class="pub-authors">
+        {%- for a in include.p.authors -%}
+        {%- if include.member_names contains a.name -%}<b>{{ a.name }}</b>{%- else -%}{{ a.name }}{%- endif -%}
+        {%- if a.corresponding %}<sup title="corresponding author">*</sup>{% endif -%}
+        {%- if a.co_first %}<sup title="co-first author">+</sup>{% endif -%}
+        {%- unless forloop.last %}, {% endunless -%}
+        {%- endfor -%}
+      </p>
+      <p class="pub-title">
+        {%- assign link = include.p.url | default: nil -%}
+        {%- if link == nil and include.p.doi -%}
+        {%- assign link = include.p.doi | prepend: "https://doi.org/" -%}
+        {%- endif -%}
+        {%- if link -%}
+        <a href="{{ link }}" rel="noopener">{{ include.p.title }}</a>
+        {%- else -%}
+        {{ include.p.title }}
+        {%- endif -%}
+      </p>
+      <p class="pub-venue">
+        {%- if include.p.journal %}<i>{{ include.p.journal }}</i>{% endif -%}
+        {%- if include.p.volume %} {{ include.p.volume }}{% endif -%}
+        {%- if include.p.issue %}({{ include.p.issue }}){% endif -%}
+        {%- if include.p.year %} ({{ include.p.year }}){% endif -%}
+        {%- if include.p.pages %} {{ include.p.pages }}{% endif -%}
+        {%- if include.p.publisher %}{% if include.p.journal %}. {% endif %}{{ include.p.publisher }}{% endif -%}
+      </p>
+      {%- if include.p.impact_factor or include.p.journal_rank %}
+      <p class="pub-metrics">
+        {%- if include.p.impact_factor %}<span class="pub-if">IF {{ include.p.impact_factor }}</span>{% endif -%}
+        {%- if include.p.journal_rank %}<span class="pub-rank">{{ include.p.journal_rank }}</span>{% endif -%}
+      </p>
+      {%- endif %}
+      {%- if include.p.doi or include.p.url %}
+      <p class="pub-links">
+        {%- if include.p.doi %}<a class="pill" href="https://doi.org/{{ include.p.doi }}" rel="noopener">DOI</a>{% endif -%}
+        {%- if include.p.url %}<a class="pill" href="{{ include.p.url }}" rel="noopener">Publisher</a>{% endif -%}
+      </p>
+      {%- endif %}
+    </div>
+  </li>

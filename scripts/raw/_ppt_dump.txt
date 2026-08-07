@@ -1,0 +1,20 @@
+슬라이드 3장, 이미지 4개
+   media: image3.png (104.4 KB)
+   media: image2.png (164.9 KB)
+   media: image4.png (18.0 KB)
+   media: image1.png (178.2 KB)
+
+=== slide1.xml ===
+  [도형] Patents
+  [도형] Etc.
+  [도형] SCIE
+
+=== slide2.xml ===
+  [도형] Patents
+  [도형] Etc.
+  [도형] SCIE
+
+=== slide3.xml ===
+  [도형] Patents
+  [도형] Etc.
+  [도형] SCIE
