@@ -1,89 +1,105 @@
 ---
-layout: page
+layout: default
 title: "Contact"
-eyebrow: "GET IN TOUCH"
-lead: "Contact ECML Lab at Hanyang University."
+description: "Contact ECML Lab at Hanyang University."
+extra_css:
+  - /assets/css/contact.css
 ---
-{%- comment -%}
-  주소와 지도 링크는 _config.yml 의 location 항목에서 만들어진다.
-  위치가 바뀌면 이 파일이 아니라 _config.yml 을 고칠 것.
-
-  지도는 좌표가 아니라 이름 검색 링크를 쓴다. 건물 좌표를 확인할 공식 출처가
-  없어 임의로 넣지 않았다. 세 서비스 모두 map_query 로 정확히 찾아준다.
-
-  이메일은 평문으로 두지 않는다. assets/js/email.js 가 클릭 시점에 합친다.
-{%- endcomment -%}
 {%- assign loc = site.location -%}
-{%- assign pi = site.data.members | where: "group", "pi" | first -%}
 
-<div class="editable">
-  <h3>담당자 작성 영역</h3>
-  <p>연구실 호실, 대표 전화, 오시는 길 상세 설명을 이 자리에 추가하세요.
-     주소와 지도 링크는 <code>_config.yml</code> 의 <code>location</code> 에서 관리합니다.</p>
-</div>
+<section class="contact-welcome" aria-labelledby="contact-welcome-title">
+  <div class="wrap">
+    <p class="contact-kicker">ECML · HANYANG UNIVERSITY</p>
+    <h1 id="contact-welcome-title">Welcome<span>!</span></h1>
+  </div>
+</section>
 
-<section class="contact-grid">
-  <article class="item contact-block">
-    <span class="tag">ADDRESS</span>
-    <h3>{{ loc.building_ko }} <small>({{ loc.building_no }})</small></h3>
-    {%- if loc.rooms %}
-    <p class="contact-rooms">{{ loc.rooms }}</p>
-    {%- endif %}
-    {%- comment -%}
-      전체 영문 주소는 _config.yml 의 조각들을 여기서 이어 붙인다.
-      완성된 문장을 따로 저장해 두면 한쪽만 고쳐져 어긋난다.
-    {%- endcomment -%}
-    {%- capture full_address -%}
-      {{ loc.rooms }}, {{ loc.building_en }}, {{ loc.department_en }}, {{ loc.university_en }}, {{ loc.street_en }}.
-    {%- endcapture %}
-    <p class="contact-address-en">{{ full_address | strip }}</p>
-    <p class="contact-address-ko">
-      {%- if loc.postal_code %}({{ loc.postal_code }}) {% endif -%}
-      {{ loc.address_ko }} {{ loc.building_ko }}
-    </p>
+<section class="wrap contact-page">
+  <section class="contact-details" aria-labelledby="contact-details-title">
+    <div class="contact-section-heading">
+      <p class="section-label" id="contact-details-title">CONTACT ADDRESS</p>
+    </div>
 
-    <div class="map-links">
+    <div class="contact-office-grid">
+      <article class="contact-office-card">
+        <div class="contact-card-head">
+          <p>Professor office</p>
+        </div>
+        <h3>Kiho Park</h3>
+        <dl class="contact-list">
+          <div>
+            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.08 7-12A7 7 0 1 0 5 9c0 6.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Address</dt>
+            <dd>Room no. 301, Advanced Materials and Chemical Engineering Building, Department of Chemical Engineering, Hanyang University, 222 Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea.</dd>
+          </div>
+          <div>
+            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>Email</dt>
+            <dd><a href="mailto:kiho138@hanyang.ac.kr">kiho138@hanyang.ac.kr</a></dd>
+          </div>
+          <div>
+            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.3 3.7 10 6.4 8.1 9.2a15.4 15.4 0 0 0 6.7 6.7l2.8-1.9 2.7 2.7-1.6 3a2.6 2.6 0 0 1-2.8 1.3C8.3 19.3 4.7 15.7 3 8.1A2.6 2.6 0 0 1 4.3 5.3Z"/></svg></span>Tel.</dt>
+            <dd><a href="tel:+82222200523">+82-2-2220-0523</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="contact-office-card contact-office-card--lab">
+        <div class="contact-card-head">
+          <p>Graduate Lab</p>
+        </div>
+        <dl class="contact-list">
+          <div>
+            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.08 7-12A7 7 0 1 0 5 9c0 6.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Address</dt>
+            <dd>Room no. 313/314, Advanced Materials and Chemical Engineering Building, Department of Chemical Engineering, Hanyang University, 222 Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea.</dd>
+          </div>
+          <div>
+            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>Lab coordinator</dt>
+            <dd><a href="mailto:dlstj54@hanyang.ac.kr">dlstj54@hanyang.ac.kr</a></dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact-invitation" aria-labelledby="contact-invitation-title">
+    <div class="contact-invitation-title">
+      <h2 id="contact-invitation-title">Join our research<br>team at ECML.</h2>
+      <p class="contact-invitation-tagline">Your next challenge can start here.</p>
+    </div>
+    <div class="contact-invitation-copy">
+      <p class="contact-invitation-welcome">친환경 화학공정 모델링 / 설계 연구실에 관심을 가져주셔서 감사합니다.</p>
+      <p>우리 연구실은 <em>process modeling &amp; design</em> 및 <em>AI application</em> 분야의 연구들을 수행하고 있으며, 더욱 자세한 내용은 <a href="{{ '/research.html' | relative_url }}">Research 페이지</a>에서 확인하실 수 있습니다.</p>
+      <p>호기심을 연구로 발전시키고, 주도적으로 배우며, 동료들과 함께 의미 있는 답을 찾아갈 열정적인 연구자를 기다립니다. 연구실과 연구 주제가 궁금하다면 편하게 연락해 주세요.</p>
+    </div>
+    <p class="contact-invitation-closing">당신의 다음 도전을 함께 이야기하겠습니다.</p>
+  </section>
+
+  <section class="contact-location" aria-labelledby="contact-location-title">
+    <div class="contact-section-heading contact-location-heading">
+      <p class="section-label">LOCATION</p>
+      <h2 id="contact-location-title">Find us at Hanyang.</h2>
+    </div>
+    <div class="contact-map-card">
+      <img src="{{ '/assets/img/contact-map.png' | relative_url }}" alt="한양대학교 신소재공학관과 주변 캠퍼스 지도">
+      <div class="contact-map-card__shade" aria-hidden="true"></div>
+      <div class="contact-map-card__caption">
+        <span>HANYANG UNIVERSITY</span>
+        <strong>Advanced Materials and Chemical Engineering Building, Hanyang University</strong>
+      </div>
+    </div>
+    <div class="contact-map-actions">
       {%- assign q = loc.map_query | url_encode -%}
-      <a class="map-btn map-google" href="https://www.google.com/maps/search/?api=1&amp;query={{ q }}"
-         target="_blank" rel="noopener" aria-label="Google 지도에서 {{ loc.building_ko }} 보기">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
-        </svg>
+      <a class="map-btn map-google" href="https://www.google.com/maps/search/?api=1&amp;query={{ q }}" target="_blank" rel="noopener" aria-label="Google 지도에서 {{ loc.building_ko }} 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
         <span>Google Maps</span>
       </a>
-      <a class="map-btn map-kakao" href="https://map.kakao.com/link/search/{{ q }}"
-         target="_blank" rel="noopener" aria-label="카카오맵에서 {{ loc.building_ko }} 보기">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
-        </svg>
+      <a class="map-btn map-kakao" href="https://map.kakao.com/link/search/{{ q }}" target="_blank" rel="noopener" aria-label="카카오맵에서 {{ loc.building_ko }} 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
         <span>카카오맵</span>
       </a>
-      <a class="map-btn map-naver" href="https://map.naver.com/p/search/{{ q }}"
-         target="_blank" rel="noopener" aria-label="네이버 지도에서 {{ loc.building_ko }} 보기">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-          <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/>
-        </svg>
+      <a class="map-btn map-naver" href="https://map.naver.com/p/search/{{ q }}" target="_blank" rel="noopener" aria-label="네이버 지도에서 {{ loc.building_ko }} 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
         <span>네이버 지도</span>
       </a>
     </div>
-  </article>
-
-  <article class="item contact-block">
-    <span class="tag">CONTACT</span>
-    <h3>ECML Lab</h3>
-    {%- if pi %}
-    <p>{{ pi.name_en }}{% if pi.name_ko %} ({{ pi.name_ko }}){% endif %}<br>
-       <span class="contact-en">{{ pi.title }}</span></p>
-    <p class="contact-actions">
-      {%- if pi.email_user %}
-      <a class="pill email-link" href="#" data-user="{{ pi.email_user }}" data-domain="{{ pi.email_domain }}">Email</a>
-      {%- endif -%}
-      {%- if pi.tel %}<span class="pub-rank">{{ pi.tel }}</span>{% endif -%}
-    </p>
-    {%- else %}
-    <p>Contact details will be published soon.</p>
-    {%- endif %}
-  </article>
+  </section>
 </section>
-
-<script src="{{ '/assets/js/email.js' | relative_url }}" defer></script>
