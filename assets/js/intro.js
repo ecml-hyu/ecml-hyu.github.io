@@ -1,44 +1,89 @@
-/*
- * 인트로 애니메이션 — 세션당 1회만 재생.
- *
- * <head> 에서 동기적으로 로드된다. 그 시점에 <body> 는 아직 파싱되지 않았으므로
- * 1단계에서는 documentElement 에만 클래스를 붙인다. 그래야 첫 페인트 전에
- * `html.intro-seen .intro{display:none}` 이 적용되어 깜빡임이 생기지 않는다.
- *
- * 타이밍(3150ms)과 skip 버튼 동작은 sindoll2 님 원본과 동일하다.
- */
+/* Show the ECML intro once per browser session; ?intro=1 always previews it. */
 (function () {
   'use strict';
 
-  var KEY = 'ecml-intro-seen';
+  var key = 'ecml-intro-seen';
+  var forcePreview = /(?:^|[?&])intro=1(?:&|$)/.test(window.location.search);
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var seen = false;
 
-  // 프라이빗 모드 등 sessionStorage 가 막힌 환경에서도 페이지는 정상 동작해야 한다.
   try {
-    seen = window.sessionStorage.getItem(KEY) === '1';
-  } catch (e) {
+    seen = window.sessionStorage.getItem(key) === '1';
+  } catch (error) {
     seen = false;
   }
 
-  if (seen) {
+  if (reduceMotion || (seen && !forcePreview)) {
     document.documentElement.classList.add('intro-seen');
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('intro')?.remove();
+    }, { once: true });
     return;
-  }
-
-  try {
-    window.sessionStorage.setItem(KEY, '1');
-  } catch (e) {
-    /* 저장 실패는 무시 — 다음 로드에서 한 번 더 재생될 뿐이다 */
   }
 
   document.addEventListener('DOMContentLoaded', function () {
     var intro = document.getElementById('intro');
     if (!intro) return;
 
-    var open = function () { intro.classList.add('open'); };
-    setTimeout(open, 3150);
+    var splineViewer = intro.querySelector('spline-viewer[data-spline-url]');
+    if (splineViewer && !splineViewer.hasAttribute('url')) {
+      splineViewer.setAttribute('url', splineViewer.dataset.splineUrl);
+    }
 
-    var skip = document.getElementById('skip');
-    if (skip) skip.onclick = open;
+    var background = [
+      document.querySelector('body > header'),
+      document.querySelector('body > main'),
+      document.querySelector('body > footer')
+    ].filter(Boolean);
+    var previousHtmlOverflow = document.documentElement.style.overflow;
+    var previousBodyOverflow = document.body.style.overflow;
+    var opening = false;
+
+    background.forEach(function (element) { element.inert = true; });
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+
+    var closeIntro = function () {
+      if (opening) return;
+      opening = true;
+      document.removeEventListener('keydown', onKeydown);
+      intro.dispatchEvent(new CustomEvent('intro:close'));
+      intro.classList.add('open');
+
+      try {
+        window.sessionStorage.setItem(key, '1');
+      } catch (error) {
+        /* A blocked session store must not prevent entry to the site. */
+      }
+
+      window.setTimeout(function () {
+        if (splineViewer && typeof splineViewer.unload === 'function') {
+          splineViewer.unload();
+        }
+        intro.remove();
+        background.forEach(function (element) { element.inert = false; });
+        document.documentElement.style.overflow = previousHtmlOverflow;
+        document.body.style.overflow = previousBodyOverflow;
+        var destination = document.querySelector('main');
+        if (destination) {
+          destination.setAttribute('tabindex', '-1');
+          destination.focus({ preventScroll: true });
+          destination.addEventListener('blur', function () {
+            destination.removeAttribute('tabindex');
+          }, { once: true });
+        }
+      }, 800);
+    };
+
+    var onKeydown = function (event) {
+      if (event.key === 'Escape') closeIntro();
+    };
+
+    var enter = document.getElementById('enter-site');
+    if (enter) {
+      enter.addEventListener('click', closeIntro);
+      enter.focus({ preventScroll: true });
+      document.addEventListener('keydown', onKeydown);
+    }
   });
 })();

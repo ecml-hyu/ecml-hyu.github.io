@@ -1,16 +1,20 @@
 {%- comment -%}
-  내비게이션 항목은 아래 한 줄에서만 관리한다. "파일명:표시이름" 형식.
-  현재 페이지에는 sindoll2 님이 만든 .active 클래스가 자동으로 붙는다.
+  로고가 Home 역할을 하므로 메뉴에는 연구실의 실제 콘텐츠 탭만 둔다.
 {%- endcomment -%}
-{%- assign nav_items = "index.html:Home,research.html:Research,publications.html:Publication,projects.html:Project,members.html:Member,program.html:Program,newsroom.html:Newsroom,contact.html:Contact" | split: "," -%}
-<nav class="wrap"><a class="brand" href="{{ '/' | relative_url }}"><i>ECML</i> LAB</a><div class="links">
+{%- assign nav_items = "research.html:Research,publications.html:Publications,projects.html:Projects,members.html:Members,program.html:Program,newsroom.html:Newsroom,contact.html:Contact" | split: "," -%}
+<nav class="wrap site-nav" aria-label="Primary navigation">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="ECML home"><img src="{{ '/assets/img/ecml-lab-mark.svg' | relative_url }}" alt=""></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation">
+    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+  </button>
+  <div class="links" id="primary-menu">
 {%- for entry in nav_items -%}
 {%- assign parts = entry | split: ":" -%}
-{%- if parts[0] == "index.html" -%}
-{%- assign target = "/" -%}
-{%- else -%}
 {%- assign target = parts[0] | prepend: "/" -%}
-{%- endif -%}
-<a {% if page.url == target %}class="active" {% endif %}href="{{ target | relative_url }}">{{ parts[1] }}</a>
+{%- assign is_active = false -%}
+{%- if page.url == target -%}{%- assign is_active = true -%}{%- endif -%}
+{%- if page.layout == "post" and parts[0] == "newsroom.html" -%}{%- assign is_active = true -%}{%- endif -%}
+<a {% if is_active %}class="active" aria-current="page" {% endif %}href="{{ target | relative_url }}">{{ parts[1] }}</a>
 {%- endfor -%}
-</div></nav>
+  </div>
+</nav>

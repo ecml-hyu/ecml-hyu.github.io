@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 168" role="img" aria-labelledby="ecmlLogoTitle ecmlLogoDesc">
+  <title id="ecmlLogoTitle">ECML Laboratory</title>
+  <desc id="ecmlLogoDesc">Environment and Chemical Process Modeling and Design Laboratory</desc>
+
+  <defs>
+    <linearGradient id="markAqua" x1="20" y1="130" x2="112" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b83ca"/>
+      <stop offset="0.52" stop-color="#39d2e5"/>
+      <stop offset="1" stop-color="#91f0dc"/>
+    </linearGradient>
+    <linearGradient id="wordIce" x1="148" y1="36" x2="405" y2="105" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9fdff"/>
+      <stop offset="0.66" stop-color="#d9f4fb"/>
+      <stop offset="1" stop-color="#7ddced"/>
+    </linearGradient>
+    <linearGradient id="waterFill" x1="28" y1="77" x2="106" y2="122" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#75eff0" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#1474c6" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="ruleAqua" x1="150" y1="0" x2="572" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42d9e7"/>
+      <stop offset="0.55" stop-color="#36aeca"/>
+      <stop offset="1" stop-color="#36aeca" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="quietGlow" x="-35%" y="-35%" width="170%" height="170%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feColorMatrix in="blur" values="0 0 0 0 0.12  0 0 0 0 0.72  0 0 0 0 0.9  0 0 0 .42 0" result="cyanBlur"/>
+      <feMerge>
+        <feMergeNode in="cyanBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Abstract process loop: water circulation, instrumentation nodes, and an environmental leaf. -->
+  <g filter="url(#quietGlow)">
+    <path d="M98.5 46.5A48 48 0 1 0 108 108" fill="none" stroke="url(#markAqua)" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M103.5 96.5 112 109l-15.2 2.4" fill="none" stroke="#72e9df" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27.5" cy="75" r="5.2" fill="#42d8e6" stroke="#c9fbff" stroke-width="1.5"/>
+    <circle cx="47" cy="39" r="4.2" fill="#6de7e8" stroke="#d4fdff" stroke-width="1.3"/>
+    <circle cx="94" cy="48" r="4.7" fill="#79ebdf" stroke="#e0fffb" stroke-width="1.4"/>
+
+    <path d="M26 83c14-9 25-9 38-1 13 8 25 8 44-4v29c-14 10-27 12-42 5-15-8-26-7-40 2Z" fill="url(#waterFill)"/>
+    <path d="M27 84c14-9 25-9 38-1 13 8 25 8 43-4" fill="none" stroke="#a4f7f4" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M34 96c11-5 21-4 31 2 11 6 22 6 35 0" fill="none" stroke="#55cce6" stroke-width="2" stroke-linecap="round" opacity="0.72"/>
+
+    <path d="M82 34c5-16 16-24 34-22-4 17-15 25-34 22Z" fill="#71e2a4"/>
+    <path d="M84 31c9-5 17-10 27-14" fill="none" stroke="#d9ffe8" stroke-width="1.8" stroke-linecap="round" opacity="0.86"/>
+    <path d="M78 34c-9-9-18-12-28-8 5 13 14 18 27 14Z" fill="#40c991"/>
+  </g>
+
+  <path d="M131 27v114" fill="none" stroke="#8bdcea" stroke-width="1" opacity="0.32"/>
+
+  <!-- The original water-letter signature is layered here by the site stylesheet. -->
+  <path d="M151 113h420" fill="none" stroke="url(#ruleAqua)" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="151" y="133" fill="#b9dce5" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15.2" font-weight="650" letter-spacing="1.08">ENVIRONMENT &amp; CHEMICAL PROCESS</text>
+  <text x="151" y="154" fill="#6ed9e8" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15.2" font-weight="700" letter-spacing="1.08">MODELING · DESIGN LABORATORY</text>
+</svg>

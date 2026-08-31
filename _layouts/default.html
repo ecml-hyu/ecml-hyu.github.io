@@ -1,13 +1,27 @@
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' }}"><head>{% include head.html %}
 {%- if page.intro %}
-<!-- 인트로는 세션당 1회만. 첫 페인트 전에 <html> 에 클래스를 붙여 깜빡임을 막는다 -->
+<!-- 인트로는 세션당 1회만 표시하고 첫 페인트 전에 상태를 복원한다. -->
 <script src="{{ '/assets/js/intro.js' | relative_url }}"></script>
 {%- endif %}
 </head>
-<body>
+{%- assign resolved_body_class = page.body_class -%}
+{%- if page.layout == "post" and resolved_body_class == nil -%}
+  {%- assign resolved_body_class = "subpage subpage--newsroom" -%}
+{%- endif -%}
+<body{% if resolved_body_class %} class="{{ resolved_body_class }}"{% endif %}>
 {%- if page.intro %}
-<div class="intro spline-intro" id="intro"><div class="intro-spline" aria-hidden="true"><iframe src="https://my.spline.design/claritystream-IloWkPRJTypvKBYKXUF90Pu5/" frameborder="0" title="Sustainable process animation"></iframe></div><div class="intro-vignette" aria-hidden="true"></div><div class="intro-copy"><p>ECO-FRIENDLY CHEMICAL PROCESS MODELING LABORATORY</p><h1>Modeling a<br><em>cleaner future.</em></h1><small>Sustainable chemistry, intelligently engineered.</small><button id="skip">Skip introduction</button></div></div>
+<div class="intro spline-intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+  <div class="intro-spline">
+    <spline-viewer loading="eager" data-spline-url="https://prod.spline.design/icVes44SwesD-NJ3/scene.splinecode" aria-label="Interactive water-colored modeling orb that follows the cursor"></spline-viewer>
+  </div>
+  <div class="intro-vignette" aria-hidden="true"></div>
+  <div class="intro-copy">
+    <p>ECML · HANYANG UNIVERSITY</p>
+    <h1 id="introTitle"><span>WE MODEL WHAT<br>COMES NEXT.</span><small>From complexity to possibility.</small></h1>
+    <button id="enter-site" type="button"><span>Enter ECML</span><span aria-hidden="true">↗</span></button>
+  </div>
+</div>
 {% endif -%}
 <header>{% include nav.html %}</header>
 <main>{{ content }}</main>

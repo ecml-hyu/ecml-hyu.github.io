@@ -31,6 +31,19 @@
 <meta name="twitter:image" content="{{ page_image }}">
 
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&amp;display=swap" rel="stylesheet">
+{%- if page.intro %}
+<link rel="preconnect" href="https://cdn.spline.design" crossorigin>
+<link rel="preconnect" href="https://prod.spline.design" crossorigin>
+<link rel="modulepreload" href="https://cdn.spline.design/@splinetool/viewer@2.0.14/build/spline-viewer.js">
+<script type="module" src="https://cdn.spline.design/@splinetool/viewer@2.0.14/build/spline-viewer.js"></script>
+<noscript><style>#intro{display:none!important}</style></noscript>
+{%- endif %}
+{%- if page.url == "/" %}
+<link rel="preload" as="image" href="{{ '/assets/img/ecml-cube-target.png' | relative_url }}" type="image/png">
+{%- endif %}
 <link rel="stylesheet" href="{{ '/site.css' | relative_url }}">
 {%- if page.extra_css %}
   {%- for stylesheet in page.extra_css %}
@@ -44,4 +57,6 @@
 {%- if page.intro %}
 <link rel="stylesheet" href="{{ '/intro-spline.css' | relative_url }}">
 {%- endif %}
+<link rel="stylesheet" href="{{ '/assets/css/ecml-theme.css' | relative_url }}">
+<script defer src="{{ '/assets/js/site-nav.js' | relative_url }}"></script>
 {%- feed_meta -%}
