@@ -1,13 +1,98 @@
 ---
 layout: page
 title: "Research"
-eyebrow: "WHAT WE STUDY"
-lead: "ECML integrates process modeling, intelligent systems, and sustainable environmental design for resilient water and chemical processes."
+eyebrow: "What we study"
+lead: "ECML integrates process modeling, intelligent systems, and sustainability assessment for resilient water and chemical processes."
 body_class: "subpage subpage--research"
 ---
-<div class="editable"><h3>담당자 작성 영역</h3><p>각 연구 주제의 배경, 핵심 질문, 사용 방법론, 대표 성과를 추가하세요.</p></div>
-<div class="cards">
-  <article class="card" id="desalination"><b>Process Modeling &amp; Design</b><p>Physics-based modeling, simulation, and process design for membrane, water, and chemical systems.</p></article>
-  <article class="card" id="intelligent-systems"><b>AI Systems</b><p>AI-driven prediction, optimization, and control for complex chemical and environmental processes.</p></article>
-  <article class="card" id="sustainable-water"><b>Sustainability &amp; Environment</b><p>Circular water use, resource efficiency, environmental performance, and techno-economic sustainability.</p></article>
+
+<nav class="research-jumps" aria-label="Research areas">
+  <a class="research-jump research-jump--process" href="#desalination">
+    <span class="research-jump__number">01</span>
+    <strong>Process Modeling &amp; Design</strong>
+    <p>Physics-based models, simulation, and system design for advanced water and chemical processes.</p>
+    <span class="research-jump__action">Explore area <span aria-hidden="true">↓</span></span>
+  </a>
+  <a class="research-jump research-jump--ai" href="#intelligent-systems">
+    <span class="research-jump__number">02</span>
+    <strong>AI Systems</strong>
+    <p>Data-driven prediction, physically consistent intelligence, optimization, and process control.</p>
+    <span class="research-jump__action">Explore area <span aria-hidden="true">↓</span></span>
+  </a>
+  <a class="research-jump research-jump--sustainability" href="#sustainable-water">
+    <span class="research-jump__number">03</span>
+    <strong>Sustainability &amp; Environment</strong>
+    <p>Techno-economic and life-cycle assessment for efficient water–energy–resource systems.</p>
+    <span class="research-jump__action">Explore area <span aria-hidden="true">↓</span></span>
+  </a>
+</nav>
+
+<div class="research-story">
+  <section class="research-section research-section--process" id="desalination" aria-labelledby="research-process-title">
+    <header class="research-section__head">
+      <p class="research-index">01 · Process</p>
+      <h2 id="research-process-title">Process Modeling &amp; Design</h2>
+      <p class="research-intro">We develop physics-based and computational models to analyze, design, and optimize advanced water and chemical process systems. Fundamental transport, thermodynamics, mass and energy balances, and dynamic process behavior are translated into practical system designs.</p>
+    </header>
+
+    <div class="research-figure-grid research-figure-grid--process">
+      <figure class="research-figure">
+        <img src="{{ '/assets/img/research/process-system-modeling.webp' | relative_url }}" alt="High-recovery reverse osmosis system modeling and optimization framework" width="1847" height="671" loading="lazy" decoding="async">
+        <figcaption>System-level modeling connects dynamic desalination behavior with design and optimization.</figcaption>
+      </figure>
+      <figure class="research-figure">
+        <img src="{{ '/assets/img/research/process-simulation-crystallization.webp' | relative_url }}" alt="Process simulation and crystallization modeling framework" width="1437" height="1011" loading="lazy" decoding="async">
+        <figcaption>Mass, energy, and population-balance models support crystallization and resource recovery.</figcaption>
+      </figure>
+    </div>
+
+    <div class="research-method-grid">
+      <article><h3>High-recovery desalination</h3><p>Dynamic models for batch, semi-batch, and hybrid reverse osmosis quantify pressure, concentration, recovery, permeate production, and energy use over time.</p></article>
+      <article><h3>Membrane transport</h3><p>RO, FO, and related membrane systems are modeled across changing feed concentration, pressure, temperature, polarization, scaling, and fouling conditions.</p></article>
+      <article><h3>Crystallization and ZLD</h3><p>Population-balance and thermodynamic models predict crystal formation, salt separation, and integrated zero-liquid-discharge performance.</p></article>
+      <article><h3>Integrated system design</h3><p>MATLAB and Aspen-based simulation compares process configurations and optimizes trade-offs among recovery, energy, productivity, stability, and resource use.</p></article>
+    </div>
+  </section>
+
+  <section class="research-section research-section--ai" id="intelligent-systems" aria-labelledby="research-ai-title">
+    <header class="research-section__head">
+      <p class="research-index">02 · Intelligence</p>
+      <h2 id="research-ai-title">AI Systems</h2>
+      <p class="research-intro">We combine artificial intelligence and machine learning with transport theory, thermodynamics, crystallization kinetics, and dynamic models. The result is reliable prediction and decision support for behavior that mechanistic models alone cannot fully capture.</p>
+    </header>
+
+    <figure class="research-figure research-figure--hero">
+      <img src="{{ '/assets/img/research/ai-digital-twin.webp' | relative_url }}" alt="Digital twin and hybrid mathematical model for water and chemical process systems" width="1280" height="811" loading="lazy" decoding="async">
+      <figcaption>Hybrid physical and data-driven models connect molecular properties, process simulation, and digital twins.</figcaption>
+    </figure>
+
+    <div class="research-method-grid">
+      <article><h3>Prediction from limited data</h3><p>Graph networks, tree-based ensembles, and deep learning predict molecular properties, membrane transport, and process performance from imperfect measurements.</p></article>
+      <article><h3>Explainable, physical AI</h3><p>SHAP attribution, sensitivity analysis, and theory-based checks test whether accurate predictions also follow physically meaningful relationships.</p></article>
+      <article><h3>Hybrid models and digital twins</h3><p>First-principles structures such as population balances are coupled with learned components only where theory or measurements are incomplete.</p></article>
+      <article><h3>Optimization and control</h3><p>Full-scale plant models and reinforcement-learning policies support adaptive operation under changing conditions, constraints, and missing sensor data.</p></article>
+    </div>
+  </section>
+
+  <section class="research-section research-section--sustainability" id="sustainable-water" aria-labelledby="research-sustainability-title">
+    <header class="research-section__head">
+      <p class="research-index">03 · Sustainability</p>
+      <h2 id="research-sustainability-title">Sustainability &amp; Environment</h2>
+      <p class="research-intro">We evaluate economic feasibility, environmental performance, and energy sustainability by linking process simulation with techno-economic analysis and life-cycle assessment. This reveals trade-offs that cannot be seen through water production or energy consumption alone.</p>
+    </header>
+
+    <figure class="research-figure research-figure--hero">
+      <img src="{{ '/assets/img/research/sustainability-water-energy.webp' | relative_url }}" alt="Renewable energy, desalination, and water-energy-resource management systems" width="1280" height="802" loading="lazy" decoding="async">
+      <figcaption>Integrated assessment spans renewable energy, waste heat, energy recovery, desalination, and resource management.</figcaption>
+    </figure>
+
+    <div class="research-method-grid">
+      <article><h3>Techno-economic analysis</h3><p>Capital, operating cost, energy, material demand, capacity, and productivity are evaluated to identify economically competitive process regions.</p></article>
+      <article><h3>Life-cycle assessment</h3><p>Environmental impacts and hotspots are quantified across electricity, chemicals, materials, waste generation, and brine management.</p></article>
+      <article><h3>Water–energy integration</h3><p>Renewable energy, low-grade waste heat, hydraulic recovery, and osmotic energy are integrated to reduce external energy demand.</p></article>
+      <article><h3>Resource recovery</h3><p>Desalination, crystallization, brine management, and ZLD strategies are assessed together to improve efficiency and reduce environmental burden.</p></article>
+    </div>
+  </section>
 </div>
+
+<p class="research-publications-link"><a class="button-ghost" href="{{ '/publications.html' | relative_url }}">View the research behind these systems <span aria-hidden="true">→</span></a></p>

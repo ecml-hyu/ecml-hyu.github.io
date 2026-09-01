@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Newsroom"
-eyebrow: "ECML UPDATES"
+eyebrow: "ECML updates"
 lead: "Laboratory news, awards, events, and announcements."
 body_class: "subpage subpage--newsroom"
 extra_css:
@@ -19,7 +19,7 @@ extra_css:
 
 <section class="newsroom" aria-label="ECML news and gallery">
   <div class="newsroom-masthead">
-    <p class="newsroom-kicker">FROM THE LAB</p>
+    <p class="newsroom-kicker">From the lab</p>
     <p class="newsroom-summary">A living record of our research, people, and moments in motion.</p>
     <div class="news-actions">
       <a class="button" id="new-post-btn"
@@ -59,7 +59,7 @@ extra_css:
         {%- endif -%}
       </a>
       <div class="news-feature-copy">
-        <p class="news-meta"><span>FEATURED UPDATE</span>{{ feature.date | date: "%d %b %Y" }}</p>
+        <p class="news-meta"><span>Featured update</span>{{ feature.date | date: "%d %b %Y" }}</p>
         <h2><a href="{{ feature.url | relative_url }}">{{ feature.title }}</a></h2>
         <p>{{ feature.description | default: feature.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
         <a class="news-read" href="{{ feature.url | relative_url }}">Read the story <span aria-hidden="true">→</span></a>
@@ -85,7 +85,7 @@ extra_css:
     </div>
     {%- else %}
     <article class="news-empty-state">
-      <p class="newsroom-kicker">FIRST ENTRY</p>
+      <p class="newsroom-kicker">First entry</p>
       <h2>The next chapter starts here.</h2>
       <p>Research news, awards, conference moments, and laboratory announcements will appear in this space.</p>
     </article>
@@ -106,7 +106,7 @@ extra_css:
     {%- else %}
     <article class="gallery-empty-state">
       <span class="gallery-orbit" aria-hidden="true"></span>
-      <p class="newsroom-kicker">ECML IN MOTION</p>
+      <p class="newsroom-kicker">ECML in motion</p>
       <h2>Moments worth keeping.</h2>
       <p>Conference days, field work, laboratory life, and team milestones will collect here as the story grows.</p>
     </article>

@@ -10,7 +10,7 @@ extra_css:
 
 <section class="contact-welcome" aria-labelledby="contact-welcome-title">
   <div class="wrap">
-    <p class="contact-kicker">ECML · HANYANG UNIVERSITY</p>
+    <p class="contact-kicker">ECML · Hanyang University</p>
     <h1 id="contact-welcome-title">Welcome<span>!</span></h1>
   </div>
 </section>
@@ -18,7 +18,7 @@ extra_css:
 <section class="wrap contact-page">
   <section class="contact-details" aria-labelledby="contact-details-title">
     <div class="contact-section-heading">
-      <p class="section-label" id="contact-details-title">CONTACT ADDRESS</p>
+      <p class="section-label" id="contact-details-title">Contact address</p>
     </div>
 
     <div class="contact-office-grid">
@@ -30,7 +30,10 @@ extra_css:
         <dl class="contact-list">
           <div>
             <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.08 7-12A7 7 0 1 0 5 9c0 6.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Address</dt>
-            <dd>Room no. 301, Advanced Materials and Chemical Engineering Building, Department of Chemical Engineering, Hanyang University, 222 Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea.</dd>
+            <dd class="contact-address-pair">
+              <span lang="ko">{{ loc.address_ko }}, 한양대학교 {{ loc.building_ko }} 301호 ({{ loc.postal_code }})</span>
+              <span lang="en">Room 301, {{ loc.building_en }}, {{ loc.department_en }}, {{ loc.university_en }}, {{ loc.postal_code }}, {{ loc.street_en }}</span>
+            </dd>
           </div>
           <div>
             <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>Email</dt>
@@ -50,11 +53,14 @@ extra_css:
         <dl class="contact-list">
           <div>
             <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.08 7-12A7 7 0 1 0 5 9c0 6.92 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>Address</dt>
-            <dd>Room no. 313/314, Advanced Materials and Chemical Engineering Building, Department of Chemical Engineering, Hanyang University, 222 Wangsimni-ro, Seongdong-gu, Seoul, Republic of Korea.</dd>
+            <dd class="contact-address-pair">
+              <span lang="ko">{{ loc.address_ko }}, 한양대학교 {{ loc.building_ko }} 313·314호 ({{ loc.postal_code }})</span>
+              <span lang="en">Rooms 313–314, {{ loc.building_en }}, {{ loc.department_en }}, {{ loc.university_en }}, {{ loc.postal_code }}, {{ loc.street_en }}</span>
+            </dd>
           </div>
           <div>
-            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>Lab coordinator</dt>
-            <dd><a href="mailto:dlstj54@hanyang.ac.kr">dlstj54@hanyang.ac.kr</a></dd>
+            <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>Lab manager</dt>
+            <dd class="contact-manager"><strong>Yinseo Song</strong><a href="mailto:dlstj54@hanyang.ac.kr">dlstj54@hanyang.ac.kr</a></dd>
           </div>
         </dl>
       </article>
@@ -76,14 +82,14 @@ extra_css:
 
   <section class="contact-location" aria-labelledby="contact-location-title">
     <div class="contact-section-heading contact-location-heading">
-      <p class="section-label">LOCATION</p>
+      <p class="section-label">Location</p>
       <h2 id="contact-location-title">Find us at Hanyang.</h2>
     </div>
     <div class="contact-map-card">
       <img src="{{ '/assets/img/contact-map.png' | relative_url }}" alt="한양대학교 신소재공학관과 주변 캠퍼스 지도">
       <div class="contact-map-card__shade" aria-hidden="true"></div>
       <div class="contact-map-card__caption">
-        <span>HANYANG UNIVERSITY</span>
+        <span>Hanyang University</span>
         <strong>Advanced Materials and Chemical Engineering Building, Hanyang University</strong>
       </div>
     </div>

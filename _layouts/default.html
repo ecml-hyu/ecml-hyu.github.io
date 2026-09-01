@@ -2,12 +2,12 @@
 <html lang="{{ site.lang | default: 'en' }}"><head>{% include head.html %}
 {%- if page.intro %}
 <!-- 인트로는 세션당 1회만 표시하고 첫 페인트 전에 상태를 복원한다. -->
-<script src="{{ '/assets/js/intro.js' | relative_url }}?v=44"></script>
+<script src="{{ '/assets/js/intro.js' | relative_url }}?v=45"></script>
 {%- endif %}
 </head>
 {%- assign resolved_body_class = page.body_class -%}
 {%- if page.layout == "post" and resolved_body_class == nil -%}
-  {%- assign resolved_body_class = "subpage subpage--newsroom" -%}
+  {%- assign resolved_body_class = "subpage subpage--newsroom is-post" -%}
 {%- endif -%}
 <body{% if resolved_body_class %} class="{{ resolved_body_class }}"{% endif %}>
 {%- if page.intro %}
@@ -17,7 +17,7 @@
   </div>
   <div class="intro-vignette" aria-hidden="true"></div>
   <div class="intro-copy">
-    <p>ECML · HANYANG UNIVERSITY</p>
+    <p>ECML · Hanyang University</p>
     <h1 id="introTitle"><span>WE MODEL WHAT<br>COMES NEXT.</span><small>From complexity to possibility.</small></h1>
     <button id="enter-site" type="button"><span>Enter ECML</span><span aria-hidden="true">↗</span></button>
   </div>

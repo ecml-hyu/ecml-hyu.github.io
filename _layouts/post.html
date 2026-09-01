@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<section class="page-head"><div class="wrap">
-  <p class="eyebrow"><a href="{{ '/newsroom.html' | relative_url }}">NEWSROOM</a></p>
+<section class="page-head post-head"><div class="wrap">
+  <p class="eyebrow"><a href="{{ '/newsroom.html' | relative_url }}">Newsroom</a></p>
   <h1>{{ page.title }}</h1>
-  <p class="lead">
+  <p class="post-meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
-    {%- if page.author %} · {{ page.author }}{% endif -%}
+    {%- if page.author %}<span aria-hidden="true">·</span><span>{{ page.author }}</span>{% endif -%}
   </p>
 </div></section>
-<section class="wrap page">
+<section class="wrap page post-page">
   <article class="post-body">
     {{ content }}
   </article>

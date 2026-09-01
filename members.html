@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Members"
-eyebrow: "THE PEOPLE OF ECML"
+eyebrow: "The people of ECML"
 lead: "Faculty, researchers, and students working on water intelligence."
 body_class: "subpage subpage--members"
 ---
@@ -36,15 +36,23 @@ body_class: "subpage subpage--members"
     {%- if pi.university %}<p class="pi-affil">{{ pi.university }}</p>{% endif -%}
     <p class="pi-contact">
       {%- if pi.email_user %}
-      <a class="pill email-link" href="#" data-user="{{ pi.email_user }}" data-domain="{{ pi.email_domain }}">Email</a>
+      <button class="pill email-link" type="button" data-user="{{ pi.email_user }}" data-domain="{{ pi.email_domain }}">Email</button>
       {%- endif -%}
       {%- if pi.tel %}<span class="pub-rank">{{ pi.tel }}</span>{% endif -%}
     </p>
+    {%- if pi.education and pi.education.size > 0 %}
+    <section class="pi-education" aria-labelledby="pi-education-title">
+      <h3 id="pi-education-title">Education</h3>
+      <ul>
+        {%- for line in pi.education %}<li>{{ line }}</li>{% endfor -%}
+      </ul>
+    </section>
+    {%- endif %}
   </div>
 </section>
 
-{%- assign cv = "education:Education,experience:Professional Experience,activities:Professional Activities and Membership" | split: "," -%}
-<div class="pi-cv">
+{%- assign cv = "experience:Professional Experience,activities:Professional Activities and Membership" | split: "," -%}
+<div class="pi-cv pi-cv--two">
 {%- for c in cv -%}
 {%- assign cp = c | split: ":" -%}
 {%- comment -%}
@@ -102,7 +110,7 @@ body_class: "subpage subpage--members"
       {%- endif %}
       {%- if m.email_user %}
       <p class="member-contact">
-        <a class="pill email-link" href="#" data-user="{{ m.email_user }}" data-domain="{{ m.email_domain }}">Email</a>
+        <button class="pill email-link" type="button" data-user="{{ m.email_user }}" data-domain="{{ m.email_domain }}">Email</button>
       </p>
       {%- endif %}
     </div>
@@ -126,4 +134,4 @@ body_class: "subpage subpage--members"
 </ul>
 {%- endif %}
 
-<script src="{{ '/assets/js/email.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/email.js' | relative_url }}?v=45" defer></script>
