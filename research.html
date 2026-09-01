@@ -29,70 +29,252 @@ body_class: "subpage subpage--research"
 
 <div class="research-story">
   <section class="research-section research-section--process" id="desalination" aria-labelledby="research-process-title">
-    <div class="research-section__head">
+    <header class="research-section__head">
       <p class="research-index">01 · Process</p>
-      <h2 id="research-process-title">Process Modeling &amp; Design</h2>
-      <p class="research-intro">We develop physics-based and computational models to analyze, design, and optimize advanced water and chemical process systems. Fundamental transport, thermodynamics, mass and energy balances, and dynamic process behavior are translated into practical system designs.</p>
+      <div class="research-section__title">
+        <h2 id="research-process-title">Process Modeling &amp; Design</h2>
+        <p class="research-tagline">Physics-based modeling, simulation, and system design for advanced water and chemical processes</p>
+      </div>
+    </header>
+
+    <div class="research-overview">
+      <p>Our research focuses on the development of physics-based and computational models for the analysis, design, and optimization of advanced water and chemical process systems. By integrating fundamental transport phenomena, mass and energy balances, thermodynamics, membrane transport, and dynamic process behavior, we aim to understand complex process interactions and translate them into practical system designs.</p>
+      <p>Numerical simulation and process modeling are used to predict system performance under various operating conditions, identify performance-limiting mechanisms, and determine optimal process configurations. Our research spans individual unit processes to integrated water–energy–resource systems, with particular emphasis on high-recovery desalination, low-energy membrane processes, brine management, resource recovery, and sustainable process design.</p>
     </div>
 
-    <div class="research-figure-grid research-figure-grid--process">
+    <div class="research-figure-stack" aria-label="Process modeling research figures">
       <figure class="research-figure">
-        <img src="{{ '/assets/img/research/process-system-modeling.webp' | relative_url }}" alt="High-recovery reverse osmosis system modeling and optimization framework" width="1847" height="671" loading="lazy" decoding="async">
-        <figcaption>System-level modeling connects dynamic desalination behavior with design and optimization.</figcaption>
+        <a href="{{ '/assets/img/research/process-system-modeling-light.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the high-resolution process system modeling figure">
+          <img src="{{ '/assets/img/research/process-system-modeling-light.png' | relative_url }}" alt="High-recovery reverse osmosis system modeling and optimization framework" width="1847" height="671" loading="lazy" decoding="async">
+        </a>
+        <figcaption>System modeling and optimization of high-recovery reverse osmosis processes.</figcaption>
       </figure>
       <figure class="research-figure">
-        <img src="{{ '/assets/img/research/process-simulation-crystallization.webp' | relative_url }}" alt="Process simulation and crystallization modeling framework" width="1437" height="1011" loading="lazy" decoding="async">
-        <figcaption>Mass, energy, and population-balance models support crystallization and resource recovery.</figcaption>
+        <a href="{{ '/assets/img/research/process-simulation-crystallization-light.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the high-resolution process simulation and crystallization figure">
+          <img src="{{ '/assets/img/research/process-simulation-crystallization-light.png' | relative_url }}" alt="Process simulation and crystallization modeling framework" width="1437" height="1011" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Process modeling and simulation for crystallization and resource recovery.</figcaption>
       </figure>
     </div>
 
-    <div class="research-method-grid">
-      <article><h3>High-recovery desalination</h3><p>Dynamic models for batch, semi-batch, and hybrid reverse osmosis quantify pressure, concentration, recovery, permeate production, and energy use over time.</p></article>
-      <article><h3>Membrane transport</h3><p>RO, FO, and related membrane systems are modeled across changing feed concentration, pressure, temperature, polarization, scaling, and fouling conditions.</p></article>
-      <article><h3>Crystallization and ZLD</h3><p>Population-balance and thermodynamic models predict crystal formation, salt separation, and integrated zero-liquid-discharge performance.</p></article>
-      <article><h3>Integrated system design</h3><p>MATLAB and Aspen-based simulation compares process configurations and optimizes trade-offs among recovery, energy, productivity, stability, and resource use.</p></article>
-    </div>
+    <section class="research-focus" aria-labelledby="process-focus-title">
+      <div class="research-subhead">
+        <p>Detailed research</p>
+        <h3 id="process-focus-title">Research areas</h3>
+      </div>
+      <dl class="research-focus-list">
+        <div>
+          <dt><span>01</span>High-recovery reverse osmosis modeling</dt>
+          <dd>Development of dynamic models for batch reverse osmosis (BRO), semi-batch reverse osmosis (SBRO), and hybrid semi-batch/batch reverse osmosis (HSBRO) to analyze time-dependent changes in pressure, concentration, permeate production, recovery, and specific energy consumption.</dd>
+        </div>
+        <div>
+          <dt><span>02</span>Membrane transport and performance modeling</dt>
+          <dd>Modeling of membrane-based separation processes including RO, FO, and related membrane systems to quantitatively describe water and solute transport and evaluate process performance under different feed concentrations, pressures, temperatures, and operating conditions.</dd>
+        </div>
+        <div>
+          <dt><span>03</span>Dynamic process modeling</dt>
+          <dd>Simulation of transient process behavior in systems where operating conditions continuously change over time, with particular consideration of concentration polarization, membrane compaction, scaling, fouling, and salt accumulation in high-recovery membrane processes.</dd>
+        </div>
+        <div>
+          <dt><span>04</span>Integrated water–energy system modeling</dt>
+          <dd>Development and simulation of hybrid systems such as DSARO, RO–PRO, and PRMD that integrate water treatment with energy recovery or production to improve overall process efficiency.</dd>
+        </div>
+        <div>
+          <dt><span>05</span>Crystallization process modeling</dt>
+          <dd>Development of crystallization models incorporating population balance equations (PBE) and thermodynamic equilibrium calculations to predict crystal formation, particle distributions, salt precipitation, and separation performance.</dd>
+        </div>
+        <div>
+          <dt><span>06</span>Zero Liquid Discharge (ZLD) system design</dt>
+          <dd>Modeling and design of integrated concentration, crystallization, and solid–liquid separation systems to minimize liquid waste, recover salts and resources, and reduce the environmental burden associated with concentrated brine.</dd>
+        </div>
+        <div>
+          <dt><span>07</span>Process simulation and system integration</dt>
+          <dd>Application of computational tools such as MATLAB and Aspen for process flowsheet development, mass and energy balance calculations, sensitivity analysis, system-level simulation, and comparison of alternative process configurations.</dd>
+        </div>
+        <div>
+          <dt><span>08</span>Process optimization and operating strategy design</dt>
+          <dd>Identification of optimal operating conditions and system configurations by evaluating trade-offs among water recovery, energy consumption, productivity, process stability, and resource utilization.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="research-papers" aria-labelledby="process-papers-title">
+      <div class="research-subhead">
+        <p>From this area</p>
+        <h3 id="process-papers-title">Related publications</h3>
+      </div>
+      <ol class="research-paper-list">
+        <li><a href="https://doi.org/10.1016/j.watres.2025.124717" target="_blank" rel="noopener"><span class="research-paper__title">A novel framework for forward osmosis in zero- and low-flow conditions: Applicability and fundamental differences from reverse osmosis</span><span class="research-paper__meta"><cite>Water Res.</cite><time datetime="2026">2026</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2024.118292" target="_blank" rel="noopener"><span class="research-paper__title">Comprehensive analysis of energy saving and high-quality permeate production strategies for a large-scale seawater reverse osmosis desalination plant</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2025">2025</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2024.118185" target="_blank" rel="noopener"><span class="research-paper__title">Application of batch reverse osmosis as an appropriate technology for inland desalination: Design, modeling, and operating strategies</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2024">2024</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2024.117534" target="_blank" rel="noopener"><span class="research-paper__title">Optimal design strategy, heuristics, and theoretical analysis of multi-stage reverse osmosis for seawater desalination</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2024">2024</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2022.116126" target="_blank" rel="noopener"><span class="research-paper__title">Hybrid semi-batch/batch reverse osmosis (HSBRO) for use in zero liquid discharge (ZLD) applications</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2022">2022</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2022.115945" target="_blank" rel="noopener"><span class="research-paper__title">Batch reverse osmosis (BRO)-adsorption desalination (AD) hybrid system for multipurpose desalination and minimal liquid discharge</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2022">2022</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2021.114976" target="_blank" rel="noopener"><span class="research-paper__title">A compact hybrid batch/semi-batch reverse osmosis (HBSRO) system for high-recovery, low-energy desalination</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2021">2021</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2020.114738" target="_blank" rel="noopener"><span class="research-paper__title">Membrane transport behavior characterization method with constant water flux in pressure assisted forward osmosis</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2021">2021</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.memsci.2019.117757" target="_blank" rel="noopener"><span class="research-paper__title">Quantitative Analysis of the Irreversible Membrane Fouling of Forward Osmosis during Wastewater Reclamation: Correlation with the Modified Fouling Index</span><span class="research-paper__meta"><cite>J. Membr. Sci.</cite><time datetime="2020">2020</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1007/s11814-019-0415-7" target="_blank" rel="noopener"><span class="research-paper__title">Modified Kinetic Rate Equation Model for Cooling Crystallization</span><span class="research-paper__meta"><cite>Korean J. Chem. Eng.</cite><time datetime="2019">2019</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.memsci.2018.03.031" target="_blank" rel="noopener"><span class="research-paper__title">Feasibility study of a forward osmosis/crystallization/reverse osmosis hybrid process with high-temperature operation: Modeling, experiments, and energy consumption</span><span class="research-paper__meta"><cite>J. Membr. Sci.</cite><time datetime="2018">2018</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1021/acs.iecr.7b03642" target="_blank" rel="noopener"><span class="research-paper__title">Theoretical analysis of pressure retarded membrane distillation (PRMD) process for simultaneous production of water and electricity</span><span class="research-paper__meta"><cite>Ind. Eng. Chem. Res.</cite><time datetime="2017">2017</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1021/acs.iecr.6b01386" target="_blank" rel="noopener"><span class="research-paper__title">Operating Strategy for Continuous Multistage Mixed Suspension and Mixed Product Removal (MSMPR) Crystallization Processes Depending on Crystallization Kinetic Parameters</span><span class="research-paper__meta"><cite>Ind. Eng. Chem. Res.</cite><time datetime="2016">2016</time><span aria-hidden="true">↗</span></span></a></li>
+      </ol>
+    </section>
   </section>
 
   <section class="research-section research-section--ai" id="intelligent-systems" aria-labelledby="research-ai-title">
-    <div class="research-section__head">
+    <header class="research-section__head">
       <p class="research-index">02 · Intelligence</p>
-      <h2 id="research-ai-title">AI Systems</h2>
-      <p class="research-intro">We combine artificial intelligence and machine learning with transport theory, thermodynamics, crystallization kinetics, and dynamic models. The result is reliable prediction and decision support for behavior that mechanistic models alone cannot fully capture.</p>
+      <div class="research-section__title">
+        <h2 id="research-ai-title">AI Systems</h2>
+        <p class="research-tagline">Artificial intelligence and data-driven modeling for the prediction, optimization, and intelligent operation of water and chemical processes</p>
+      </div>
+    </header>
+
+    <div class="research-overview">
+      <p>Our research focuses on the development of artificial intelligence and machine learning methods for the prediction, optimization, and intelligent operation of advanced water and chemical process systems. By integrating data-driven models with fundamental transport phenomena, thermodynamics, crystallization kinetics, and dynamic process behavior, we aim to describe process behavior that is difficult to capture by mechanistic modeling alone and translate it into reliable predictive and decision-making tools.</p>
+      <p>Machine learning, deep learning, and reinforcement learning are used to predict process performance from limited and imperfect data, identify the variables and mechanisms governing system behavior, and determine optimal operating strategies under continuously changing conditions. Our research spans molecular property prediction to full-scale plant operation, with particular emphasis on hybrid physics–data modeling, explainable and physically consistent prediction, robust modeling of industrial operating data, and learning-based process control.</p>
     </div>
 
-    <figure class="research-figure research-figure--hero">
-      <img src="{{ '/assets/img/research/ai-digital-twin.webp' | relative_url }}" alt="Digital twin and hybrid mathematical model for water and chemical process systems" width="1280" height="811" loading="lazy" decoding="async">
-      <figcaption>Hybrid physical and data-driven models connect molecular properties, process simulation, and digital twins.</figcaption>
-    </figure>
-
-    <div class="research-method-grid">
-      <article><h3>Prediction from limited data</h3><p>Graph networks, tree-based ensembles, and deep learning predict molecular properties, membrane transport, and process performance from imperfect measurements.</p></article>
-      <article><h3>Explainable, physical AI</h3><p>SHAP attribution, sensitivity analysis, and theory-based checks test whether accurate predictions also follow physically meaningful relationships.</p></article>
-      <article><h3>Hybrid models and digital twins</h3><p>First-principles structures such as population balances are coupled with learned components only where theory or measurements are incomplete.</p></article>
-      <article><h3>Optimization and control</h3><p>Full-scale plant models and reinforcement-learning policies support adaptive operation under changing conditions, constraints, and missing sensor data.</p></article>
+    <div class="research-figure-stack" aria-label="AI systems research figure">
+      <figure class="research-figure">
+        <a href="{{ '/assets/img/research/ai-digital-twin-light.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the high-resolution AI and digital twin figure">
+          <img src="{{ '/assets/img/research/ai-digital-twin-light.png' | relative_url }}" alt="Digital twin and hybrid mathematical model for water and chemical process systems" width="1280" height="811" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Data-driven intelligence connected with mathematical models, process simulation, and digital twins.</figcaption>
+      </figure>
     </div>
+
+    <section class="research-focus" aria-labelledby="ai-focus-title">
+      <div class="research-subhead">
+        <p>Detailed research</p>
+        <h3 id="ai-focus-title">Research areas</h3>
+      </div>
+      <dl class="research-focus-list">
+        <div>
+          <dt><span>01</span>Deep learning for molecular property prediction</dt>
+          <dd>Development of graph convolutional network models with model-based transfer learning to predict thermophysical and transport properties of organic compounds directly from molecular structure under limited experimental data.</dd>
+        </div>
+        <div>
+          <dt><span>02</span>Machine learning-based process performance prediction</dt>
+          <dd>Development of regression models including tree-based ensembles and deep neural networks to predict permeate flux, water and solute transport, and separation performance of membrane processes under different feed concentrations, pressures, temperatures, and operating conditions.</dd>
+        </div>
+        <div>
+          <dt><span>03</span>Data-driven analysis for parameter identification</dt>
+          <dd>Application of principal component analysis and related multivariate statistical methods to quantify how operating conditions affect intrinsic membrane parameters, and to distinguish genuine physical dependence from experimental artifacts.</dd>
+        </div>
+        <div>
+          <dt><span>04</span>Explainable AI (XAI) and physical consistency verification</dt>
+          <dd>Application of SHAP-based attribution and sensitivity analysis to identify the variables driving model predictions, and verification of the learned relationships against transport theory to confirm that predictive accuracy is obtained for physically correct reasons.</dd>
+        </div>
+        <div>
+          <dt><span>05</span>Hybrid mechanistic and data-driven modeling</dt>
+          <dd>Integration of first-principles models such as Population Balance Equations with data-driven classifiers, retaining the physical structure of the process while using learning only for terms that cannot be derived from theory, and translating the resulting models into practical operating guidelines.</dd>
+        </div>
+        <div>
+          <dt><span>06</span>Full-scale plant data modeling</dt>
+          <dd>Construction of deep learning models trained on operating data from commercial-scale facilities, including a 1,000 m³/day high-salinity seawater reverse osmosis plant, with input estimation methods that maintain predictive reliability under missing and imperfect industrial measurements.</dd>
+        </div>
+        <div>
+          <dt><span>07</span>Reinforcement learning-based process operation</dt>
+          <dd>Formulation of process operation as a sequential decision-making problem and development of adaptive control policies for high-recovery membrane processes including closed-circuit reverse osmosis systems, to reduce specific energy consumption while satisfying recovery and operational constraints.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="research-papers" aria-labelledby="ai-papers-title">
+      <div class="research-subhead">
+        <p>From this area</p>
+        <h3 id="ai-papers-title">Related publications</h3>
+      </div>
+      <ol class="research-paper-list">
+        <li><a href="https://doi.org/10.1016/j.watres.2026.125855" target="_blank" rel="noopener"><span class="research-paper__title">Adaptive reinforcement learning for energy-efficient high-recovery closed-circuit reverse osmosis</span><span class="research-paper__meta"><cite>Water Res.</cite><time datetime="2026">2026</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2025.118678" target="_blank" rel="noopener"><span class="research-paper__title">Robust deep learning model combined with missing input data estimation: Application in a 1000 m³/day high-salinity SWRO plant</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2025">2025</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2025.118551" target="_blank" rel="noopener"><span class="research-paper__title">Explainable AI for permeate flux prediction in forward osmosis: SHAP interpretability and theoretical validation for enhanced predictive reliability</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2025">2025</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1107/S1600576724010239" target="_blank" rel="noopener"><span class="research-paper__title">Optimal operation guidelines for direct recovery of high-purity precursor from spent lithium-ion batteries: hybrid operation model of population balance equation and data-driven classifier</span><span class="research-paper__meta"><cite>J. Appl. Cryst.</cite><time datetime="2024">2024</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1021/acs.jcim.2c00846" target="_blank" rel="noopener"><span class="research-paper__title">Not from Scratch: Predicting Thermophysical Properties through Model-Based Transfer Learning Using Graph Convolutional Networks</span><span class="research-paper__meta"><cite>J. Chem. Inf. Model.</cite><time datetime="2022">2022</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.5004/dwt.2022.29110" target="_blank" rel="noopener"><span class="research-paper__title">Prediction of permeate water flux in forward osmosis (FO) desalination system using tree-based ensemble machine learning models</span><span class="research-paper__meta"><cite>Desalin. Water Treat.</cite><time datetime="2022">2022</time><span aria-hidden="true">↗</span></span></a></li>
+      </ol>
+    </section>
   </section>
 
   <section class="research-section research-section--sustainability" id="sustainable-water" aria-labelledby="research-sustainability-title">
-    <div class="research-section__head">
+    <header class="research-section__head">
       <p class="research-index">03 · Sustainability</p>
-      <h2 id="research-sustainability-title">Sustainability &amp; Environment</h2>
-      <p class="research-intro">We evaluate economic feasibility, environmental performance, and energy sustainability by linking process simulation with techno-economic analysis and life-cycle assessment. This reveals trade-offs that cannot be seen through water production or energy consumption alone.</p>
+      <div class="research-section__title">
+        <h2 id="research-sustainability-title">Sustainability &amp; Environment</h2>
+        <p class="research-tagline">Techno-economic and life cycle assessment for sustainable water-energy systems</p>
+      </div>
+    </header>
+
+    <div class="research-overview">
+      <p>Our research evaluates the economic feasibility, environmental performance, and energy sustainability of advanced water and chemical process systems by integrating process simulation with techno-economic analysis (TEA) and life cycle assessment (LCA). Rather than assessing process performance solely in terms of water production or energy consumption, we investigate the broader trade-offs among process efficiency, economic competitiveness, environmental impacts, energy utilization, and resource recovery.</p>
+      <p>Process simulation results from desalination, crystallization, and integrated water–energy systems are used as the quantitative basis for sustainability assessment. Through TEA, we evaluate the economic competitiveness of emerging process configurations by considering capital investment, operating expenses, energy requirements, material consumption, and potential benefits from water production, energy recovery, and resource recovery. LCA is further applied to quantify environmental impacts across the process life cycle and identify major environmental hotspots associated with electricity, chemicals, materials, waste generation, and brine management.</p>
     </div>
 
-    <figure class="research-figure research-figure--hero">
-      <img src="{{ '/assets/img/research/sustainability-water-energy.webp' | relative_url }}" alt="Renewable energy, desalination, and water-energy-resource management systems" width="1280" height="802" loading="lazy" decoding="async">
-      <figcaption>Integrated assessment spans renewable energy, waste heat, energy recovery, desalination, and resource management.</figcaption>
-    </figure>
-
-    <div class="research-method-grid">
-      <article><h3>Techno-economic analysis</h3><p>Capital, operating cost, energy, material demand, capacity, and productivity are evaluated to identify economically competitive process regions.</p></article>
-      <article><h3>Life-cycle assessment</h3><p>Environmental impacts and hotspots are quantified across electricity, chemicals, materials, waste generation, and brine management.</p></article>
-      <article><h3>Water–energy integration</h3><p>Renewable energy, low-grade waste heat, hydraulic recovery, and osmotic energy are integrated to reduce external energy demand.</p></article>
-      <article><h3>Resource recovery</h3><p>Desalination, crystallization, brine management, and ZLD strategies are assessed together to improve efficiency and reduce environmental burden.</p></article>
+    <div class="research-figure-stack" aria-label="Sustainability research figure">
+      <figure class="research-figure">
+        <a href="{{ '/assets/img/research/sustainability-water-energy-light.png' | relative_url }}" target="_blank" rel="noopener" aria-label="Open the high-resolution sustainability and water-energy figure">
+          <img src="{{ '/assets/img/research/sustainability-water-energy-light.png' | relative_url }}" alt="Renewable energy, desalination, and water-energy-resource management systems" width="1280" height="802" loading="lazy" decoding="async">
+        </a>
+        <figcaption>Integrated water–energy systems, renewable energy, waste heat, and resource management.</figcaption>
+      </figure>
     </div>
+
+    <section class="research-focus" aria-labelledby="sustainability-focus-title">
+      <div class="research-subhead">
+        <p>Detailed research</p>
+        <h3 id="sustainability-focus-title">Research areas</h3>
+      </div>
+      <dl class="research-focus-list">
+        <div>
+          <dt><span>01</span>Techno-economic analysis (TEA)</dt>
+          <dd>Evaluation of the economic feasibility of emerging water and chemical process technologies by integrating process simulation results with capital cost, operating cost, energy consumption, material requirements, and process productivity.</dd>
+        </div>
+        <div>
+          <dt><span>02</span>Economic optimization and sensitivity analysis</dt>
+          <dd>Investigation of the effects of operating conditions, energy prices, process capacity, recovery, and other key parameters on process economics to identify economically competitive operating regions and system configurations.</dd>
+        </div>
+        <div>
+          <dt><span>03</span>Life cycle assessment (LCA)</dt>
+          <dd>Quantitative evaluation of environmental impacts associated with water treatment, desalination, crystallization, and integrated water–energy processes throughout their life cycles.</dd>
+        </div>
+        <div>
+          <dt><span>04</span>Renewable energy integration</dt>
+          <dd>Assessment of water treatment systems integrated with renewable energy sources such as solar energy to reduce dependence on conventional electricity and improve long-term process sustainability.</dd>
+        </div>
+        <div>
+          <dt><span>05</span>Waste-heat utilization and energy recovery</dt>
+          <dd>Evaluation and design of hybrid processes utilizing low-grade waste heat or recovering hydraulic and osmotic energy to reduce external energy requirements and improve overall process efficiency.</dd>
+        </div>
+        <div>
+          <dt><span>06</span>Integrated water–energy system assessment</dt>
+          <dd>Simultaneous evaluation of water production, energy consumption or recovery, economic performance, and environmental impacts for hybrid systems such as DSARO, RO–PRO, and PRMD.</dd>
+        </div>
+        <div>
+          <dt><span>07</span>Brine management and Zero Liquid Discharge (ZLD)</dt>
+          <dd>Evaluation of concentration, crystallization, and resource-recovery strategies for minimizing liquid waste and reducing the environmental burden of high-salinity brine.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="research-papers" aria-labelledby="sustainability-papers-title">
+      <div class="research-subhead">
+        <p>From this area</p>
+        <h3 id="sustainability-papers-title">Related publications</h3>
+      </div>
+      <ol class="research-paper-list">
+        <li><a href="https://doi.org/10.1016/j.desal.2025.119364" target="_blank" rel="noopener"><span class="research-paper__title">Sustainable operation of hybrid semi-batch/batch reverse osmosis by additional purge-and-refill phase: Optimization and life cycle assessment</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2025">2025</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.jwpe.2025.107849" target="_blank" rel="noopener"><span class="research-paper__title">Implementation of low-pressure pressure exchanger (LPPX) on two-stage reverse osmosis system: Energetic and environmental impacts in a large-scale water reuse facility</span><span class="research-paper__meta"><cite>J. Water Process Eng.</cite><time datetime="2025">2025</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.jclepro.2024.141998" target="_blank" rel="noopener"><span class="research-paper__title">Design of hybrid desalination process using waste heat and cold energy from LNG power plant increasing energy and economic potential</span><span class="research-paper__meta"><cite>J. Clean. Prod.</cite><time datetime="2024">2024</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2024.117531" target="_blank" rel="noopener"><span class="research-paper__title">Cost-based optimization, feasibility study, and sensitivity analysis of forward osmosis/crystallization/reverse osmosis with high-temperature operation</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2024">2024</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2023.116995" target="_blank" rel="noopener"><span class="research-paper__title">Energy, exergy, economic and environment analysis of standalone forward osmosis (FO) system for domestic wastewater treatment</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2023">2023</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.jclepro.2023.138264" target="_blank" rel="noopener"><span class="research-paper__title">Techno-economic analysis of integrated bipolar membrane electrodialysis and batch reverse osmosis for water and chemical recovery from dairy wastewater</span><span class="research-paper__meta"><cite>J. Clean. Prod.</cite><time datetime="2023">2023</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.watres.2019.115426" target="_blank" rel="noopener"><span class="research-paper__title">Comprehensive analysis of a hybrid FO/crystallization/RO process for improving its economic feasibility to seawater desalination</span><span class="research-paper__meta"><cite>Water Res.</cite><time datetime="2020">2020</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2019.114085" target="_blank" rel="noopener"><span class="research-paper__title">Low-recovery, -energy-consumption, -emission hybrid systems of seawater desalination: Energy optimization and cost analysis</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2019">2019</time><span aria-hidden="true">↗</span></span></a></li>
+        <li><a href="https://doi.org/10.1016/j.desal.2017.08.026" target="_blank" rel="noopener"><span class="research-paper__title">Cost-based feasibility study and sensitivity analysis of a new draw solution assisted reverse osmosis (DSARO) process for seawater desalination</span><span class="research-paper__meta"><cite>Desalination</cite><time datetime="2017">2017</time><span aria-hidden="true">↗</span></span></a></li>
+      </ol>
+    </section>
   </section>
 </div>
 
-<p class="research-publications-link"><a class="button-ghost" href="{{ '/publications.html' | relative_url }}">View the research behind these systems <span aria-hidden="true">→</span></a></p>
+<p class="research-publications-link"><a class="button-ghost" href="{{ '/publications.html' | relative_url }}">View all ECML publications <span aria-hidden="true">→</span></a></p>
