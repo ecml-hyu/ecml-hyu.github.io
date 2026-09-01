@@ -205,7 +205,12 @@ header .site-nav{
   letter-spacing:-.043em;
 }
 .hero-acronym span{display:block;color:#fff;white-space:nowrap}
-.hero-acronym b{color:#78e7fb;font-weight:700}
+.hero-acronym b{
+  display:inline-block;
+  width:1em;
+  color:#78e7fb;
+  font-weight:700;
+}
 .hero-actions{
   display:inline-grid;
   min-width:190px;
@@ -1129,6 +1134,34 @@ header .site-nav{
   font-size:.75rem;
   font-weight:800;
 }
+.home-explore .card.research-jump{
+  min-height:218px;
+  padding:25px 25px 23px;
+  border:1px solid rgba(var(--research-accent),.25);
+  border-radius:17px;
+  background:
+    radial-gradient(circle at 88% 8%,rgba(var(--research-accent),.1),transparent 34%),
+    linear-gradient(145deg,rgba(8,32,47,.92),rgba(4,19,31,.96));
+  color:#f4fbfd;
+  box-shadow:0 16px 46px rgba(0,0,0,.16);
+}
+.home-explore .card.research-jump p{
+  color:#bfd2d9;
+}
+.home-explore .card.research-jump:hover,
+.home-explore .card.research-jump:focus-visible,
+.home-explore .card.research-jump.is-layer-active{
+  transform:translateY(-4px);
+  border-color:rgba(var(--research-accent),.58);
+  box-shadow:0 22px 58px rgba(0,0,0,.24),0 0 28px rgba(var(--research-accent),.09);
+}
+.home-explore .card.research-jump:focus-visible{
+  outline:2px solid rgb(var(--research-accent));
+  outline-offset:3px;
+}
+.home-explore[data-active-layer]:not([data-active-layer="default"]) .card.research-jump[data-ecml-layer]:not(.is-layer-active){
+  opacity:.82;
+}
 .research-story{
   display:block;
   margin-top:86px;
@@ -1136,6 +1169,10 @@ header .site-nav{
 .research-section{
   --research-accent:82,223,241;
   --research-block-gap:clamp(56px,7vw,80px);
+  --research-label-width:150px;
+  --research-column-gap:40px;
+  --research-rail:calc(var(--research-label-width) + var(--research-column-gap));
+  --research-content-width:930px;
   position:relative;
   scroll-margin-top:112px;
   overflow:visible;
@@ -1150,8 +1187,8 @@ header .site-nav{
 .research-section--sustainability{--research-accent:78,232,189}
 .research-section__head{
   display:grid;
-  grid-template-columns:150px minmax(0,880px);
-  gap:40px;
+  grid-template-columns:var(--research-label-width) minmax(0,var(--research-content-width));
+  gap:var(--research-column-gap);
   align-items:start;
   position:static;
   top:auto;
@@ -1184,8 +1221,9 @@ header .site-nav{
   line-height:1.6;
 }
 .research-overview{
-  max-width:900px;
-  margin:36px 0 0 190px;
+  width:calc(100% - var(--research-rail));
+  max-width:var(--research-content-width);
+  margin:36px 0 0 var(--research-rail);
 }
 .research-overview p{
   margin:0;
@@ -1199,8 +1237,10 @@ header .site-nav{
 .research-figure-stack{
   display:grid;
   gap:32px;
-  max-width:1120px;
+  width:calc(100% - var(--research-rail));
+  max-width:var(--research-content-width);
   margin-top:var(--research-block-gap);
+  margin-left:var(--research-rail);
 }
 .research-figure{
   min-width:0;
@@ -1237,8 +1277,8 @@ header .site-nav{
 }
 .research-subhead{
   display:grid;
-  grid-template-columns:150px minmax(0,1fr);
-  gap:40px;
+  grid-template-columns:var(--research-label-width) minmax(0,var(--research-content-width));
+  gap:var(--research-column-gap);
   align-items:baseline;
 }
 .research-subhead p{
@@ -1256,7 +1296,9 @@ header .site-nav{
   letter-spacing:-.035em;
 }
 .research-focus-list{
-  margin:27px 0 0;
+  width:calc(100% - var(--research-rail));
+  max-width:var(--research-content-width);
+  margin:27px 0 0 var(--research-rail);
   border-top:1px solid rgba(var(--research-accent),.24);
 }
 .research-focus-list>div{
@@ -1288,8 +1330,10 @@ header .site-nav{
 }
 .research-paper-list{
   counter-reset:research-paper;
+  width:calc(100% - var(--research-rail));
+  max-width:var(--research-content-width);
   list-style:none;
-  margin:27px 0 0;
+  margin:27px 0 0 var(--research-rail);
   padding:0;
   border-top:1px solid rgba(var(--research-accent),.24);
 }
@@ -1468,7 +1512,12 @@ body.subpage--contact .contact-list dt{
   .research-index{
     margin:0;
   }
-  .research-overview{
+  .research-overview,
+  .research-figure-stack,
+  .research-focus-list,
+  .research-paper-list{
+    width:100%;
+    max-width:none;
     margin-left:0;
   }
 }

@@ -34,10 +34,25 @@ intro: true
 <section class="wrap section home-explore">
   <p class="eyebrow dark-text">Explore ECML</p>
   <h2>Our Research in Detail</h2>
-  <div class="cards">
-    <a class="card" href="{{ '/research.html#desalination' | relative_url }}" data-ecml-layer="desalination"><b>Process Modeling &amp; Design</b><p>Physics-based process modeling and design for water and chemical systems.</p></a>
-    <a class="card" href="{{ '/research.html#intelligent-systems' | relative_url }}" data-ecml-layer="intelligent"><b>AI Systems</b><p>AI-driven prediction, optimization, and control for complex processes.</p></a>
-    <a class="card" href="{{ '/research.html#sustainable-water' | relative_url }}" data-ecml-layer="sustainable"><b>Sustainability &amp; Environment</b><p>Circular water use, environmental performance, and economic sustainability.</p></a>
+  <div class="cards research-jumps">
+    <a class="card research-jump research-jump--process" href="{{ '/research.html#desalination' | relative_url }}" data-ecml-layer="desalination">
+      <span class="research-jump__number">01</span>
+      <strong>Process Modeling &amp; Design</strong>
+      <p>Physics-based process modeling and design for water and chemical systems.</p>
+      <span class="research-jump__action">Explore area <span aria-hidden="true">↓</span></span>
+    </a>
+    <a class="card research-jump research-jump--ai" href="{{ '/research.html#intelligent-systems' | relative_url }}" data-ecml-layer="intelligent">
+      <span class="research-jump__number">02</span>
+      <strong>AI Systems</strong>
+      <p>AI-driven prediction, optimization, and control for complex processes.</p>
+      <span class="research-jump__action">Explore area <span aria-hidden="true">↓</span></span>
+    </a>
+    <a class="card research-jump research-jump--sustainability" href="{{ '/research.html#sustainable-water' | relative_url }}" data-ecml-layer="sustainable">
+      <span class="research-jump__number">03</span>
+      <strong>Sustainability &amp; Environment</strong>
+      <p>Circular water use, environmental performance, and economic sustainability.</p>
+      <span class="research-jump__action">Explore area <span aria-hidden="true">↓</span></span>
+    </a>
   </div>
 </section>
 <script src="{{ '/assets/js/ecml-hero-overlay.js' | relative_url }}?v=46"></script>
