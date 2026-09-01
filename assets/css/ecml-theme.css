@@ -1497,13 +1497,7 @@ body.subpage--contact .contact-list dt{
   letter-spacing:.07em;
 }
 
-@media(max-width:900px){
-  .research-jumps{
-    grid-template-columns:1fr;
-  }
-  .research-jump{
-    min-height:0;
-  }
+@media(max-width:1159px){
   .research-section__head,
   .research-subhead{
     grid-template-columns:1fr;
@@ -1519,6 +1513,15 @@ body.subpage--contact .contact-list dt{
     width:100%;
     max-width:none;
     margin-left:0;
+  }
+}
+@media(max-width:900px){
+  .research-jumps{
+    grid-template-columns:1fr;
+  }
+  .research-jump,
+  .home-explore .card.research-jump{
+    min-height:0;
   }
 }
 @media(max-width:760px){
