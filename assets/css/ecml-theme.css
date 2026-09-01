@@ -1135,6 +1135,7 @@ header .site-nav{
 }
 .research-section{
   --research-accent:82,223,241;
+  --research-block-gap:clamp(56px,7vw,80px);
   position:relative;
   scroll-margin-top:112px;
   overflow:visible;
@@ -1199,7 +1200,7 @@ header .site-nav{
   display:grid;
   gap:32px;
   max-width:1120px;
-  margin-top:48px;
+  margin-top:var(--research-block-gap);
 }
 .research-figure{
   min-width:0;
@@ -1230,16 +1231,9 @@ header .site-nav{
   object-fit:contain;
   background:#fff;
 }
-.research-figure figcaption{
-  padding:12px 2px 0;
-  color:#aebfc6;
-  font-size:.78rem;
-  font-weight:600;
-  line-height:1.5;
-}
 .research-focus,
 .research-papers{
-  margin-top:clamp(64px,8vw,94px);
+  margin-top:var(--research-block-gap);
 }
 .research-subhead{
   display:grid;
@@ -1490,18 +1484,11 @@ body.subpage--contact .contact-list dt{
     margin-top:58px;
   }
   .research-section{
+    --research-block-gap:48px;
     padding:62px 0;
   }
   .research-section h2{
     font-size:clamp(2rem,10vw,2.8rem);
-  }
-  .research-figure,
-  .research-figure-stack{
-    margin-top:30px;
-  }
-  .research-focus,
-  .research-papers{
-    margin-top:56px;
   }
   .research-focus-list>div{
     grid-template-columns:1fr;
