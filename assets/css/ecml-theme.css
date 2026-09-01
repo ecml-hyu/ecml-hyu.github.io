@@ -1262,10 +1262,11 @@ header .site-nav{
 }
 .is-post .post-head h1{
   max-width:980px;
-  font-size:clamp(2.35rem,5vw,4.4rem);
+  font-size:clamp(2.25rem,4.5vw,3.8rem);
   line-height:1.08;
   letter-spacing:-.055em;
-  overflow-wrap:anywhere;
+  word-break:keep-all;
+  overflow-wrap:break-word;
 }
 .is-post .post-head .eyebrow a{
   color:inherit;
