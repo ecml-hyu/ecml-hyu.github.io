@@ -64,12 +64,16 @@
   group: "postdoc"
   degree: "Postdoctoral Researcher"
   started: null
-  email_user: null
-  email_domain: null
-  photo: null
+  email_user: "jeongwoomoon"
+  email_domain: "hanyang.ac.kr"
+  photo: "/assets/img/members/jeongwoo-moon.webp"
   photo_slug: "jeongwoo-moon"
   hobby: ""
-  research_areas: []
+  research_areas:
+    - "Desalination"
+    - "Design and optimization using numerical modeling"
+    - "Optimization of process operation using deep learning"
+    - "Optimization of process control using reinforcement learning"
 
 - name_en: "Yinseo Song"
   name_ko: "송인서"
@@ -164,7 +168,7 @@
   started: "2026.09"
   email_user: null
   email_domain: null
-  photo: null
+  photo: "/assets/img/members/jinbeom-kim.webp"
   photo_slug: "jinbeom-kim"
   hobby: ""
   research_areas:
