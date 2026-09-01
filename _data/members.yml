@@ -157,19 +157,19 @@
   research_areas:
     - "Reinforced learning-based process control"
 
-- name_en: "Minseo Kim"
-  name_ko: "김민서"
-  group: "undergraduate"
-  degree: "B.S course (4rd year)"
-  started: null
-  email_user: "mseokim9999"
-  email_domain: "gmail.com"
+- name_en: "Jinbeom Kim"
+  name_ko: "김진범"
+  group: "master"
+  degree: "Master course (2026.09~)"
+  started: "2026.09"
+  email_user: null
+  email_domain: null
   photo: null
-  photo_slug: "minseo-kim"
+  photo_slug: "jinbeom-kim"
   hobby: ""
   research_areas:
-    - "AI-based chemical process modeling"
-    - "Brine valorization/utilization"
+    - "Biodiesel production process"
+    - "e-SAF process design"
 
 - name_en: "Gyeom Jeong"
   name_ko: "정겸"
@@ -210,3 +210,18 @@
   hobby: ""
   former_status: "Undergraduate student"
   research_areas: []
+
+- name_en: "Minseo Kim"
+  name_ko: "김민서"
+  group: "alumni"
+  degree: null
+  started: null
+  email_user: "mseokim9999"
+  email_domain: "gmail.com"
+  photo: null
+  photo_slug: "minseo-kim"
+  hobby: ""
+  former_status: "Undergraduate student"
+  research_areas:
+    - "AI-based chemical process modeling"
+    - "Brine valorization/utilization"
