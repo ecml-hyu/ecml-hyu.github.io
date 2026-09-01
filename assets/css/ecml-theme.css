@@ -1152,6 +1152,13 @@ header .site-nav{
   grid-template-columns:150px minmax(0,880px);
   gap:40px;
   align-items:start;
+  position:static;
+  top:auto;
+  z-index:auto;
+  min-height:0;
+  background:transparent;
+  border:0;
+  backdrop-filter:none;
 }
 .research-index{
   margin:9px 0 0;
