@@ -216,10 +216,16 @@ header .site-nav{
 .hero-acronym b{
   display:block;
   width:auto;
+  justify-self:start;
   color:#78e7fb;
   font-weight:700;
   letter-spacing:0;
+  transform-origin:left center;
 }
+.hero-acronym__line:nth-child(1)>b{transform:scaleX(1.45)}
+.hero-acronym__line:nth-child(2)>b{transform:scaleX(1.075)}
+.hero-acronym__line:nth-child(3)>b{transform:scaleX(.886)}
+.hero-acronym__line:nth-child(4)>b{transform:scaleX(1.54)}
 .hero-actions{
   display:inline-grid;
   min-width:190px;
