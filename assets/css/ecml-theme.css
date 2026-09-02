@@ -204,12 +204,21 @@ header .site-nav{
   line-height:.97;
   letter-spacing:-.043em;
 }
-.hero-acronym span{display:block;color:#fff;white-space:nowrap}
+.hero-acronym__line{
+  display:grid;
+  grid-template-columns:.94em max-content;
+  align-items:baseline;
+  column-gap:.08em;
+  color:#fff;
+  white-space:nowrap;
+}
+.hero-acronym__word{display:block}
 .hero-acronym b{
-  display:inline-block;
-  width:1em;
+  display:block;
+  width:auto;
   color:#78e7fb;
   font-weight:700;
+  letter-spacing:0;
 }
 .hero-actions{
   display:inline-grid;
