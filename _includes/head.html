@@ -1,6 +1,5 @@
 {%- comment -%}
-  index 는 "ECML Lab | Water Intelligence", 하위 페이지는 "제목 | ECML Lab".
-  기존 7개 파일의 <title> 규칙을 그대로 재현한 것이다.
+  index 는 "ECML | Hanyang University", 하위 페이지는 "제목 | ECML".
   description 은 page.description > page.lead > site.description 순으로 고른다.
 {%- endcomment -%}
 {%- if page.title -%}
@@ -30,6 +29,67 @@
 <meta name="twitter:description" content="{{ page_desc | escape }}">
 <meta name="twitter:image" content="{{ page_image }}">
 
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ '/#website' | absolute_url | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": "ECML",
+      "alternateName": [
+        "ECML Lab",
+        "Environment and Chemical Process Modeling/Design Laboratory",
+        "한양대학교 ECML 연구실"
+      ],
+      "publisher": {
+        "@id": {{ '/#organization' | absolute_url | jsonify }}
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": {{ '/#organization' | absolute_url | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": "ECML",
+      "alternateName": [
+        "ECML Lab",
+        "Environment and Chemical Process Modeling/Design Laboratory",
+        "한양대학교 박기호 교수 연구실"
+      ],
+      "description": {{ site.description | jsonify }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ '/assets/img/ecml-logo-02.png' | absolute_url | jsonify }},
+        "width": 1200,
+        "height": 470
+      },
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Hanyang University",
+        "url": "https://www.hanyang.ac.kr/"
+      },
+      "member": {
+        "@type": "Person",
+        "name": "Kiho Park",
+        "alternateName": "박기호",
+        "jobTitle": "Associate Professor",
+        "url": {{ '/members.html' | absolute_url | jsonify }}
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "222 Wangsimni-ro, Seongdong-gu",
+        "addressLocality": "Seoul",
+        "postalCode": "04763",
+        "addressCountry": "KR"
+      }
+    }
+  ]
+}
+</script>
+{%- endif %}
+
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +115,7 @@
   sindoll2 님이 index.html 에 직접 넣었던 것을 그대로 옮긴 것.
 {%- endcomment -%}
 {%- if page.intro %}
-<link rel="stylesheet" href="{{ '/intro-spline.css' | relative_url }}?v=47">
+<link rel="stylesheet" href="{{ '/intro-spline.css' | relative_url }}?v=52">
 {%- endif %}
 <link rel="stylesheet" href="{{ '/assets/css/ecml-theme.css' | relative_url }}?v=51">
 <script defer src="{{ '/assets/js/site-nav.js' | relative_url }}?v=47"></script>
