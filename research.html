@@ -27,6 +27,12 @@ body_class: "subpage subpage--research"
   </a>
 </nav>
 
+<nav class="research-rail" data-research-rail aria-label="Research section shortcuts" aria-hidden="true" hidden>
+  <a class="research-rail__link research-rail__link--process" href="#desalination" aria-label="Research area 1: Process Modeling and Design"><span aria-hidden="true">01</span></a>
+  <a class="research-rail__link research-rail__link--ai" href="#intelligent-systems" aria-label="Research area 2: AI Systems"><span aria-hidden="true">02</span></a>
+  <a class="research-rail__link research-rail__link--sustainability" href="#sustainable-water" aria-label="Research area 3: Sustainability and Environment"><span aria-hidden="true">03</span></a>
+</nav>
+
 <div class="research-story">
   <section class="research-section research-section--process" id="desalination" aria-labelledby="research-process-title">
     <header class="research-section__head">
@@ -274,3 +280,4 @@ body_class: "subpage subpage--research"
 </div>
 
 <p class="research-publications-link"><a class="button-ghost" href="{{ '/publications.html' | relative_url }}">View all ECML publications <span aria-hidden="true">→</span></a></p>
+<script defer src="{{ '/assets/js/research-nav.js' | relative_url }}?v=1"></script>
