@@ -488,7 +488,7 @@ header .site-nav{
   font-size:clamp(3.25rem,7vw,5.9rem);
   text-shadow:0 12px 42px rgba(0,0,0,.38);
 }
-.subpage .page-head .lead{max-width:680px;color:#b2ccd7}
+.subpage .page-head .lead{max-width:680px;margin-top:6px;color:#b2ccd7}
 .subpage .page{
   position:relative;
   z-index:1;
