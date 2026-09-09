@@ -9,6 +9,40 @@
 # id                      : 구 홈페이지의 원본 순번 (재정렬해도 보존)
 # publisher               : 단행본/북챕터 출판사. 저널 논문은 null
 
+- id: 60
+  type: journal-scie
+  title: "Anomaly diagnosis in SWRO desalination plants using a physics-informed spatiotemporal graph attention network"
+  year: 2026
+  authors:
+    - name: "Hyeongcheol Noh"
+      corresponding: false
+      co_first: true
+    - name: "Jeongwoo Moon"
+      corresponding: false
+      co_first: true
+    - name: "Byeongchan Yun"
+      corresponding: false
+      co_first: false
+    - name: "Jihye Kim"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Kyung Hwa Cho"
+      corresponding: true
+      co_first: false
+  journal: "Water Res."
+  volume: null
+  issue: null
+  pages: "126904"
+  publisher: null
+  doi: "10.1016/j.watres.2026.126904"
+  url: null
+  journal_rank: "Top 1.1% journal in Water Resources"
+  section: null
+  impact_factor: 12.8
+
 - id: 59
   type: journal-scie
   title: "Elucidation of biofouling mechanisms on membranes in a semi-batch reverse osmosis process for surface water treatment"
