@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Integrated process simulator flowsheet</title>
+  <desc id="desc">A generic process flow diagram with vessels, heat exchange, separation, and recycle.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061923"/><stop offset="1" stop-color="#06111b"/></linearGradient>
+    <linearGradient id="pipe" x1="0" x2="1"><stop stop-color="#56d7ef"/><stop offset="1" stop-color="#68e6c0"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5"/></filter>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#6bdfd9"/></marker>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g opacity=".15" stroke="#65bcd0"><path d="M0 60H640M0 120H640M0 180H640M0 240H640M0 300H640M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+  <g fill="none" stroke="url(#pipe)" stroke-width="4" marker-end="url(#a)">
+    <path d="M35 187H114M176 187H230M286 187H340M396 187H458M516 187H603"/>
+    <path d="M486 142V78H143V145"/>
+    <path d="M367 229V291H143V229"/>
+  </g>
+  <g fill="#092837" stroke="#79dff0" stroke-width="2">
+    <circle cx="145" cy="187" r="32"/><path d="m130 169 30 18-30 18Z" fill="#59cfea"/>
+    <rect x="229" y="112" width="58" height="150" rx="27"/><path d="M236 145h44M236 172h44M236 199h44M236 226h44" opacity=".55"/>
+    <circle cx="367" cy="187" r="30"/><path d="m349 173 36 28M385 173l-36 28"/>
+    <rect x="457" y="140" width="60" height="95" rx="12"/><path d="M467 161h40M467 181h40M467 201h40" opacity=".55"/>
+  </g>
+  <rect x="205" y="63" width="106" height="27" rx="13.5" fill="#061824" fill-opacity=".94" stroke="#69dce7" stroke-opacity=".42"/>
+  <g fill="#e0fbff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle" letter-spacing=".2" paint-order="stroke" stroke="#06131f" stroke-width="2" stroke-opacity=".75"><text x="145" y="247">Pump</text><text x="258" y="82">Separation</text><text x="367" y="247">Heat</text><text x="487" y="265">Product</text></g>
+  <g fill="#dffeff"><circle cx="94" cy="187" r="4"/><circle cx="207" cy="187" r="4"/><circle cx="317" cy="187" r="4"/><circle cx="429" cy="187" r="4"/><circle cx="566" cy="187" r="4"/></g>
+  <path d="M48 314H592" stroke="#5cd7e7" stroke-opacity=".15" stroke-width="18" filter="url(#glow)"/>
+  <text x="48" y="48" fill="#dffbff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing=".55" paint-order="stroke" stroke="#06131f" stroke-width="2" stroke-opacity=".75">Mass · energy · recycle</text>
+</svg>

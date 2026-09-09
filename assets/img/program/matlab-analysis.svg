@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Numerical analysis surface</title>
+  <desc id="desc">A glowing three-dimensional analytical surface with axes and data curves.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1a29"/><stop offset="1" stop-color="#07101c"/></linearGradient>
+    <linearGradient id="mesh" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#4bc9ed"/><stop offset=".52" stop-color="#f5a95c"/><stop offset="1" stop-color="#ff6d66"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#f6a15b" stop-opacity=".32"/><stop offset="1" stop-color="#f6a15b" stop-opacity="0"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7"/></filter>
+    <clipPath id="plot"><path d="M88 282 319 107 557 203 319 318Z"/></clipPath>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <circle cx="438" cy="133" r="130" fill="url(#halo)" filter="url(#glow)"/>
+  <g opacity=".18" stroke="#7ec8dd"><path d="M44 64H596M44 112H596M44 160H596M44 208H596M44 256H596M108 30V322M188 30V322M268 30V322M348 30V322M428 30V322M508 30V322"/></g>
+  <g clip-path="url(#plot)" fill="none" stroke="url(#mesh)" stroke-width="2">
+    <path d="M77 280C142 251 187 230 235 186S326 89 377 143s105 86 188 57"/>
+    <path d="M90 294C151 265 205 247 253 207S334 120 382 162s103 70 174 56" opacity=".82"/>
+    <path d="M111 307C172 278 218 266 268 230s76-75 120-43 92 56 149 48" opacity=".58"/>
+    <path d="M129 271C178 251 219 217 258 171s76-92 115-48 102 87 179 72" opacity=".68"/>
+    <path d="M158 286C201 260 237 226 275 178s66-72 106-31 85 65 142 58" opacity=".5"/>
+    <path d="M172 299C218 273 254 240 286 199s63-62 99-29 70 50 118 47" opacity=".4"/>
+  </g>
+  <g fill="none" stroke="#8bdcf1" stroke-opacity=".36">
+    <path d="M88 282 319 107 557 203 319 318Z"/>
+    <path d="M134 247 365 126M181 221 412 145M228 185 459 164M274 150 506 184"/>
+    <path d="M135 300 365 126M182 310 412 145M228 316 459 164M274 319 506 184"/>
+  </g>
+  <g fill="#e7fbff">
+    <circle cx="236" cy="185" r="4"/><circle cx="321" cy="113" r="5"/><circle cx="379" cy="147" r="4"/><circle cx="459" cy="185" r="3"/>
+  </g>
+  <g fill="#e2f7fc" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing=".5" paint-order="stroke" stroke="#06131f" stroke-width="2" stroke-opacity=".75">
+    <text x="48" y="48">Numerical model</text><text x="492" y="310">x / t</text><text x="65" y="304">Response</text>
+  </g>
+</svg>

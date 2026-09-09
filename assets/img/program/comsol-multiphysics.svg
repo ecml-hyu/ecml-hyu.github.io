@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Coupled multiphysics membrane-channel simulation</title>
+  <desc id="desc">A finite-element domain combines fluid flow, heat contours, and a species boundary layer around a membrane channel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071828"/><stop offset=".56" stop-color="#0a1730"/><stop offset="1" stop-color="#07121d"/></linearGradient>
+    <radialGradient id="sceneHalo"><stop stop-color="#7b6cff" stop-opacity=".22"/><stop offset=".52" stop-color="#38c9ea" stop-opacity=".08"/><stop offset="1" stop-color="#07121d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="domain" x1="0" x2="1"><stop stop-color="#123450" stop-opacity=".86"/><stop offset=".52" stop-color="#16284a" stop-opacity=".92"/><stop offset="1" stop-color="#301f4d" stop-opacity=".84"/></linearGradient>
+    <linearGradient id="topFace" x1="0" x2="1"><stop stop-color="#1c4960" stop-opacity=".72"/><stop offset=".55" stop-color="#38446f" stop-opacity=".72"/><stop offset="1" stop-color="#522e55" stop-opacity=".74"/></linearGradient>
+    <linearGradient id="species" x1="0" x2="1"><stop stop-color="#52d9f3" stop-opacity=".04"/><stop offset=".47" stop-color="#8e7cff" stop-opacity=".72"/><stop offset="1" stop-color="#b184ff" stop-opacity=".1"/></linearGradient>
+    <radialGradient id="heat"><stop stop-color="#fff2bf" stop-opacity=".96"/><stop offset=".18" stop-color="#f2b66d" stop-opacity=".76"/><stop offset=".52" stop-color="#f07989" stop-opacity=".24"/><stop offset="1" stop-color="#f07989" stop-opacity="0"/></radialGradient>
+    <linearGradient id="membrane" x1="0" x2="1"><stop stop-color="#55def1" stop-opacity=".88"/><stop offset=".5" stop-color="#d8fbff" stop-opacity=".95"/><stop offset="1" stop-color="#8e7cff" stop-opacity=".88"/></linearGradient>
+    <pattern id="mesh" width="32" height="24" patternUnits="userSpaceOnUse">
+      <path d="M0 0H32V24H0ZM0 0 32 24M32 0 0 24" fill="none" stroke="#c8f5ff" stroke-opacity=".2" stroke-width=".8"/>
+    </pattern>
+    <clipPath id="frontClip"><path d="M120 104 510 121 520 264 130 247Z"/></clipPath>
+    <marker id="flowArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#75e5f6"/></marker>
+    <filter id="soft"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="lineGlow"><feGaussianBlur stdDeviation="3.5"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <ellipse cx="341" cy="181" rx="265" ry="150" fill="url(#sceneHalo)"/>
+  <g opacity=".12" stroke="#8bcfe1"><path d="M0 72H640M0 144H640M0 216H640M0 288H640M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+  <g>
+    <path d="M120 104 163 73 553 90 510 121Z" fill="url(#topFace)" stroke="#9bdcf0" stroke-opacity=".5"/>
+    <path d="M510 121 553 90 563 232 520 264Z" fill="#17213b" stroke="#ab9cf7" stroke-opacity=".55"/>
+    <path d="M120 104 510 121 520 264 130 247Z" fill="url(#domain)" stroke="#7adcf0" stroke-opacity=".72" stroke-width="1.6"/>
+    <path d="M120 104 510 121 520 264 130 247Z" fill="url(#mesh)" opacity=".86"/>
+    <path d="M130 221C206 204 267 220 326 231s121 6 193-4l1 37-390-17Z" fill="url(#species)"/>
+    <path d="M130 228C212 209 271 226 326 237s121 7 194-4" fill="none" stroke="#9b87ff" stroke-width="10" stroke-opacity=".16" filter="url(#lineGlow)"/>
+  </g>
+  <g clip-path="url(#frontClip)" fill="none" stroke-linecap="round">
+    <g stroke="#62dcf3" stroke-opacity=".2" stroke-width="8" filter="url(#lineGlow)">
+      <path d="M137 137C220 133 259 158 310 159s107-30 202-11"/><path d="M137 164C219 159 264 177 312 177s105-24 202-4"/><path d="M139 194C216 188 264 194 313 195s109-14 203 4"/><path d="M141 222C219 215 269 211 317 214s107 5 201 15"/>
+    </g>
+    <g stroke="#76e4f5" stroke-width="2.4" marker-end="url(#flowArrow)">
+      <path d="M137 137C220 133 259 158 310 159s107-30 202-11"/><path d="M137 164C219 159 264 177 312 177s105-24 202-4"/><path d="M139 194C216 188 264 194 313 195s109-14 203 4"/><path d="M141 222C219 215 269 211 317 214s107 5 201 15"/>
+    </g>
+    <g stroke="#baf5ff" stroke-width="1.2" stroke-opacity=".68">
+      <path d="M145 149C222 145 261 168 310 169s108-27 198-8"/><path d="M143 179C220 174 265 186 313 186s106-19 201 0"/>
+    </g>
+  </g>
+  <ellipse cx="327" cy="188" rx="88" ry="72" fill="url(#heat)" filter="url(#soft)"/>
+  <g fill="none" stroke-linecap="round">
+    <ellipse cx="327" cy="188" rx="48" ry="38" stroke="#f4c078" stroke-width="2.4" stroke-opacity=".88"/>
+    <ellipse cx="327" cy="188" rx="67" ry="51" stroke="#f19780" stroke-width="1.7" stroke-opacity=".62"/>
+    <ellipse cx="327" cy="188" rx="84" ry="65" stroke="#b18bda" stroke-width="1.2" stroke-opacity=".44"/>
+  </g>
+  <path d="M314 119 337 120 344 253 321 252Z" fill="url(#membrane)" fill-opacity=".5" stroke="#d5fbff" stroke-width="1.5"/>
+  <g stroke="#e2fcff" stroke-opacity=".48"><path d="M318 136 339 144M319 159l21 8M320 182l22 8M321 205l22 8M322 228l21 8"/></g>
+  <g fill="#061725" stroke-width="2">
+    <circle cx="188" cy="148" r="6" stroke="#52d9f3"/><circle cx="279" cy="208" r="6" stroke="#8e7cff"/><circle cx="390" cy="161" r="6" stroke="#f2b66d"/><circle cx="476" cy="219" r="6" stroke="#63e2c0"/>
+  </g>
+  <g fill="#f4feff"><circle cx="188" cy="148" r="2.2"/><circle cx="279" cy="208" r="2.2"/><circle cx="390" cy="161" r="2.2"/><circle cx="476" cy="219" r="2.2"/></g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <rect x="38" y="27" width="250" height="38" rx="19" fill="#071625" fill-opacity=".9" stroke="#8e7cff" stroke-opacity=".46"/>
+    <text x="56" y="52" fill="#eefaff" font-size="18" letter-spacing=".45">Coupled multiphysics</text>
+    <g font-size="16" letter-spacing=".2">
+      <rect x="150" y="293" width="92" height="31" rx="15.5" fill="#071725" stroke="#52d9f3" stroke-opacity=".5"/><text x="177" y="314" fill="#dffbff">Flow</text><path d="M211 308h16" stroke="#52d9f3" stroke-width="3"/>
+      <rect x="254" y="293" width="92" height="31" rx="15.5" fill="#071725" stroke="#f2b66d" stroke-opacity=".5"/><text x="278" y="314" fill="#fff0d6">Heat</text><circle cx="329" cy="308" r="5" fill="#f2b66d"/>
+      <rect x="358" y="293" width="132" height="31" rx="15.5" fill="#071725" stroke="#8e7cff" stroke-opacity=".5"/><text x="379" y="314" fill="#eeeaff">Species</text><path d="M448 308h24" stroke="#8e7cff" stroke-width="5" stroke-opacity=".75"/>
+    </g>
+  </g>
+</svg>

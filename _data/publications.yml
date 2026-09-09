@@ -9,6 +9,136 @@
 # id                      : 구 홈페이지의 원본 순번 (재정렬해도 보존)
 # publisher               : 단행본/북챕터 출판사. 저널 논문은 null
 
+- id: 59
+  type: journal-scie
+  title: "Elucidation of biofouling mechanisms on membranes in a semi-batch reverse osmosis process for surface water treatment"
+  year: 2026
+  authors:
+    - name: "Yumiao Song"
+      corresponding: false
+      co_first: false
+    - name: "Weijian Jia"
+      corresponding: false
+      co_first: false
+    - name: "Heriberto Vélëz"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+    - name: "Jungbin Kim"
+      corresponding: true
+      co_first: false
+  journal: "J. Water Process Eng."
+  volume: "92"
+  issue: null
+  pages: "110678"
+  publisher: null
+  doi: "10.1016/j.jwpe.2026.110678"
+  url: null
+  journal_rank: "Top 9.5% journal in Water Resources"
+  section: null
+  impact_factor: 6.6
+
+- id: 58
+  type: journal-scie
+  title: "Machine learning-based analysis of calcium sulfate scaling-induced permeability decline in semi-batch reverse osmosis"
+  year: 2026
+  authors:
+    - name: "Jungbin Kim"
+      corresponding: true
+      co_first: false
+    - name: "Haowen Zheng"
+      corresponding: false
+      co_first: false
+    - name: "Yiheng Yan"
+      corresponding: false
+      co_first: false
+    - name: "Weijian Jia"
+      corresponding: false
+      co_first: false
+    - name: "Linyinxue Dong"
+      corresponding: false
+      co_first: false
+    - name: "Daliang Xu"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: false
+      co_first: false
+  journal: "Sep. Purif. Technol."
+  volume: "414"
+  issue: null
+  pages: "139835"
+  publisher: null
+  doi: "10.1016/j.seppur.2026.139835"
+  url: null
+  journal_rank: "Top 11.7% journal in Engineering, Chemical"
+  section: null
+  impact_factor: 9.1
+
+- id: 57
+  type: journal-scie
+  title: "Energy and economic assessment of high-recovery seawater desalination integrated with pressure-retarded osmosis: Employing high-pressure RO, high-pressure NF, and low-salt-rejection RO"
+  year: 2026
+  authors:
+    - name: "Gihong Lee"
+      corresponding: false
+      co_first: false
+    - name: "Yunwhan Kim"
+      corresponding: false
+      co_first: false
+    - name: "Ahyeon Jeong"
+      corresponding: false
+      co_first: false
+    - name: "Jihun Bae"
+      corresponding: false
+      co_first: false
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Yong-Gyun Park"
+      corresponding: true
+      co_first: false
+  journal: "Desalination"
+  volume: "638"
+  issue: null
+  pages: "120608"
+  publisher: null
+  doi: "10.1016/j.desal.2026.120608"
+  url: null
+  journal_rank: "Top 2.7% journal in Water Resources"
+  section: null
+  impact_factor: 9.9
+
+- id: 56
+  type: journal-scie
+  title: "Integrated alkaline electrolyser-pressure retarded membrane distillation system for ammonia wastewater valorisation: technoeconomic and environmental assessment"
+  year: 2026
+  authors:
+    - name: "Sunyoung Oh"
+      corresponding: false
+      co_first: true
+    - name: "Heun Se Kim"
+      corresponding: false
+      co_first: true
+    - name: "Kiho Park"
+      corresponding: true
+      co_first: false
+    - name: "Boram Gu"
+      corresponding: true
+      co_first: false
+  journal: "npj Clean Water"
+  volume: null
+  issue: null
+  pages: null
+  publisher: null
+  doi: "10.1038/s41545-026-00599-y"
+  url: null
+  journal_rank: "Top 1.9% journal in Water Resources"
+  section: null
+  impact_factor: 11.0
+
 - id: 55
   type: journal-scie
   title: "Adaptive reinforcement learning for energy-efficient high-recovery closed-circuit reverse osmosis"

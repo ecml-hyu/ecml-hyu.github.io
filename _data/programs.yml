@@ -1,0 +1,65 @@
+- slug: matlab
+  name: "MATLAB"
+  category: "Numerical computing"
+  description: "Numerical modeling, optimization, data analysis, and dynamic control for chemical and water processes."
+  image: "/assets/img/program/matlab-analysis.svg"
+  image_alt: "Three-dimensional numerical surface with analysis curves"
+  capabilities:
+    - "Model development"
+    - "Optimization"
+    - "Control"
+
+- slug: python
+  name: "Python"
+  category: "Scientific programming"
+  description: "Machine learning, scientific computing, workflow automation, and reproducible data analysis."
+  image: "/assets/img/program/python-computing.svg"
+  image_alt: "Scientific code window connected to data and computing nodes"
+  capabilities:
+    - "Machine learning"
+    - "Data pipelines"
+    - "Automation"
+
+- slug: openlca
+  name: "openLCA"
+  category: "Life-cycle assessment"
+  description: "Life-cycle modeling and environmental impact assessment across products, energy, and process systems."
+  image: "/assets/img/program/openlca-lifecycle.svg"
+  image_alt: "Circular life-cycle diagram connecting materials, energy, and environment"
+  capabilities:
+    - "LCA modeling"
+    - "Impact assessment"
+    - "Scenario comparison"
+
+- slug: comsol
+  name: "COMSOL"
+  category: "Multiphysics simulation"
+  description: "Coupled modeling of transport, reactions, membranes, heat transfer, and process phenomena."
+  image: "/assets/img/program/comsol-multiphysics.svg"
+  image_alt: "Coupled multiphysics fields represented by layered contour bands"
+  capabilities:
+    - "Transport"
+    - "Reaction systems"
+    - "Multiphysics"
+
+- slug: process
+  name: "Process simulator"
+  category: "Process design"
+  description: "Flowsheet modeling, mass and energy balances, unit-operation design, and integrated process evaluation."
+  image: "/assets/img/program/process-simulator.svg"
+  image_alt: "Generic process flow diagram with connected unit operations and a recycle stream"
+  capabilities:
+    - "Flowsheets"
+    - "Unit operations"
+    - "System integration"
+
+- slug: ai
+  name: "AI assistants (ChatGPT, Claude)"
+  category: "Lab-supported access"
+  description: "ECML supports access to ChatGPT and Claude for literature exploration, coding, analysis, and research communication."
+  image: "/assets/img/program/ai-assistants.svg"
+  image_alt: "AI assistant panels connected to research, code, and data workflows"
+  capabilities:
+    - "Literature support"
+    - "Coding assistance"
+    - "Research productivity"

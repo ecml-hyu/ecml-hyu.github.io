@@ -1,13 +1,40 @@
 ---
 layout: page
 title: "Program"
-eyebrow: "ECML programs"
-lead: "Academic programs, laboratory activities, and opportunities to learn with ECML."
+eyebrow: "ECML research environment"
+lead: "Modeling, simulation, life-cycle assessment, and AI tools supported for ECML research."
 body_class: "subpage subpage--program"
+extra_css:
+  - /assets/css/program.css
 ---
 
-<section class="program-note" aria-labelledby="program-note-title">
-  <h2 id="program-note-title">Programs at ECML</h2>
-  <p>This page will introduce our courses, seminars, workshops, and opportunities for prospective students.</p>
-  <p>Program details will be added soon.</p>
+<section class="program-note" aria-labelledby="program-intro-title">
+  <p class="program-kicker">From equations to decisions</p>
+  <h2 id="program-intro-title">Tools that move ideas into working models.</h2>
+  <p>ECML supports an integrated computational environment for numerical analysis, machine learning, multiphysics simulation, process design, and environmental assessment.</p>
+  <div class="program-workflow" aria-label="ECML computational workflow">
+    <span>Model</span><i aria-hidden="true"></i><span>Simulate</span><i aria-hidden="true"></i><span>Evaluate</span><i aria-hidden="true"></i><span>Decide</span>
+  </div>
+</section>
+
+<section class="program-catalogue" aria-label="Software and AI support">
+  <ul class="program-grid" role="list">
+  {%- for tool in site.data.programs %}
+    <li class="program-card program-card--{{ tool.slug }}">
+      <figure class="program-card__visual">
+        <img src="{{ tool.image | relative_url }}" alt="{{ tool.image_alt }}" width="640" height="360" decoding="async">
+      </figure>
+      <div class="program-card__body">
+        <p class="program-card__label">{{ tool.category }}</p>
+        <h3>{{ tool.name }}</h3>
+        <p>{{ tool.description }}</p>
+        <ul class="program-card__tags" aria-label="{{ tool.name }} capabilities">
+        {%- for capability in tool.capabilities %}
+          <li>{{ capability }}</li>
+        {%- endfor %}
+        </ul>
+      </div>
+    </li>
+  {%- endfor %}
+  </ul>
 </section>

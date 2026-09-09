@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Scientific computing workflow</title>
+  <desc id="desc">A code editor connected to structured data and machine-learning nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071827"/><stop offset="1" stop-color="#07111e"/></linearGradient>
+    <linearGradient id="line" x1="0" x2="1"><stop stop-color="#50c8f3"/><stop offset="1" stop-color="#7c9cff"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#6db8d0"><path d="M0 72H640M0 144H640M0 216H640M0 288H640M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+  <rect x="56" y="55" width="336" height="250" rx="15" fill="#07121e" stroke="#3d7190"/>
+  <path d="M56 92H392" stroke="#3d7190"/>
+  <circle cx="80" cy="74" r="5" fill="#ff776f"/><circle cx="98" cy="74" r="5" fill="#f4bf63"/><circle cx="116" cy="74" r="5" fill="#63d7a7"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="17" font-weight="600" paint-order="stroke" stroke="#06131f" stroke-width="1.5" stroke-opacity=".72">
+    <text x="76" y="126" fill="#a9bcc8">01</text><text x="112" y="126" fill="#74d4f7">data</text><text x="150" y="126" fill="#e3f6fb"> = ProcessData()</text>
+    <text x="76" y="158" fill="#a9bcc8">02</text><text x="112" y="158" fill="#bda7ff">features</text><text x="184" y="158" fill="#e3f6fb"> = transform(data)</text>
+    <text x="76" y="190" fill="#a9bcc8">03</text><text x="112" y="190" fill="#74d4f7">result</text><text x="170" y="190" fill="#e3f6fb"> = optimize(features)</text>
+    <text x="76" y="222" fill="#a9bcc8">04</text><text x="112" y="222" fill="#63d7a7">validate</text><text x="184" y="222" fill="#e3f6fb">(result, physics)</text>
+  </g>
+  <rect x="112" y="259" width="188" height="5" rx="2.5" fill="url(#line)" opacity=".8"/><rect x="112" y="277" width="127" height="5" rx="2.5" fill="#6788a0" opacity=".45"/>
+  <path d="M392 174C432 174 421 119 464 119M392 206C430 206 430 262 473 262" fill="none" stroke="url(#line)" stroke-width="2"/>
+  <g stroke="#61cffa" stroke-opacity=".58">
+    <path d="M483 93 545 72 584 119 547 162 485 145Z" fill="#0b2940"/>
+    <path d="M485 236 541 212 589 247 557 299 492 286Z" fill="#132344"/>
+    <path d="M515 105 545 72M515 105 547 162M515 105 485 145M515 105 584 119M532 257 541 212M532 257 589 247M532 257 557 299M532 257 492 286"/>
+  </g>
+  <g fill="#e6fbff"><circle cx="515" cy="105" r="6"/><circle cx="545" cy="72" r="4"/><circle cx="584" cy="119" r="5"/><circle cx="547" cy="162" r="4"/><circle cx="485" cy="145" r="4"/><circle cx="532" cy="257" r="7"/><circle cx="541" cy="212" r="4"/><circle cx="589" cy="247" r="5"/><circle cx="557" cy="299" r="4"/><circle cx="492" cy="286" r="4"/></g>
+  <circle cx="532" cy="257" r="25" fill="#627cff" opacity=".18" filter="url(#g)"/>
+</svg>

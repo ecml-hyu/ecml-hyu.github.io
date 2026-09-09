@@ -10,6 +10,33 @@
 #
 # 사진은 옮기지 않았다. 필요하면 담당자가 직접 추가한다.
 
+- title_ko: "리포머 연계형 분리막 탄소포집의 성능 안정성 강화를 위한 동적 제어 기술 개발"
+  title_en: "Development of Dynamic Control Strategies for the Performance Stability of Reformer-Integrated Membrane Carbon Capture Systems"
+  role: null
+  funder: "현대자동차 (주)"
+  ministry: null
+  start: "2026.05.26"
+  end: "2027.05.25"
+  status: "ongoing"
+
+- title_ko: "암모니아수를 활용한 CO2 포집 공정모델링 구축 용역"
+  title_en: "Process model development for CO2 absorption process using ammonia aqueous solution"
+  role: null
+  funder: "한국에너지기술연구원"
+  ministry: null
+  start: "2026.05.18"
+  end: "2026.09.18"
+  status: "ongoing"
+
+- title_ko: "국내외 미활용 유지계 자원 발굴 및 HEFA 공정 적용 기술개발"
+  title_en: "Development of Application Technologies for HEFA Process and Identification of Domestic and Overseas Underutilized Lipid Resources"
+  role: null
+  funder: "한국산업기술기획평가원"
+  ministry: "산업통상부"
+  start: "2026.04.01"
+  end: "2029.12.31"
+  status: "ongoing"
+
 - title_ko: "4단계 BK21 탄소중립 첨단소재 교육연구단"
   title_en: "Education & research center for advanced materials toward carbon neutrality"
   role: null
@@ -26,24 +53,6 @@
   ministry: "과학기술정보통신부"
   start: "2024.04.01"
   end: "2029.03.28"
-  status: "ongoing"
-
-- title_ko: "녹색 융합기술 인재 양성 특성화 대학원 전문인력 양성사업 (포스트플라스틱)"
-  title_en: "Graduate students resource development program specialized in green convergence technology: post-plastic"
-  role: null
-  funder: "한국환경산업기술원"
-  ministry: "환경부"
-  start: "2024.03.01"
-  end: "2025.11.30"
-  status: "ongoing"
-
-- title_ko: "생산수 계통의 오일제거 및 수처리 복합공정 설비기술 개발"
-  title_en: "Development of oil sand process affected water reuse and zero liquid discharge system"
-  role: "공동7: 역삼투 조합 증발농축 공정 설계 및 운영지원 최적화 모델 및 성능평가"
-  funder: "국토교통과학기술진흥원"
-  ministry: "국토교통부"
-  start: "2022.04.01"
-  end: "2025.12.31"
   status: "ongoing"
 
 - title_ko: "10만톤/년급 바이오디젤 생산플랜트 FEED를 위한 공정모사 용역"
@@ -64,6 +73,15 @@
   end: "2025.02.28"
   status: "terminated"
 
+- title_ko: "녹색 융합기술 인재 양성 특성화 대학원 전문인력 양성사업 (포스트플라스틱)"
+  title_en: "Graduate students resource development program specialized in green convergence technology: post-plastic"
+  role: null
+  funder: "한국환경산업기술원"
+  ministry: "환경부"
+  start: "2024.03.01"
+  end: "2025.11.30"
+  status: "terminated"
+
 - title_ko: "연산2.5만톤급 수산화리튬 결정화기 국산화를 위한 공정수리 모델 개발"
   title_en: "Process model development for LiOH recrystallization implementation for a large-scale system at 25000 ton/year"
   role: null
@@ -80,6 +98,15 @@
   ministry: null
   start: "2023.07.01"
   end: "2023.11.30"
+  status: "terminated"
+
+- title_ko: "생산수 계통의 오일제거 및 수처리 복합공정 설비기술 개발"
+  title_en: "Development of oil sand process affected water reuse and zero liquid discharge system"
+  role: "공동7: 역삼투 조합 증발농축 공정 설계 및 운영지원 최적화 모델 및 성능평가"
+  funder: "국토교통과학기술진흥원"
+  ministry: "국토교통부"
+  start: "2022.04.01"
+  end: "2025.12.31"
   status: "terminated"
 
 - title_ko: "디지털 트윈 기반 고순도 공업용수 생산 공정의 운영기술 개발"

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Life-cycle assessment system</title>
+  <desc id="desc">A circular material and energy pathway connecting resources, process, use, and recovery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b20"/><stop offset="1" stop-color="#06131c"/></linearGradient>
+    <linearGradient id="cycle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4ee0a4"/><stop offset=".55" stop-color="#70d9d2"/><stop offset="1" stop-color="#5ba9f0"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#67debd"/></marker>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <ellipse cx="320" cy="183" rx="185" ry="119" fill="none" stroke="#54d7ad" stroke-opacity=".15" stroke-width="34" filter="url(#glow)"/>
+  <g fill="none" stroke="url(#cycle)" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M189 98A172 107 0 0 1 420 84"/><path d="M465 108A172 107 0 0 1 481 245"/><path d="M444 275A172 107 0 0 1 212 285"/><path d="M164 255A172 107 0 0 1 156 125"/>
+  </g>
+  <circle cx="320" cy="183" r="74" fill="#092a2b" stroke="#5ed7b7" stroke-opacity=".55"/>
+  <path d="M320 231c-41-27-44-66-10-92 22-17 48-15 68-24-3 50-15 90-58 116Z" fill="#66df9e" opacity=".88"/>
+  <path d="M319 231c7-42 24-70 54-105M335 183c-10-8-20-12-32-14M347 160c12-2 23-7 31-14" fill="none" stroke="#d9ffe9" stroke-linecap="round" stroke-width="3"/>
+  <g fill="#09232c" stroke="#65dcb3">
+    <rect x="130" y="72" width="95" height="47" rx="12"/><rect x="420" y="66" width="96" height="47" rx="12"/><rect x="438" y="248" width="96" height="47" rx="12"/><rect x="105" y="246" width="108" height="47" rx="12"/>
+  </g>
+  <g fill="#e6fff7" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle" letter-spacing=".2" paint-order="stroke" stroke="#06131f" stroke-width="2" stroke-opacity=".75"><text x="177" y="101">Resources</text><text x="468" y="95">Process</text><text x="486" y="277">Use</text><text x="159" y="275">Recovery</text></g>
+  <g stroke="#85e9ca" stroke-width="2" opacity=".78"><path d="M263 183h-51M377 183h51M320 109V86M320 257v27"/></g>
+  <g fill="#dffdf5"><circle cx="212" cy="183" r="4"/><circle cx="428" cy="183" r="4"/><circle cx="320" cy="86" r="4"/><circle cx="320" cy="284" r="4"/></g>
+</svg>
