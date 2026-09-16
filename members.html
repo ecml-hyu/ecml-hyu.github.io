@@ -50,6 +50,35 @@ body_class: "subpage subpage--members"
     </section>
     {%- endif %}
   </div>
+  {%- if pi.badges and pi.badges.size > 0 %}
+  <aside class="pi-badges" aria-labelledby="pi-badges-title">
+    <h3 class="pi-badges__heading" id="pi-badges-title">Honors &amp; Service</h3>
+    {%- for badge in pi.badges %}
+    <article class="pi-badge pi-badge--{{ badge.kind | default: 'recognition' }} pi-badge--{{ badge.theme | default: 'aqua' }}{% if badge.cover_image %} pi-badge--cover{% endif %}">
+      {%- if badge.cover_image %}
+      <span class="pi-badge__cover">
+        <img src="{{ badge.cover_image }}" alt="{{ badge.cover_alt | default: badge.title }}" width="480" height="640" loading="lazy" decoding="async">
+      </span>
+      {%- else %}
+      <span class="pi-badge__medal" aria-hidden="true">
+        <span class="pi-badge__tails"></span>
+        <span class="pi-badge__burst"></span>
+        <span class="pi-badge__seal">
+          <span class="pi-badge__seal-top">{{ badge.seal_top }}</span>
+          <strong class="pi-badge__seal-main">{{ badge.badge_text }}</strong>
+          <span class="pi-badge__seal-bottom">{{ badge.seal_bottom }}</span>
+        </span>
+      </span>
+      {%- endif %}
+      <span class="pi-badge__copy">
+        <span class="pi-badge__label">{{ badge.label }}</span>
+        <strong>{{ badge.title }}</strong>
+        {%- if badge.meta and badge.meta != "" %}<span class="pi-badge__meta">{{ badge.meta }}</span>{% endif %}
+      </span>
+    </article>
+    {%- endfor %}
+  </aside>
+  {%- endif %}
 </section>
 
 {%- assign cv = "experience:Professional Experience,activities:Professional Activities and Membership" | split: "," -%}
@@ -68,7 +97,11 @@ body_class: "subpage subpage--members"
     <h3>{{ cv_label }}</h3>
     <ul>
       {%- for line in list %}
+      {%- if line == "Honors and Awards" %}
+      <li class="cv-subhead">{{ line }}</li>
+      {%- else %}
       <li>{{ line }}</li>
+      {%- endif %}
       {%- endfor %}
     </ul>
   </div>
