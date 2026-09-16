@@ -1090,8 +1090,8 @@ header .site-nav{
   --badge-metal:#d6b964;
   --badge-metal-light:#f6dda0;
   --badge-metal-dark:#79602d;
-  --badge-ribbon:#0c718c;
-  --badge-ribbon-dark:#074357;
+  --badge-ribbon:#8a3240;
+  --badge-ribbon-dark:#4b1720;
   --badge-glow:216,185,100;
   position:relative;
   display:flex;
@@ -1209,24 +1209,30 @@ header .site-nav{
 .subpage--members .pi-badge__tails{
   position:absolute;
   top:54px;
-  left:24px;
+  left:19px;
   z-index:-2;
-  width:25px;
+  width:54px;
   height:39px;
-  background:linear-gradient(155deg,var(--badge-ribbon),var(--badge-ribbon-dark));
-  clip-path:polygon(0 0,100% 0,88% 100%,50% 79%,8% 100%);
-  transform:rotate(8deg);
-  transform-origin:top center;
   filter:drop-shadow(0 7px 7px rgba(0,0,0,.24));
 }
+.subpage--members .pi-badge__tails::before,
 .subpage--members .pi-badge__tails::after{
   content:"";
   position:absolute;
-  inset:0;
-  background:linear-gradient(205deg,var(--badge-ribbon),var(--badge-ribbon-dark));
-  clip-path:inherit;
-  transform:translateX(22px) rotate(-16deg);
+  top:0;
+  width:25px;
+  height:39px;
+  background:linear-gradient(155deg,#b0525e 0,var(--badge-ribbon) 40%,var(--badge-ribbon-dark) 100%);
+  clip-path:polygon(0 0,100% 0,88% 100%,50% 79%,8% 100%);
   transform-origin:top center;
+}
+.subpage--members .pi-badge__tails::before{
+  left:2px;
+  transform:rotate(7deg);
+}
+.subpage--members .pi-badge__tails::after{
+  right:2px;
+  transform:rotate(-7deg);
 }
 .subpage--members .pi-badge__seal{
   position:absolute;
